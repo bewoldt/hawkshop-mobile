@@ -202,8 +202,3 @@ $.fn.setup_navigation = function(settings) {
 		e.stopPropagation();
 	});
 }
-
-$( document ).ready(function() {
-
-
-});

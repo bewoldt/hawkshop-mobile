@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 				}
 			},
 			markup: {
-					files: ['templates/**/*.php'],
+					files: ['*.php','includes/*.php'],
 					options: {
 							livereload: true,
 					}

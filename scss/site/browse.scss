@@ -1,0 +1,44 @@
+
+.browse {
+	margin-top: 3em;
+}
+.product-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.product-list a {
+	color: #333;
+	display: block;
+}
+.product-list .justify-item {
+	width: 48%;
+	@media (min-width: 500px) {
+		width: 32%;
+	}
+	@media (min-width: $break-medium) {
+		width: 24%;
+	}
+}
+.productimg {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.brandname, .productname, .productprice {
+	display: block;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.4;
+}
+.brandname {
+	font-weight: bold;
+}
+.productname {
+
+}
+.productprice {
+	text-decoration: none;
+	color: #585a5d;
+	font-weight: bold;
+}

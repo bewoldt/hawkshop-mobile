@@ -1,0 +1,165 @@
+#header {
+	position: relative;
+	z-index: 40;
+}
+.header-top-bg {
+	/*background: url(../images/header_top.png) repeat-x left bottom;*/
+	background-color: #222;
+	border-bottom: 1px solid #333;
+	box-shadow: 0 1px 1px rgba(0,0,0,.5);
+	position: relative;
+	z-index: 40;
+}
+.header-top {
+	margin: 0 auto;
+	position: relative;
+}
+.top-para {
+	color: #ddd;
+	display: block;
+	float: left;
+	font-size: 10px;
+	line-height: 25px;
+	margin: 0;
+	& a {
+		color: #ddd;
+		text-decoration: underline;
+	}
+}
+.top-nav-wrapper {
+	float: right;
+}
+.top-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	@media (min-width: $break-medium) {
+		display: block;
+		float: left;
+		margin-right: 5px;
+	}
+}
+.top-nav li {
+	float: left;
+}
+.top-nav li a {
+	padding: 2px 5px 0;
+}
+.top-nav li a, .checkout-link, .my-cart {
+	color: #ddd;
+	display: block;
+	font-size: 10px;
+	line-height: 23px;
+	text-transform: uppercase;
+	-webkit-transition: border-color .1s linear;
+	-moz-transition: border-color .1s linear;
+	-o-transition: border-color .1s linear;
+	transition: border-color .1s linear;
+	@media (min-width: $break-medium) {
+		border-bottom: 2px solid #222;
+	}
+}
+
+/* -----------------------------------------------------------------
+My Cart
+----------------------------------------------------------------- */
+.cart-checkout {
+	float: left;
+}
+.cart, .checkout-link {
+	float: left;
+}
+.cart {
+	position: relative;
+}
+.checkout-link {
+	padding: 2px 5px 0 10px;
+}
+.my-cart {
+	xbackground: url(../images/sprite.png) no-repeat -3px -533px;
+	padding: 2px 8px 0 5px;
+	position: relative;
+}
+
+/* hover */
+.top-nav a:hover, .top-nav a:focus, .my-cart:hover, .my-cart:focus {
+	border-bottom-color: #fdd700;
+	color: #fff;
+	text-decoration: none;
+}
+.my-cart:hover .caret, .open .my-cart .caret {
+	border-top-color: #fff;
+}
+
+
+/* -----------------------------------------------------------------
+
+----------------------------------------------------------------- */
+.header-mid-bg {
+	xbackground: url(../images/header_mid.png) repeat-x left bottom;
+	background-color: #000;
+}
+.header-mid {
+	position: relative;
+	padding: 12px 0 9px 0;
+}
+.logo {
+	display: block;
+	width: 100%;
+	@media (min-width: $break-medium) {
+		margin: 0 auto;
+		width: 421px;
+	}
+}
+.logo img {
+	display: block;
+}
+
+/* -----------------------------------------------------------------------
+Search
+----------------------------------------------------------------------- */
+.searchwrapper {
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	margin-top: -13px;
+}
+.searchtextbox {
+	position: relative;
+}
+.searchwrapper input {
+	-webkit-appearance: textfield;
+	background: #fff;
+	color: #222;
+	border: none;
+	display: inline-block;
+	font-size: 13px;
+	font-family: arial, verdana, sans-serif;
+	height: auto;
+	line-height: normal;
+	padding: 5px 30px 5px 10px;
+	position: relative;
+	vertical-align: middle;
+	width: 140px;
+	margin-bottom: 0;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	outline: none;
+	-webkit-transition: width 0.2s ease, background-color 0.2s ease;
+	-moz-transition: width 0.2s ease, background-color 0.2s ease;
+	transition: width 0.2s ease, background-color 0.2s ease;
+}
+.search-btn {
+	border: none;
+	background: url(../images/btn-magnifying-glass.gif) no-repeat center center;
+	text-indent: -9999em;
+	position: absolute;
+	right: 5px;
+	width: 16px;
+	height: 16px;
+	top: 5px;
+}
+
+

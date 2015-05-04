@@ -1,4 +1,42 @@
 <!-- Header -->
-<header class="header" role="banner">
+<header id="header" role="banner">
+	<div class="header-top-bg">
+		<div class="container header-top clearfix">
+			<p class="top-para">All proceeds benefit University of Iowa student programs.</p>
+			<div class="top-nav-wrapper">
+				<ul class="top-nav clearfix">
+					<li><a href="#">Customer Service</a></li>
+					<li><a href="#">My Account</a></li>
+				</ul>
+				<div class="cart-checkout">
+					<div class="cart">
+						<a href="#" class="my-cart">My Cart ( <strong>3</strong> )</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="header-mid-bg">
+		<div class="container header-mid clearfix">
+			<a href="#" title="Iowa Hawk Shop - Home" class="logo">
+				<img src="images/iowahawkshop.png" alt="Iowa Hawk Shop - University of Iowa Bookstore" height="56" width="421" />
+			</a>
+			<!-- <div class="searchwrapper">
+				<form>
+					<div class="searchtextbox">
+						<label for="quicksearch" class="visuallyhidden">Search</label>
+						<input type="search" placeholder="search">
+						<button type="submit" name="search" class="search-btn" title="Search">Search</button>
+					</div>
+				</form>
+			</div> -->
+		</div>
+	</div>
+
+	<div class="main-nav-bg">
+
+			<?php include 'includes/main-nav.php'; ?>
+
+	</div>
 </header>

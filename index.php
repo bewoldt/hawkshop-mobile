@@ -5,14 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home | Student Life Marketing &amp; Design.</title>
+	<title>Home</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/master.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
-	<?php include 'includes/main-nav.php'; ?>
 
 	<section role="main">
 
@@ -21,7 +23,7 @@
 	<?php include 'includes/footer.php'; ?>
 
 	<!-- JS -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
 
 

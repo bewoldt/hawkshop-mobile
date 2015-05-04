@@ -1,6 +1,4 @@
-/* /scss/imports/typography.scss
-========================================================================== */
-a {color: $link; outline:none; text-decoration: none;}
+a {color: $link; outline:none; text-decoration: none;transition: all .15s ease;}
 a:hover {text-decoration: underline;}
 a:active {color:#0088cc;}
 a:focus {outline:thin dotted;}
@@ -19,24 +17,24 @@ h1,h2,h3,h4,h5,h6 {
     text-rendering: optimizelegibility;
 }
 h1 {
-    @include rem(45);
+    @include rem(34);
     margin: .75em 0 .5em;
     text-transform: uppercase;
 }
 h2 {
-    @include rem(33);
+    @include rem(28);
 }
 h3 {
-    @include rem(26);
+    @include rem(21);
 }
 h4 {
-    @include rem(20);
+    @include rem(15);
 }
 h5 {
-    @include rem(17);
+    @include rem(14);
 }
 h6 {
-    @include rem(16);
+    @include rem(13);
 }
 h1 + h2,
 h2 + h3,
@@ -90,8 +88,9 @@ hr {
     border-bottom: 1px solid #fff;
 }
 
-/* Quotes
-----------------------------------------------------*/
+/* -----------------------------------------------------------------
+Quotes
+----------------------------------------------------------------- */
 blockquote {
     margin: 1.6667em 0;
     padding-left: 1em;

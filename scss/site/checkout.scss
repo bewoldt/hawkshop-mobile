@@ -1,0 +1,190 @@
+#startCheckoutFrame table td, #checkouttable table td {
+	@media (max-width: $break-medium) {
+		display: block;
+	}
+
+}
+table#checkouttable td, #paymenttable td, table#giftcardfields td, div#local_user table td {
+	@media (max-width: $break-medium) {
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+}
+table#checkouttable td label {
+	@media (max-width: $break-medium) {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+}
+#cartLogin {
+	@media (max-width: $break-medium) {
+		margin-left: 0;
+	}
+}
+table#billtable, table#shiptable, table#giftcardfields, div#local_user table {
+	@media (max-width: $break-medium) {
+		width: 100%;
+	}
+}
+table#billtable br {
+	@media (max-width: $break-medium) {
+		display: none;
+	}
+}
+table#billtable #billaddrstr2label, table#shiptable #shipaddrstr2label {
+	@media (max-width: $break-medium) {
+		display: none;
+	}
+}
+table#checkouttable #savebilllabel, table#checkouttable #savebilldata {
+	@media (max-width: $break-medium) {
+		display: inline-block;
+		width: auto;
+	}
+}
+table#checkouttable #savebilldata label {
+	@media (max-width: $break-medium) {
+		margin-top: 0;
+	}
+}
+#paymentframe {
+	border: none;
+}
+#CIDDiv {
+	@media (max-width: $break-medium) {
+		display: none;
+	}
+}
+div.cartGroupRow div.cartData {
+	@media (max-width: $break-small) {
+		display: block;
+	}
+}
+/* End New Stuff */
+
+.cartData  {
+	background-color: #f4f4f4;
+}
+#cartFrame {
+	background-color: #f4f4f4;
+	border: solid 1px #ccc;
+}
+div.cartDetailsFrame {
+	background-color: #fff;
+	border: solid 1px #ccc;
+}
+.checkout-page .column-main {
+	width: 100%;
+}
+
+#startCheckoutFrame {
+	margin-left: 0;
+	margin-right: 0;
+}
+.checkout-page .column-main {
+	float: none;
+	margin-bottom: 20px;
+}
+.checkout-page .breadcrumbs {
+	padding: 5px 0;
+}
+#coupon {
+	padding: 15px 0;
+}
+#courseFrame {
+	margin-left: 20px;
+}
+.textStart {
+	padding-left: 20px;
+}
+
+.cartAddPage table td {
+	padding:0; /* I don't know what this is */
+}
+#giftcardframe, #cartLogin, #cartShipOpt {
+	border-color: #ccc;
+}
+div.cartData {
+	border-radius: 0;
+	border-color: #ccc;
+}
+.textsmall {
+font-size: 13px;
+}
+#cartTotalFrame, #cartUpdate {
+	border-radius: 0;
+}
+div.cartItem {
+	margin: 10px 0;
+}
+
+#discountData input, .cartQty input, .paydata input, #coupon input, .loginfields table input {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.paydata input, #coupon input {
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+#billingframe, #shippingframe {
+	background: #f4f4f4;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+#billingtitle, #shippingtitle, .rbottom, td.rtopright #shippingframe, td.rtopleft #billingframe, td.rtopright #shippingtitle, td.rtopleft #billingtitle, div.cartDetailsFrame {
+	border-radius: 0;
+}
+#billingtitle, #shippingtitle, #optionstitle, #checkouttable td.buttoncell {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#checkouttable td.billingcell, #checkouttable td.buttoncell {
+border-right-color: #ccc;
+border-left-color: #ccc;
+}
+#optionstitle {
+	border-bottom-color: #ccc;
+}
+#checkouttable td.optionscell {
+	border-top-color: #ccc;
+}
+#checkouttable td.buttoncell, #billingtitle, #shippingtitle, #optionstitle {
+	border-bottom-color: #ccc;
+}
+#checkouttable td.shippingcell {
+	border-right-color: #ccc;
+}
+#checkouttable td.optionscell {
+border-left-color: #ccc;
+border-right-color: #ccc;
+}
+div.cartGroup {
+	border-spacing: 0;
+	margin-top: 10px;
+}
+#cartLive {
+	margin-top: 10px;
+}
+#finalCheckoutCartReview {
+	margin: 0;
+}
