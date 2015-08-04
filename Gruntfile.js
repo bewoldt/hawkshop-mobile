@@ -8,7 +8,17 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'js/plugins/*.js',
+					'js/plugins/flickity.pkgd.min.js',
+					'js/plugins/core.js',
+					'js/plugins/mediaquery.js',
+					'js/plugins/swap.js',
+					'js/plugins/touch.js',
+					// 'js/plugins/navigation.js',
+					'js/plugins/jquery.fs.shifter.js',
+					'js/plugins/jquery.lazyload.js',
+					'js/plugins/jquery.waypoints.js',
+					'js/plugins/sticky.js',
+					'js/plugins/menubar.js',
 					'js/main.js'
 				],
 				dest: 'js/build/production.js'
@@ -28,7 +38,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/master.css': 'scss/master.scss'
+					'css/p3.css': 'scss/master.scss'
 				}
 			}
 		},

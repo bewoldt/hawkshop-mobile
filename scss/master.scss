@@ -5,6 +5,7 @@
 @import "global/mixins";
 @import "global/normalize";
 @import "global/typography";
+@import "global/fonts";
 @import "global/global";
 
 
@@ -18,17 +19,23 @@
 
 /* Plugins
 -------------------------------------------*/
-
-
+@import "plugins/navigation";
+@import "plugins/flickity";
+@import "plugins/shifter";
 
 /* Layout
 -------------------------------------------*/
+@import "site/breadcrumbs";
 @import "site/mainnav";
+@import "site/subnav";
 @import "site/footer";
 @import "site/header";
 @import "site/checkout";
 @import "site/browse";
 @import "site/product";
+@import "site/featureditems";
+@import "site/pagination";
+@import "site/catalog";
 @import "site/home";
 
 

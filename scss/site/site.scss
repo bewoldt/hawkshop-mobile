@@ -17,12 +17,27 @@ body {
 Layout
 ----------------------------------------------------------------- */
 .container {
-	max-width: $break-large;
+	max-width: $break-xlarge;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 1em;
 	padding-right: 1em;
+	@media (min-width: $break-medium) {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
 }
+.column-left {
+	float: left;
+	width: 22%;
+}
+.column-main {
+	position: relative;
+}
+.page {
+	margin-top: 1em;
+}
+
 /* -----------------------------------------------------------------
 Skip to content
 ----------------------------------------------------------------- */
