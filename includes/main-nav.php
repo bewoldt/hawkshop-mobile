@@ -1,7 +1,7 @@
 <!-- <h4 id="handle"></h4> -->
 <!-- <nav role="navigation" class="mainnav-wrapper" aria-label="Main menu" data-navigation-handle="#handle" data-navigation-content="#content"> -->
 
-<nav role="navigation" class="mainnav-wrapper" aria-label="Main menu">
+<nav role="navigation" class="mainnav-wrapper clearfix" aria-label="Main menu">
 	<ul class="main-nav clearfix">
 		<li class="first"><a href="#">Textbooks</a>
 			<ul>
@@ -22,25 +22,19 @@
 				<li><a href="#">Hats</a></li>
 				<li><a href="#">Scrubs</a></li>
 				<li><a href="#">Accessories</a></li>
-				<li class="divider"></li>
 				<li><a href="#">New Arrivals</a></li>
-				<li><a href="#">Best Sellers</a></li>
-				<li><a href="#">Sale</a></li>
 			</ul>
 		</li>
 		<li><a href="#">Women</a>
 			<ul>
-				<li><a href="#">Shirts</a></li>
+				<li><a href="#">Tops</a></li>
 				<li><a href="#">Sweatshirts</a></li>
 				<li><a href="#">Shorts &amp; Pants</a></li>
 				<li><a href="#">Outerwear</a></li>
 				<li><a href="#">Hats</a></li>
 				<li><a href="#">Footwear / Socks</a></li>
 				<li><a href="#">Accessories</a></li>
-				<li class="divider"></li>
 				<li><a href="#">New Arrivals</a></li>
-				<li><a href="#">Best Sellers</a></li>
-				<li><a href="#">Sale</a></li>
 			</ul>
 		</li>
 		<li><a href="#">Kids</a>
@@ -51,10 +45,7 @@
 				<li><a href="#">Hats / Gloves / Scarves</a></li>
 				<li><a href="#">Footwear / Socks</a></li>
 				<li><a href="#">Toys &amp; Games</a></li>
-				<li class="divider"></li>
 				<li><a href="#">New Arrivals</a></li>
-				<li><a href="#">Best Sellers</a></li>
-				<li><a href="#">Sale</a></li>
 			</ul>
 		</li>
 		<li><a href="#">Home &amp; Office</a>
@@ -93,13 +84,6 @@
 				<li><a href="#">Pens, Pencils, and Markers</a></li>
 			</ul>
 		</li>
-		<!-- <li><a href="#">Tech</a>
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</li> -->
 		<li><a href="#">Sports</a>
 			<ul>
 				<li><a href="#">Baseball &amp; Softball</a></li>
@@ -110,19 +94,6 @@
 				<li><a href="#">Swimming</a></li>
 			</ul>
 		</li>
-
-		<!-- <li class="last"><a href="#">Info</a>
-			<ul>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Community and Student Involvement</a></li>
-				<li><a href="#">Shipping &amp; Returns</a></li>
-				<li><a href="#">Gift Cards</a></li>
-				<li><a href="#">Request A Catalog</a></li>
-				<li><a href="#">Sizing Chart</a></li>
-				<li><a href="#">Find a Store</a></li>
-				<li><a href="#">Calendar of Events</a></li>
-			</ul>
-		</li> -->
 		<li class="last"><a href="#">Sale</a>
 			<ul>
 				<li><a href="#">Men</a></li>
@@ -131,13 +102,6 @@
 				<li><a href="#">Accessories</a></li>
 			</ul>
 		</li>
-		<!-- <li class="last"><a href="#">More</a>
-			<ul>
-				<li><a href="#">Alumni</a></li>
-				<li><a href="#">Shop by Brand</a></li>
-				<li><a href="#">Shop by Sport</a></li>
-			</ul>
-		</li> -->
 	</ul>
 </nav>
 

@@ -22,12 +22,13 @@
 @import "plugins/navigation";
 @import "plugins/flickity";
 @import "plugins/shifter";
+@import "plugins/owl.carousel";
 
 /* Layout
 -------------------------------------------*/
 @import "site/breadcrumbs";
 @import "site/mainnav";
-@import "site/subnav";
+@import "site/nav";
 @import "site/footer";
 @import "site/header";
 @import "site/checkout";

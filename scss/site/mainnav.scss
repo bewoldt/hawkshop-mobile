@@ -1,10 +1,6 @@
-.main-nav-bg {
-	background: #000;
-	border-top: 1px solid #333;
-	position: relative;
-	z-index: 30;
-}
+
 .mainnav-wrapper {
+	clear: both;
 	position: relative;
 	@media (max-width: $break-medium - 1) {
 		display: none;
@@ -40,29 +36,20 @@
 	display: block;
 	font-family: arial, sans-serif;
 	font-family: $heading-font;
+	font-weight: 300;
 	letter-spacing: 1px;
-	font-size: 15px;
-	padding: 10px;
+	font-size: 13px;
+	padding: 10px 12px;
 	text-decoration: none;
 	transition: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	/*text-transform: uppercase;*/
-	@media (min-width: $break-medium) {
-		font-size: 14px;
-		padding: 10px 13px;
-	}
 	@media (min-width: $break-large) {
 		font-size: 14px;
-		padding: 8px 15px;
+		padding: 8px 21px;
 	}
 	@media (min-width: $break-xlarge) {
-		font-size: 14px;
-		padding: 10px 24px;
-	}
-	@media (min-width: $break-xxlarge) {
-		font-size: 14px;
-		padding: 10px 29px;
+		padding: 10px 27px;
 	}
 }
 .main-nav li a:hover, .main-nav > li:hover a, .main-nav > li:focus, .main-nav li a:focus, .main-nav li.active a {
@@ -128,9 +115,10 @@ ul.show-menu {
 	font-weight: normal;
 	letter-spacing: 0;
 	line-height: 1.3;
-	padding: 10px 20px;
+	padding: 12px 20px;
 	text-align: left;
 	text-transform: none;
+	border-bottom: 1px solid #eee;
 }
 .main-nav ul a:hover,
 .main-nav ul a:focus,

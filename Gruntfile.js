@@ -8,16 +8,16 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'js/plugins/flickity.pkgd.min.js',
-					'js/plugins/core.js',
-					'js/plugins/mediaquery.js',
-					'js/plugins/swap.js',
-					'js/plugins/touch.js',
+					'js/plugins/owl.carousel.js',
+					// 'js/plugins/core.js',
+					// 'js/plugins/mediaquery.js',
+					// 'js/plugins/swap.js',
+					// 'js/plugins/touch.js',
 					// 'js/plugins/navigation.js',
-					'js/plugins/jquery.fs.shifter.js',
+					// 'js/plugins/jquery.fs.shifter.js',
 					'js/plugins/jquery.lazyload.js',
-					'js/plugins/jquery.waypoints.js',
-					'js/plugins/sticky.js',
+					// 'js/plugins/jquery.waypoints.js',
+					// 'js/plugins/sticky.js',
 					'js/plugins/menubar.js',
 					'js/main.js'
 				],

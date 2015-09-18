@@ -1,82 +1,48 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Browse</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Browse</title>
-	<!-- CSS -->
 	<link rel="stylesheet" href="css/p3.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+	<script src="js/modernizr.js"></script>
 </head>
+<body class="">
+	<a id="skiplink" href="#main-content">Skip to main content</a>
+	<?php include 'includes/header.php'; ?>
 
-<body class="browse shifter shifter-left">
-	<div class="shifter-page">
-		<a id="skiplink" href="#main-content">Skip to main content</a>
-		<?php include 'includes/header.php'; ?>
+	<main class="cd-main-content">
+		<div class="sub-cats clearfix">
+			<div class="item"><a href="#">Tops</a></div>
+			<div class="item"><a href="#">Sweatshirts</a></div>
+			<div class="item"><a href="#">Business Casual</a></div>
+			<div class="item"><a href="#">Shorts &amp; Pants</a></div>
+			<div class="item"><a href="#">Outerwear</a></div>
+			<div class="item"><a href="#">Hats</a></div>
+			<div class="item"><a href="#">Scrubs</a></div>
+			<div class="item"><a href="#">Accessories</a></div>
+			<div class="item"><a href="#">New Arrivals</a></div>
+		</div>
 		<div class="container">
-			<?php include 'includes/breadcrumbs.php'; ?>
+			<?php /* include 'includes/breadcrumbs.php'; */ ?>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<section class="browse rightcolumn">
-						<!-- <div class="sub-menu">
-							<div class="overflow-scrollable">
-								<div class="overflow-scrollable">
-									<ul style="">
-										<li><a href="#" class="current">Shirts and Tanks</a></li>
-										<li><a href="#">Sweatshirts</a></li>
-										<li><a href="#">Shorts and Pants</a></li>
-										<li><a href="#">Outerwear</a></li>
-										<li><a href="#">Hats</a></li>
-										<li><a href="#">Footwear</a></li>
-										<li><a href="#">Accessories</a></li>
-									</ul>
-								</div>
-							</div>
-						</div> -->
 						<div class="catalogcontent">
-							<h1 class="catalog-title">Shirts and Tanks</h1>
-							<!-- <div class="catalogcount">Items 1 to 24 (out of 24)</div> -->
+							<h1 class="catalog-title">Tops</h1>
 						</div>
 						<ul class="justify product-list">
-							<li class="justify-item featured">
-								<span class="featured-title">Featured Items</span>
-								<ul class="browse-featured">
-									<li>
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="http://www.hawkshop.com/webitemimages/103/CW0901-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
-										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title"><span class="brand">Retro Brand</span> Women's Iowa Hawkeyes V-Neck Long Sleeve Raglan T-Shirt</h2>
-											<p class="thumbnail-price">$34.00</p>
-										</div>
-									</li>
-									<li>
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="http://www.hawkshop.com/webitemimages/103/CW0838-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
-										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title"><span class="brand">Retro Brand</span> Women's Relaxed Fit Iowa Hawkeyes T-shirt in Charcoal</h2>
-											<p class="thumbnail-price">$28.00</p>
-										</div>
-									</li>
-									<li>
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="http://www.hawkshop.com/webitemimages/103/PR0351-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
-										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title"><span class="brand">Nike</span> Iowa Floral Burnout Dress</h2>
-											<p class="thumbnail-price">$45.00</p>
-										</div>
-									</li>
-								</ul>
-							</li>
+							<!-- Featured items include -->
+							<?php include 'includes/browse-featured.php'; ?>
+
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/DW1000-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/DW1000-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -87,7 +53,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0964-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0964-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -99,7 +65,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/PR0305-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/PR0305-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -110,7 +76,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0988-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0988-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -121,7 +87,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0950-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0950-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -133,7 +99,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/PR0216-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/PR0216-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -144,7 +110,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0838-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0838-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -155,7 +121,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0901-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0901-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -166,7 +132,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/BW0834-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/BW0834-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -177,7 +143,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0968-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0968-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -188,7 +154,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0859-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0859-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -199,7 +165,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0956-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0956-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -210,7 +176,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/CW0980-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/CW0980-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -222,7 +188,7 @@
 							</li>
 							<li class="justify-item">
 								<a class="thumbnail-link" href="#" title="">
-									<img data-original="http://www.hawkshop.com/webitemimages/103/PR0351-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+									<img data-original="images/items/PR0351-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
 								</a>
 								<div class="thumbnail-info">
 									<h2 class="thumbnail-title">
@@ -240,14 +206,19 @@
 			</div><!-- end .row -->
 		</div><!-- end .container -->
 		<?php include 'includes/footer.php'; ?>
-	</div>
+	</main>
 
-	<!-- Mobile Navigation Slideout -->
-	<?php include 'includes/shifter-navigation.php'; ?>
+	<!-- <div class="cd-overlay"></div> -->
 
-	<!-- JS -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<?php include'includes/cd-nav.php'; ?>
+
+	<!-- <div id="cd-search" class="cd-search">
+		<form>
+			<input type="search" placeholder="Search...">
+		</form>
+	</div> -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
-
 </body>
 </html>
