@@ -17,8 +17,8 @@ module.exports = function(grunt) {
 					// 'js/plugins/jquery.fs.shifter.js',
 					'js/plugins/foundation.min.js',
 					'js/plugins/jquery.lazyload.js',
-					// 'js/plugins/jquery.waypoints.js',
-					// 'js/plugins/sticky.js',
+					'js/plugins/jquery.waypoints.js',
+					'js/plugins/sticky.js',
 					// 'js/plugins/menubar.js',
 					'js/main.js'
 				],

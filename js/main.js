@@ -77,9 +77,9 @@ jQuery(document).ready(function($){
         responsive:{
             0:{
                 items:2,
-                loop:true,
-                center:true,
-                dots: false
+                loop:false,
+                center:false,
+                dots: true
             },
             480:{
                 items:3,
@@ -174,15 +174,9 @@ jQuery(document).ready(function($){
 	$("html,body").trigger("scroll");
 
 	// var sticky = new Waypoint.Sticky({
-	// 	element: $('.basic-sticky-example')[0]
+	// 	element: $('.top-bar')[0]
 	// })
 
-    // $('.mobile-searchtoggle').click(function() {
-    //     $(this).toggleClass('active');
-    //     $('.top-wrapper').slideToggle();
-    //     $('#search').focus();
-    //     return false;
-    // });
 
     $('.mobile-searchtoggle').click(function(e){
         $(this).toggleClass('active');
