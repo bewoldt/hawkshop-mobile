@@ -1,5 +1,8 @@
 .breadcrumbs-wrapper {
 	margin-top: 1em;
+	/*@media (min-width: $break-medium) {
+		display: none;
+	}*/
 }
 .breadcrumbs {
 	color: #555;

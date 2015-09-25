@@ -15,10 +15,11 @@ module.exports = function(grunt) {
 					// 'js/plugins/touch.js',
 					// 'js/plugins/navigation.js',
 					// 'js/plugins/jquery.fs.shifter.js',
+					'js/plugins/foundation.min.js',
 					'js/plugins/jquery.lazyload.js',
 					// 'js/plugins/jquery.waypoints.js',
 					// 'js/plugins/sticky.js',
-					'js/plugins/menubar.js',
+					// 'js/plugins/menubar.js',
 					'js/main.js'
 				],
 				dest: 'js/build/production.js'

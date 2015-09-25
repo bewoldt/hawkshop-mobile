@@ -24,19 +24,37 @@
 }
 
 .icon-cross:before {
-	content: "\e606";
+	content: "\e608";
 }
 .icon-menu:before {
-	content: "\e604";
-}
-.icon-credit-card:before {
 	content: "\e605";
+}
+.icon-chevron-left:before {
+	content: "\e60c";
+}
+.icon-chevron-right:before {
+	content: "\e607";
 }
 .icon-shopping-cart:before {
 	content: "\e603";
 }
 .icon-search:before {
 	content: "\e600";
+}
+.icon-location:before {
+	content: "\e60b";
+}
+.icon-phone:before {
+	content: "\e60a";
+}
+.icon-home:before {
+	content: "\e609";
+}
+.icon-instagram:before {
+	content: "\e604";
+}
+.icon-pinterest:before {
+	content: "\e606";
 }
 .icon-twitter:before {
 	content: "\e601";

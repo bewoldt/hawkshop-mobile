@@ -3,7 +3,7 @@
 	<ul class="suggested-gallery">
 		<li class="gallery-cell">
 			<a class="thumbnail-link suggested-img" href="#">
-				<img src="http://www.hawkshop.com/webitemimages/103/CW0901-t.jpg" width="180" alt="Iowa Speckled Gold Mug" class="" />
+				<img src="images/CW0901-t.jpg" width="180" alt="Iowa Speckled Gold Mug" class="" />
 			</a>
 			<div class="thumbnail-info">
 				<h2 class="thumbnail-title">
@@ -14,7 +14,7 @@
 		</li>
 		<li class="gallery-cell">
 			<a class="thumbnail-link suggested-img" href="#">
-				<img src="http://www.hawkshop.com/webitemimages/103/DW1000-t.jpg" width="180" alt="Iowa Speckled Gold Mug" class="" />
+				<img src="images/DW1000-t.jpg" width="180" alt="Iowa Speckled Gold Mug" class="" />
 			</a>
 			<div class="thumbnail-info">
 				<h2 class="thumbnail-title">
@@ -25,7 +25,7 @@
 		</li>
 		<li class="gallery-cell">
 			<a class="thumbnail-link suggested-img" href="#">
-				<img src="http://www.hawkshop.com/webitemimages/103/CW0964-t.jpg" width="180" alt="Iowa Speckled Gold Mug" class="" />
+				<img src="images/CW0964-t.jpg" width="180" alt="Iowa Speckled Gold Mug" class="" />
 			</a>
 			<div class="thumbnail-info">
 				<h2 class="thumbnail-title"><a href="#"><span class="brand">Nike</span> Iowa Women's Rewind Run Game Shirt</a></h2>
@@ -35,7 +35,7 @@
 		</li>
 		<li class="gallery-cell">
 			<a class="thumbnail-link suggested-img" href="#">
-				<img src="http://www.hawkshop.com/webitemimages/103/BW0834-t.jpg" width="180" alt="Iowa Hawkeyes Fleece" class="" />
+				<img src="images/BW0834-t.jpg" width="180" alt="Iowa Hawkeyes Fleece" class="" />
 			</a>
 			<div class="thumbnail-info">
 				<h2 class="thumbnail-title"><a href="#"><span class="brand">Under Armour</span> Iowa Hawkeyes Fleece</a></h2>

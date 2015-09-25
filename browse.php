@@ -5,17 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Browse</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="stylesheet" href="css/p3.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script src="js/modernizr.js"></script>
 </head>
 <body class="">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 
-	<main class="cd-main-content">
-		<div class="sub-cats clearfix">
+	<main>
+		<!-- <div class="sub-cats clearfix">
 			<div class="item"><a href="#">Tops</a></div>
 			<div class="item"><a href="#">Sweatshirts</a></div>
 			<div class="item"><a href="#">Business Casual</a></div>
@@ -25,7 +25,7 @@
 			<div class="item"><a href="#">Scrubs</a></div>
 			<div class="item"><a href="#">Accessories</a></div>
 			<div class="item"><a href="#">New Arrivals</a></div>
-		</div>
+		</div> -->
 		<div class="container">
 			<?php /* include 'includes/breadcrumbs.php'; */ ?>
 		</div>
@@ -208,17 +208,10 @@
 		<?php include 'includes/footer.php'; ?>
 	</main>
 
-	<!-- <div class="cd-overlay"></div> -->
-
-	<?php include'includes/cd-nav.php'; ?>
-
-	<!-- <div id="cd-search" class="cd-search">
-		<form>
-			<input type="search" placeholder="Search...">
-		</form>
-	</div> -->
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
+	<script>
+      $(document).foundation();
+    </script>
 </body>
 </html>

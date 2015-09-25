@@ -5,7 +5,12 @@
 ::-moz-selection {background: #b3d4fc;text-shadow: none;}
 ::selection { background: #b3d4fc;text-shadow: none;}
 
-img,object,embed { max-width: 100%; height: auto; }
+img,object,embed {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
 
 object,embed { height: 100%; }
 /*img { display: inline-block; -ms-interpolation-mode: bicubic; vertical-align: middle; }*/

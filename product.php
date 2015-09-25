@@ -5,16 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Product</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="stylesheet" href="css/p3.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script src="js/modernizr.js"></script>
 </head>
-<body class="">
+<body>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
-
-	<main class="cd-main-content" style="min-height: 1500px;">
+	<main>
 		<div class="container">
 			<div class="clearfix">
 				<div class="column-main">
@@ -24,10 +23,10 @@
 							<div id="itemPhoto">
 								<div class="product-items">
 									<div class="gallery-cell">
-										<img src="http://www.hawkshop.com/webitemimages/103/PR0216.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
+										<img src="images/PR0216.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
 									</div>
 									<div class="gallery-cell">
-										<img src="http://www.hawkshop.com/webitemimages/103/CW0901.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
+										<img src="images/CW0901.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
 									</div>
 								</div>
 							</div>
@@ -85,7 +84,7 @@
 								</div>
 								<div id="itemDesc">
 									<div id="itemText" itemprop="description">
-										<h4 class="description">Description:</h4>
+										<h4 class="description"><span>Description</span></h4>
 										<p>The Vertical Short Sleeve T-Shirt is a great way to show you school spirit at any sporting event!</p>
 										<p>Features Iowa Hawkeyes printed vertically with a Tigerhawk at the bottom.</p>
 										<ul>
@@ -97,7 +96,7 @@
 									</div>
 								</div>
 								<p class="item-meta"><strong>Brand:</strong> <span itemprop="brand">Champion</span></p>
-								<p class="item-meta" id="itemNumber" itemprop="productID"><strong>Item Number:</strong> F0694</p>
+								<p class="item-meta" id="itemNumber" itemprop="productID">F0694</p>
 							</div>
 						</div>
 					</div>
@@ -108,20 +107,12 @@
 		<?php include 'includes/footer.php'; ?>
 	</main>
 
-	<div class="cd-overlay"></div>
-
-	<?php include'includes/cd-nav.php'; ?>
-
-	<!-- <div id="cd-search" class="cd-search">
-		<form>
-			<input type="search" placeholder="Search...">
-		</form>
-	</div> -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/jquery.mobile.custom.min.js"></script>
 	<script src="js/build/production.min.js"></script>
-	<script type="text/javascript" src="http://www.hawkshop.com/scripts/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+      $(document).foundation();
+    </script>
 	<script type="text/javascript" src="http://www.hawkshop.com/scripts/itemDisplay.js"></script>
 </body>
 </html>
