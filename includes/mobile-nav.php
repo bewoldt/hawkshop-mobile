@@ -41,14 +41,14 @@
 					</li>
 					<li><a href="#">Sweatshirts &amp; Hoodies</a></li>
 					<li><a href="#">Shorts &amp; Pants</a></li>
-					<li><a href="#">Coats & Jackets</a></li>
-					<li><a href="#">Hats</a></li>
+					<li><a href="#">Outerwear</a></li>
 					<li><a href="#">Scrubs</a></li>
 					<li class="has-dropdown">
 						<a href="#">Accessories</a>
 						<ul class="dropdown">
 							<li><a href="#">Footwear &amp; Socks</a></li>
 							<li><a href="#">Gloves &amp; Scarves</a></li>
+							<li><a href="#">Hats</a></li>
 							<li><a href="#">Ties &amp; Belts</a></li>
 						</ul>
 					</li>
