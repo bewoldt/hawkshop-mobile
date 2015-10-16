@@ -1,5 +1,5 @@
 <li class="justify-item featured">
-	<span class="featured-title">Featured Items</span>
+	<h3 class="featured-title">Featured Items</h3>
 	<ul class="browse-featured">
 		<li>
 			<a class="thumbnail-link" href="#" title="">

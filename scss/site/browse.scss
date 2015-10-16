@@ -3,19 +3,18 @@ Catalog Content
 ----------------------------------------------------------------- */
 .catalogcontent {
 	position: relative;
-	border-bottom: 1px solid #ddd;
 	& p {
 		font-size: 16px;
 	}
 }
 .catalogcontent .catalog-title {
 	@include rem(30);
-	font-weight: 300;
 	margin-top: .5em;
 	text-align: center;
 	@media (min-width: $break-medium) {
 		@include rem(34);
 		margin-top:.75em;
+		margin-bottom: .75em;
 	}
 }
 /*.catalogcount {
@@ -105,7 +104,6 @@ Sub Menu
 .sub-menu ul li {
 	float: left;
 	font-size: 13px;
-	font-weight: 300;
 	list-style: none;
 	padding: 15px 0;
 	margin-right: 3em;
@@ -171,6 +169,7 @@ Thumbnail Info
 	}
 }
 .thumbnail-info .thumbnail-title {
+	font-family: $body-font;
 	font-size: 11px;
 	font-weight: normal;
 	line-height: 1.4;
@@ -190,15 +189,22 @@ Sub-Catalog Slider
 ----------------------------------------------------------------- */
 .sub-cats {
 	background-color: #f4f4f4;
+	list-style: none;
+	margin: 0 -16px 0 -15px;
 	white-space: nowrap;
-	overflow-x: scroll;
+	xoverflow-x: scroll;
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
-	@media (min-width: $break-medium - 1) {
+	@media (min-width: $break-medium ) {
 		display: none;
 	}
+	& ul {
+		display: inline-block;
+		margin: 0;
+		list-style: none;
+	}
 }
-.sub-cats .item {
+.sub-cats li, .sub-cats li, .onbranchli .onbranch {
 	display: inline-block;
 	& a {
 		color: #333;
@@ -207,6 +213,46 @@ Sub-Catalog Slider
 		padding: 10px 10px;
 	}
 }
-
+.onbranchli .onbranch {
+	font-weight: bold;
+	&:after {
+		content: '\003e';
+		position: relative;
+		left: 12px;
+	}
+}
+.sub-cats .onleafli {
+	font-weight: bold;
+}
+.level2 .branchli .subnav-level2 {
+    display: none;
+}
+.level3 > .leafli, .level3 > .branchli {
+	display: none;
+}
+.level4 .onbranchli .subnav-level2 > .leafli,
+.level4 .onbranchli .subnav-level2 > .branchli {
+	display: none;
+}
+/* -----------------------------------------------------------------
+Search No Results
+----------------------------------------------------------------- */
+.search-noresults {
+	margin: 3em 0;
+}
+.search-noresults nobr {
+	display: none;
+}
+.search-noresults nobr:first-of-type {
+	display: block;
+}
+.search-noresults p nobr:first-of-type {
+	display: none;
+}
+.search-noresults .searchterm {
+	padding: 5px;
+	width: 260px;
+	display: block;
+}
 
 

@@ -12,14 +12,17 @@ h1,h2,h3,h4,h5,h6 {
     color: #333;
     font-family: $heading-font;
     margin: 1em 0 0.5em;
+
     line-height: 1.1;
-    font-weight: normal;
+    font-weight: 900;
     text-rendering: optimizelegibility;
 }
 h1 {
-    @include rem(34);
+    font-size: 28px;
     margin: .75em 0 .5em;
-    font-weight: normal;
+    @media (min-width: $break-small) {
+        font-size: 34px;
+    }
 }
 h2 {
     @include rem(28);

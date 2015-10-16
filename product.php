@@ -7,13 +7,13 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="stylesheet" href="css/p3.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<?php include 'includes/google-font.php'; ?>
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
-	<main>
+	<main id="main-content" tabindex="-1">
 		<div class="container">
 			<div class="clearfix">
 				<div class="column-main">
@@ -21,13 +21,13 @@
 					<div itemscope itemtype="http://schema.org/Product" id="itemDisplay" class="item-wrapper" store="103">
 						<div class="clearfix">
 							<div id="itemPhoto">
-								<div class="product-items">
-									<div class="gallery-cell">
+								<div id="photoThumb">
+									<a class="">
 										<img src="images/PR0216.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
-									</div>
-									<div class="gallery-cell">
+									</a>
+									<a class="">
 										<img src="images/CW0901.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
-									</div>
+									</a>
 								</div>
 							</div>
 							<div id="itemInfo" class="hasImage">
@@ -77,11 +77,15 @@
 												</div>
 												<div id="cartLimit"></div>
 												<div id="qtyCart" class="optionLimit"></div>
-												<input name="Add Cart" value="Add to Cart" type="submit" tabindex="2" onclick="_gaq.push(['_trackEvent', 'Ecommerce', 'Add To Cart']);" id="cartAdd" border="0" alt="Add to Cart" >
+												<span class="addtocart-btn">
+													<span class="icon-shopping-cart"></span>
+													<input name="Add Cart" value="Add to Cart" type="submit" tabindex="2" onclick="_gaq.push(['_trackEvent', 'Ecommerce', 'Add To Cart']);" id="cartAdd" border="0" alt="Add to Cart" >
+												</span>
 											</div>
 										</div>
 									</form>
 								</div>
+
 								<div id="itemDesc">
 									<div id="itemText" itemprop="description">
 										<h4 class="description"><span>Description</span></h4>
@@ -97,13 +101,37 @@
 								</div>
 								<p class="item-meta"><strong>Brand:</strong> <span itemprop="brand">Champion</span></p>
 								<p class="item-meta" id="itemNumber" itemprop="productID">F0694</p>
+								<div class="item-meta item-social">
+									<span class="item-share">Share: </span>
+									<a href="#" class="js-social-share"><span class="icon-facebook"></span></a>
+									<a href="https://twitter.com/intent/tweet?text=hello%20world&url=https%3A%2F%2Fjonsuh.com%2F&via=iowahawkshop" class="js-social-share"><span class="icon-twitter"></span></a>
+									<a href="#" class="js-social-share"><span class="icon-pinterest"></span></a>
+								</div>
+								<div>
+									<img src="images/why.jpg" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
 					<?php include 'includes/suggested-items.php'; ?>
 				</div>
+				<div class="row">
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3a.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3b.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3c.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3a.jpg">
+				</div>
+			</div><!-- end .row -->
 			</div>
-		</div><!-- end .container -->
+		</div>
+		<?php include 'includes/mission.php'; ?>
 		<?php include 'includes/footer.php'; ?>
 	</main>
 
@@ -113,6 +141,26 @@
 	<script>
       $(document).foundation();
     </script>
-	<script type="text/javascript" src="http://www.hawkshop.com/scripts/itemDisplay.js"></script>
+    <script>
+    	jQuery(document).ready(function($){
+    		// initialize owlcarousel
+			$('#photoThumb').owlCarousel({
+				responsive:{
+	            0:{
+	                items:1,
+	            },
+	            650:{
+	                items:1,
+	                center:true,
+	                stagePadding: 150
+	            },
+	            769:{
+	                items:1
+	            }
+	        }
+			});
+		});
+    </script>
+	<!--<script type="text/javascript" src="js/plugins/itemDisplay.js"></script>-->
 </body>
 </html>

@@ -1,8 +1,57 @@
 .home-hero1 .owl-nav {
-	display: none;
+
 }
-.home-hero1 .owl-dots {
+
+.home-hero1 .owl-nav .owl-next,
+.home-hero1 .owl-nav .owl-prev {
+	border-radius: 0;
 	position: absolute;
-	right: 10px;
-	top: 10px;
+	top: 0;
+	left: 0;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	text-indent: -999em;
+	background-color: rgba(0,0,0,.5);
+	transition: all .2s linear;
+	@media (min-width: $break-xlarge) {
+		width: 200px;
+	}
+	&:hover, &:focus {
+		background-color: rgba(0,0,0,.6);
+		&:after {
+			color: #fff;
+		}
+	}
+}
+.home-hero1 .owl-nav .owl-next {
+	left: auto;
+	right: 0;
+}
+.home-hero1 .owl-nav .owl-next:after,
+.home-hero1 .owl-nav .owl-prev:after {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e607";
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	color: #fff;
+	color: rgba(255,255,255,.7);
+	margin-top: -15px;
+	text-indent: 0;
+	font-size: 30px;
+}
+.home-hero1 .owl-nav .owl-prev:after {
+	content: "\e60c";
+	left: auto;
+	right: 20%;
 }

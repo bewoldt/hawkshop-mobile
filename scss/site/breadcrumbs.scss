@@ -1,12 +1,14 @@
 .breadcrumbs-wrapper {
-	margin-top: 1em;
-	/*@media (min-width: $break-medium) {
-		display: none;
-	}*/
+	display: none;
+	// border-bottom: 1px solid #eee;
+	padding: 10px 0;
+	@media (min-width: $break-medium) {
+		display: block;
+	}
 }
 .breadcrumbs {
 	color: #555;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0;
 	text-align: center;
 	& a {
@@ -15,5 +17,8 @@
 	}
 	@media (min-width: $break-medium) {
 		text-align: left;
+	}
+	.history-icon {
+		padding: 0 5px;
 	}
 }

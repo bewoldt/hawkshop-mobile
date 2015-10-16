@@ -1,3 +1,17 @@
+/* added to cart page */
+.cartAddPage {
+	position: relative;
+	max-width: $break-xlarge;
+	margin: 3em auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	@media (min-width: $break-large) {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+}
+
+/* view cart page */
 #startCheckoutFrame table td, #checkouttable table td {
 	@media (max-width: $break-medium) {
 		display: block;

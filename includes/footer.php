@@ -1,3 +1,4 @@
+
 <footer class="footer clearfix" role="contentinfo">
 	<div class="container">
 		<div class="footer-signup clearfix">
@@ -99,7 +100,7 @@
 			<p>Hours: Mon-Fri 8am - 5pm</p>
 		</div>
 		<div class="back-to-top">
-			<a href="#header"><span></span>Back to the Top<span></span></a>
+			<a href="#" class="scrollup"><span></span>Back to the Top<span></span></a>
 		</div>
 	</div>
 </footer>

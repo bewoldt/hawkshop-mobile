@@ -14,8 +14,23 @@
 			</form>
 		</div>
 		<a href="tel:+18004295746" class="header-phone">1-800-429-5746</a>
-		<a href="#" class="header-location">Help</a>
-		<a href="#" class="header-account">My Account</a>
+		<div class="help-center">
+			<a href="#" class="header-location" data-toggle="dropdown">Help <span class="caret"></span></a>
+			<ul class="dropdown-menu" aria-labelledby="dLabel">
+				<li><a href="#">Shipping</a></li>
+				<li><a href="#">Returns</a></li>
+				<li><a href="#">FAQ</a></li>
+	  		</ul>
+	  	</div>
+	  	<div class="account-dropdown">
+			<a href="#" class="header-account" data-toggle="dropdown">My Account <span class="caret"></span></a>
+			<ul class="dropdown-menu" aria-labelledby="dLabel">
+				<li><a href="#">Account home</a></li>
+				<li><a href="#">Orders</a></li>
+				<li><a href="#">Log in</a></li>
+				<li><a href="#">Gift Cards</a></li>
+	  		</ul>
+		</div>
 	</div>
 	<div class="container clearfix">
 		<div class="logo-container">

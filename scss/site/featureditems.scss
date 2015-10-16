@@ -13,7 +13,7 @@ Suggested items
 .suggested-title {
 	color: #444;
 	text-align: center;
-	font-weight: 300;
+	font-weight: normal;
 	text-transform: uppercase;
 	margin: 1.5em 0;
 }
@@ -28,10 +28,84 @@ Suggested items
 Homepage featured
 ----------------------------------------------------------------- */
 .home-featured-title {
-	font-size: 20px;
-	font-weight: 700;
+	margin: 2em 0 0;
+	font-size: 28px;
+	font-weight: normal;
 	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
 }
+.home-featured .owl-stage {
+	xpadding-left: 0 !important;
+}
+.home-featured-text {
+	margin: .5em 0 2em;
+	text-align: center;
+	font-size: 14px;
+}
+.title-center span {
+	padding: 0 15px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+.title-center span:after, .title-center span:before {
+    content: ' ';
+    display: block;
+    height: 0;
+    border-bottom: 3px solid #EEE;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+}
+.title-center span:before {
+    left: -1010px;
+}
+.title-center span:after {
+    right: -1010px;
+}
+.home-featured.owl-theme .owl-next, .home-featured.owl-theme .owl-prev {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	height: 100%;
+	background-color: rgba(255,255,255,.8);
+	width: 7%;
+	text-indent: -999em;
+	&:hover, &:focus {
+		background-color: rgba(255,255,255,.9);
+	}
+}
+.home-featured .owl-prev {
+	left: 0;
+	right: auto;
+}
+.home-featured.owl-theme .owl-next:after,
+.home-featured.owl-theme .owl-prev:after {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\e607";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: #333;
+	margin-top: -10px;
+	text-indent: 0;
+	margin-left: -7px;
+	font-size: 20px;
+}
+.home-featured.owl-theme .owl-prev:after {
+	content: "\e60c";
+}
+
 
 /* -----------------------------------------------------------------
 Browse page featured
@@ -52,15 +126,17 @@ Browse page featured
 	/*margin-right: 10px;*/
 }
 .product-list .featured-title {
+	font-family: $body-font;
 	text-align: center;
 	position: relative;
-	margin-top: -21px;
+	margin-top: -11px;
+	margin-bottom: 0;
 	display: block;
 	text-transform: uppercase;
 	font-size: 12px;
 	background-color: #000;
 	color: $yellow;
-	padding: 1px 0;
+	padding: 5px 0;
 }
 
 /* -----------------------------------------------------------------
@@ -71,16 +147,23 @@ Catalog page featured
 	margin: 0;
 }
 .catalog-list .featured-title {
-	border-bottom: 1px solid #ddd;
-	font-size: 30px;
+	font-family: $heading-font;
+	border-top: 1px solid #ddd;
+	font-size: 28px;
 	display: block;
-	font-weight: 300;
-	margin-top: .5em;
-	margin-bottom: .5em;
-	padding-bottom: .25em;
+	font-weight: normal;
+	margin: 0;
+	padding: 1.5em 0;
 	text-align: center;
-	@media (min-width: $break-medium) {
-		font-size: 34px;
-		margin-top:.75em;
-	}
+	text-transform: uppercase;
+}
+
+/* added to cart suggested items */
+.cartAddPage table {
+	width:100%;
+	table-layout: fixed;
+}
+.no-js .browse-featured li {
+	float: left;
+	width: 20%;
 }

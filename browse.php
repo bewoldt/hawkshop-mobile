@@ -7,27 +7,44 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="stylesheet" href="css/p3.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<?php include 'includes/google-font.php'; ?>
 	<script src="js/modernizr.js"></script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js"></script>
 </head>
 <body class="">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 
-	<main>
-		<!-- <div class="sub-cats clearfix">
-			<div class="item"><a href="#">Tops</a></div>
-			<div class="item"><a href="#">Sweatshirts</a></div>
-			<div class="item"><a href="#">Business Casual</a></div>
-			<div class="item"><a href="#">Shorts &amp; Pants</a></div>
-			<div class="item"><a href="#">Outerwear</a></div>
-			<div class="item"><a href="#">Hats</a></div>
-			<div class="item"><a href="#">Scrubs</a></div>
-			<div class="item"><a href="#">Accessories</a></div>
-			<div class="item"><a href="#">New Arrivals</a></div>
-		</div> -->
+	<main id="main-content" tabindex="-1">
+		<div>
+			<picture>
+				<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset="images/amazon-banner.jpg" media="(min-width: 981px)">
+				<source srcset="images/amazon-banner-md.jpg" media="(min-width: 480px)">
+				<!--[if IE 9]></video><![endif]-->
+				<img srcset="images/amazon-banner-sm.jpg" alt="…">
+			</picture>
+		</div>
 		<div class="container">
-			<?php /* include 'includes/breadcrumbs.php'; */ ?>
+			<?php include 'includes/subcats.php'; ?>
+			<!-- <ul class="sub-cats clearfix">
+				<li class="onbranchli"><a href="#" class="onbranch">Women's Apparel</a>
+					<ul>
+						<li class="onleafli"><a href="#">Tops</a></li>
+						<li class="leafli"><a href="#">Sweatshirts</a></li>
+						<li class="leafli"><a href="#">Business Casual</a></li>
+						<li class="leafli"><a href="#">Shorts &amp; Pants</a></li>
+						<li class="leafli"><a href="#">Outerwear</a></li>
+						<li class="leafli"><a href="#">Hats</a></li>
+						<li class="leafli"><a href="#">Scrubs</a></li>
+						<li class="leafli"><a href="#">Accessories</a></li>
+						<li class="leafli"><a href="#">New Arrivals</a></li>
+					</ul>
+				</li>
+			</ul> -->
+		</div>
+		<div class="container">
+			<?php include 'includes/breadcrumbs.php'; ?>
 		</div>
 		<div class="container">
 			<div class="row">
@@ -203,6 +220,20 @@
 						<?php include 'includes/pagination.php'; ?>
 					</section>
 				</div><!-- end .col -->
+			</div><!-- end .row -->
+			<div class="row">
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3a.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3b.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3c.jpg">
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<img src="images/extra-3a.jpg">
+				</div>
 			</div><!-- end .row -->
 		</div><!-- end .container -->
 		<?php include 'includes/footer.php'; ?>

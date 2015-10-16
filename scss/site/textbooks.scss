@@ -1,0 +1,46 @@
+.textStart {
+    padding-left: 0;
+    padding-right: 0;
+}
+#courseFrame {
+    margin-left: 0;
+    margin-right: 0;
+}
+#courseSelector, #courseSelections {
+	@media (max-width: $break-small - 1) {
+		width: 100%;
+		margin-right: 0;
+		box-shadow: none;
+	}
+}
+#courseData a {
+	color: $link;
+}
+#sectionArea li.justsection a:after {
+	content: 'add';
+	font-weight: normal;
+	float: right;
+	padding-right: 5px;
+}
+#textList {
+	margin: 1em auto 1em auto;
+	max-width: $break-large;
+}
+#textList h1 {
+	margin-left: 20px;
+	color: #fff;
+	margin: 10px 0 10px 20px;
+	font-size: 21px;
+}
+#textList h1, #textList h2, #textList h3, #textList h4, #textList h5 {
+	font-family: $body-font;
+}
+#courseList h2 {font-size:14px;font-weight: bold;}
+#courseList h3 {font-size: 12px;font-weight: bold;}
+.bookInfo, .bookOrder {
+	@media (max-width: $break-small - 1) {
+		margin: 4%;
+		float: none;
+		width: 92%;
+	}
+}

@@ -3,9 +3,16 @@ $footer-break: 850px;
 
 .footer {
 	background-color: #000;
+	position: relative;
+	overflow: hidden;
+	@media (min-width: $break-medium) {
+		background-image: url(../images/Iowa_Hawkeyes2.gif);
+		background-repeat: no-repeat;
+		background-position: -180px -35px;
+	}
 }
 .footer a {
-	color: #eee;
+	color: #fff;
 }
 
 /* -----------------------------------------------------------------
@@ -23,14 +30,14 @@ Signup
 		border-bottom: 1px solid #333;
 	}
 	@media (min-width: $break-medium) {
-		padding: 19px 0 19px 29%;
+		padding: 2em 0 2em 0;
 		margin: 0;
-		background: url(../images/Iowa_Hawkeyes.gif) no-repeat 0 0px;
+		// background: url(../images/Iowa_Hawkeyes.gif) no-repeat 0 12px;
 	}
 	@media (min-width: $break-large) {
-		padding: 13px 0 13px 21%;
+		padding-left: 0;
 		margin: 0;
-		background: url(../images/Iowa_Hawkeyes.gif) no-repeat 0 -10px;
+		// background: url(../images/Iowa_Hawkeyes.gif) no-repeat 0 6px;
 	}
 }
 .hawkeye-logo {
@@ -131,7 +138,7 @@ Signup
 	position: absolute;
 	width: 75px;
 	right: 4px;
-	bottom: 4px;
+	bottom: 3px;
 	height: 36px;
 	border: 1px solid #999;
 	background-color: #fdd212;
@@ -210,28 +217,33 @@ Tabs to Full
 	@media (min-width: 600px) {
 		color: #fff;
 		border-bottom: 2px solid #ffd900;
-		font-size: 11px;
-		font-weight: bold;
+		font-size: 12px;
+		font-weight: normal;
+		letter-spacing: 1px;
 		padding: 0 0 4px;
 		text-transform: uppercase;
+	}
+	@media (min-width: $break-large) {
+		font-size: 13px;
 	}
 }
 .tab:after {
 	content: '+';
 	color: $yellow;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 11px;
+	right: 16px;
 	display: block;
-	font-size: 14px;
-	padding: 1.3em;
-}
-.tab.active {
-	xbackground-color: #222;
-	xborder-bottom: none;
+	font-size: 24px;
+	@media (min-width: 600px) {
+		content: "";
+	}
 }
 .tab.active:after {
 	content: '-';
+	@media (min-width: 600px) {
+		content: "";
+	}
 }
 
 .panel {
@@ -268,9 +280,6 @@ Tabs to Full
 	.tab.active {
 		background: none;
 	}
-	.tab:after, .tab.active:after {
-		content: "";
-	}
 
 	.js .panel, .js .panel.active {
 		max-height: none;
@@ -283,6 +292,7 @@ Tabs to Full
 	margin-top: -1px;
 	@media (min-width: 600px) {
 		padding: 0;
+		margin-top: 5px;
 	}
 }
 .panel ul li a {
@@ -299,9 +309,9 @@ Tabs to Full
 	}
 	@media (min-width: 600px) {
 		border-top: none;
-		color: #d9d9d9;
+		color: #eee;
 		display: block;
-		font-size: 11px;
+		font-size: 12px;
 		padding: 3px 0;
 	}
 }
@@ -329,7 +339,7 @@ Mission
 	width: 75px;
 }
 .mission p {
-	color: #eee;
+	color: #fff;
 	float: left;
 	font-size: 13px;
 	font-family: Georgia, Times, 'Times New Roman', serif;
@@ -404,7 +414,7 @@ Social Media
 .social .username {
 	color: #999;
 }
-.icon-twitter, .icon-facebook {
+.social .icon-twitter, .social .icon-facebook {
 	color: #666;
 	display: block;
 	font-size: 30px;
@@ -413,10 +423,10 @@ Social Media
 	height: 30px;
 	width: 30px;
 }
-.tw:hover .icon-twitter {
+.social .tw:hover .icon-twitter {
 	color: #49cffb;
 }
-.fb:hover .icon-facebook {
+.social .fb:hover .icon-facebook {
 	color: #4963a0;
 }
 
@@ -432,7 +442,7 @@ Copyright
 	}
 }
 .footer-bot p {
-	color: #999;
+	color: #ccc;
 	font-size: 11px;
 	margin: 0;
 	@media (min-width: 600px) {
