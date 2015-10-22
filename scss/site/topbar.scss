@@ -1,41 +1,41 @@
 meta.foundation-version {
 	font-family: "/5.5.2/"; }
 
-meta.foundation-mq-small {
-	font-family: "/only screen/";
-	width: 0; }
+// meta.foundation-mq-small {
+// 	font-family: "/only screen/";
+// 	width: 0; }
 
-meta.foundation-mq-small-only {
-	font-family: "/only screen and (max-width: 40em)/";
-	width: 0; }
+// meta.foundation-mq-small-only {
+// 	font-family: "/only screen and (max-width: 40em)/";
+// 	width: 0; }
 
-meta.foundation-mq-medium {
-	font-family: "/only screen and (min-width:40.0625em)/";
-	width: 40.0625em; }
+// meta.foundation-mq-medium {
+// 	font-family: "/only screen and (min-width:40.0625em)/";
+// 	width: 40.0625em; }
 
-meta.foundation-mq-medium-only {
-	font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
-	width: 40.0625em; }
+// meta.foundation-mq-medium-only {
+// 	font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
+// 	width: 40.0625em; }
 
-meta.foundation-mq-large {
-	font-family: "/only screen and (min-width:64.0625em)/";
-	width: 64.0625em; }
+// meta.foundation-mq-large {
+// 	font-family: "/only screen and (min-width:64.0625em)/";
+// 	width: 64.0625em; }
 
-meta.foundation-mq-large-only {
-	font-family: "/only screen and (min-width:64.0625em) and (max-width:90em)/";
-	width: 64.0625em; }
+// meta.foundation-mq-large-only {
+// 	font-family: "/only screen and (min-width:64.0625em) and (max-width:90em)/";
+// 	width: 64.0625em; }
 
-meta.foundation-mq-xlarge {
-	font-family: "/only screen and (min-width:90.0625em)/";
-	width: 90.0625em; }
+// meta.foundation-mq-xlarge {
+// 	font-family: "/only screen and (min-width:90.0625em)/";
+// 	width: 90.0625em; }
 
-meta.foundation-mq-xlarge-only {
-	font-family: "/only screen and (min-width:90.0625em) and (max-width:120em)/";
-	width: 90.0625em; }
+// meta.foundation-mq-xlarge-only {
+// 	font-family: "/only screen and (min-width:90.0625em) and (max-width:120em)/";
+// 	width: 90.0625em; }
 
-meta.foundation-mq-xxlarge {
-	font-family: "/only screen and (min-width:120.0625em)/";
-	width: 120.0625em; }
+// meta.foundation-mq-xxlarge {
+// 	font-family: "/only screen and (min-width:120.0625em)/";
+// 	width: 120.0625em; }
 
 meta.foundation-data-attribute-namespace {
 	font-family: false; }
@@ -66,7 +66,7 @@ meta.foundation-mq-topbar {
 		margin-bottom: 0; }
 
 .top-bar {
-	background: #000;
+	background: #fff;
 	max-height: 60px;
 	line-height: 60px;
 	margin-bottom: 0;
@@ -80,10 +80,20 @@ meta.foundation-mq-topbar {
 		overflow: visible;
 	}
 }
+.top-bar.stuck {
+	@media (min-width: $break-medium) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+}
 	.top-bar ul {
 		list-style: none;
 		margin-bottom: 0; }
 	.top-bar .title-area {
+		background-color: #000;
 		margin: 0;
 		position: relative; }
 	.top-bar .name {
@@ -188,7 +198,7 @@ meta.foundation-mq-topbar {
 	color: #333;
 	display: block;
 	font-size: 12px;
-	font-weight: 400;
+	font-weight: 300;
 	font-family: $heading-font;
 	letter-spacing: 1px;
 	padding-left: 1em;
@@ -204,11 +214,11 @@ meta.foundation-mq-topbar {
 	@media (min-width: $break-medium) {
 		border-bottom: none;
 		color: #fff;
-		font-size: 13px;
+		font-size: 15px;
 		padding: 10px 12px;
 	}
 	@media (min-width: 900px) {
-		font-size: 14px;
+		font-size: 16px;
 		padding: 10px 17px;
 	}
 	@media (min-width: 1024px) {
@@ -241,10 +251,11 @@ meta.foundation-mq-topbar {
 		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		margin-top: -6px;
+		margin-top: -9px;
 		position: absolute;
 		right: 1em;
 		top: 50%;
+		font-size: 15px;
 		display: inline-block;
 	}
 }
@@ -372,20 +383,22 @@ Dropdowns
 		left: 0;
 		background: #fff;
 		width: auto;
-		min-width: 180px;
+		min-width: 200px;
 		top: auto;
 		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 		padding: 10px 0;
 	}
 }
 .top-bar-section .dropdown:after {
-	content: '';
-	position: absolute;
-	width: 112%;
-	height: 105%;
-	bottom: -5%;
-	left: -6%;
-	z-index: -1;
+	@media (min-width: $break-medium) {
+		content: '';
+		position: absolute;
+		width: 112%;
+		height: 105%;
+		bottom: -5%;
+		left: -6%;
+		z-index: -1;
+	}
 }
 .top-bar-section .dropdown li {
 	height: auto;
@@ -396,11 +409,22 @@ Dropdowns
 		padding: 0 10px;
 	}
 }
+.top-bar-section .divider {
+	display: none;
+	@media (min-width: $break-medium) {
+		border-top: solid 1px #eee;
+		clear: both;
+		height: 1px;
+		margin: 5px 0;
+		width: 100%;
+	}
+}
 .top-bar-section .dropdown li a {
 	@media (min-width: $break-medium) {
 		color: #333;
 		float: none;
 		display: block;
+		font-family: $body-font;
 		font-size: 13px;
 		font-weight: normal;
 		letter-spacing: 0;
@@ -421,13 +445,10 @@ Dropdowns
 	}
 }
 /* hide 3rd level menus */
-// .top-bar-section .dropdown li .dropdown {
-// 	@media (min-width: $break-medium) {
-// 		display: none !important;
-// 	}
-// }
-.top-bar-section .dropdown .dropdown {
-
+.top-bar-section .dropdown li .dropdown {
+	@media (min-width: $break-medium) {
+		// display: none !important;
+	}
 }
 .top-bar-section .dropdown li .dropdown {
     left: 100%;
@@ -444,6 +465,7 @@ Dropdowns
 /* JS generated Back link */
 .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
 	font-family: $body-font;
+	font-weight: normal;
 	font-size: 12px;
 	line-height: 44px;
 	margin-bottom: 0;
@@ -452,7 +474,7 @@ Dropdowns
 	text-transform: uppercase;
 	& a {
 		color: #333;
-		padding-left: 2.5em;
+		padding-left: 3em;
 		display: block;
 		border-bottom: 1px solid #ddd;
 		&:hover, &:focus {
@@ -471,10 +493,11 @@ Dropdowns
 			/* Better Font Rendering =========== */
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-			margin-top: -6px;
+			margin-top: -9px;
 			position: absolute;
 			left: 1em;
 			top: 50%;
+			font-size: 15px;
 			display: inline-block;
 		}
 	}
@@ -534,4 +557,15 @@ Dropdowns
 	@media (min-width: $break-medium) {
 		display: none;
 	}
+}
+
+/* Sticky, fixed to top */
+.fixed {
+	@media (min-width: $break-medium) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+ }
 }

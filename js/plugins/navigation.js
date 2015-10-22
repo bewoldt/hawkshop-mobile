@@ -54,8 +54,12 @@
 
 		data.contentClasses = [
 			RawClasses.content.replace(baseClass, typeClass),
-			gravityClass ? RawClasses.content.replace(baseClass, gravityClass) : "",
 			classGroup
+		].join(" ");
+
+		data.contentClassesOpen = [
+			gravityClass ? RawClasses.content.replace(baseClass, gravityClass) : "",
+			RawClasses.open
 		].join(" ");
 
 		// DOM
@@ -70,7 +74,7 @@
 		// toggle
 
 		data.$handle.attr("data-swap-target", data.dotGuid)
-					.attr("data-swap-linked", "." + data.handleGuid)
+					.attr("data-swap-linked", data.handleGuid)
 					.attr("data-swap-group", RawClasses.base)
 					.on("activate.swap" + data.dotGuid, data, onOpen)
 					.on("deactivate.swap" + data.dotGuid, data, onClose)
@@ -99,7 +103,7 @@
 	 */
 
 	function destruct(data) {
-		data.$content.removeClass(data.contentClasses)
+		data.$content.removeClass( [data.contentClasses, data.contentClassesOpen].join(" ") )
 					 .off(Events.namespace);
 
 		data.$handle.removeAttr("data-swap-target")
@@ -177,8 +181,8 @@
 			if (!data.open) {
 				data.$el.trigger(Events.open);
 
-				data.$content.addClass(RawClasses.open)
-							 .one(Events.clickTouchStart, function() {
+				data.$content.addClass(data.contentClassesOpen)
+							 .one(Events.click, function() {
 								close(data);
 							 });
 
@@ -207,7 +211,7 @@
 			if (data.open) {
 				data.$el.trigger(Events.close);
 
-				data.$content.removeClass(RawClasses.open)
+				data.$content.removeClass(data.contentClassesOpen)
 							 .off(Events.namespace);
 
 				if (data.label) {
@@ -331,10 +335,12 @@
 	 * @name Navigation
 	 * @description A jQuery plugin for simple responsive navigation.
 	 * @type widget
+	 * @main navigation.js
+	 * @main navigation.css
+	 * @dependency jQuery
 	 * @dependency core.js
 	 * @dependency mediaquery.js
 	 * @dependency swap.js
-	 * @dependency touch.js
 	 */
 
 	var Plugin = Formstone.Plugin("navigation", {
@@ -386,7 +392,6 @@
 			 */
 
 			events: {
-				tap      : "tap",
 				open     : "open",
 				close    : "close"
 			},

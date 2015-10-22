@@ -37,7 +37,7 @@
 			<a class="logo" href="#"><img src="images/iowahawkshop.jpg" alt="Logo"></a>
 		</div>
 	</div>
-	<div>
+	<div class="">
 		<?php include'includes/mobile-nav.php'; ?>
 	</div>
 </header>

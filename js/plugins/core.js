@@ -4,7 +4,7 @@
  * @description Formstone Library core. Required for all plugins.
  */
 
-var Formstone = this.Formstone = (function ($, window, document, undefined) {
+var Formstone = window.Formstone = (function ($, window, document, undefined) {
 
 	/* global ga */
 
@@ -21,6 +21,7 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 				fn: {}
 			};
 			this.ResizeHandlers = [];
+			this.RAFHandlers    = [];
 
 			// Globals
 
@@ -32,6 +33,7 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 
 			this.windowWidth          = 0;
 			this.windowHeight         = 0;
+			this.fallbackWidth        = 1024; // <ie8 fallback width
 			this.userAgent            = window.navigator.userAgent || window.navigator.vendor || window.opera;
 			this.isFirefox            = /Firefox/i.test(this.userAgent);
 			this.isChrome             = /Chrome/i.test(this.userAgent);
@@ -45,6 +47,7 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 				file          : !!(window.File && window.FileList && window.FileReader),
 				history       : !!(window.history && window.history.pushState && window.history.replaceState),
 				matchMedia    : !!(window.matchMedia || window.msMatchMedia),
+				pointer       : !!(window.PointerEvent),
 				raf           : !!(window.requestAnimationFrame && window.cancelAnimationFrame),
 				touch         : !!(("ontouchstart" in window) || window.DocumentTouch && document instanceof window.DocumentTouch),
 				transition    : false,
@@ -119,7 +122,7 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 			 */
 
 			sortAsc: function(a, b) {
-				return (parseInt(b) - parseInt(a));
+				return (parseInt(a, 10) - parseInt(b, 10));
 			},
 
 			/**
@@ -132,8 +135,44 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 			 */
 
 			sortDesc: function(a, b) {
-				return (parseInt(b) - parseInt(a));
-			}
+				return (parseInt(b, 10) - parseInt(a, 10));
+			},
+
+			/**
+			 * @method private
+			 * @name decodeEntities
+			 * @description Decodes HTML.
+			 * @param string [string] "String to decode"
+			 * @return Decoded string
+			 */
+
+			decodeEntities: function(string) {
+				// http://stackoverflow.com/a/1395954
+				var el = Formstone.document.createElement("textarea");
+				el.innerHTML = string;
+
+				return el.value;
+			},
+
+			/**
+			 * @method private
+			 * @name parseGetParams
+			 * @description Returns keyed object containing all GET query parameters
+			 * @param url [string] "URL to parse"
+			 * @return [object] "Keyed query params"
+			 */
+
+			parseQueryString: function(url) {
+				var params = {},
+					parts = url.slice( url.indexOf("?") + 1 ).split("&");
+
+				for (var i = 0; i < parts.length; i++) {
+					var part = parts[i].split("=");
+					params[ part[0] ] = part[1];
+				}
+
+				return params;
+		    }
 		},
 
 		Formstone = new Core(),
@@ -153,6 +192,7 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 
 		Events = {
 			namespace            : ".{ns}",
+			beforeUnload         : "beforeunload.{ns}",
 			blur                 : "blur.{ns}",
 			change               : "change.{ns}",
 			click                : "click.{ns}",
@@ -180,9 +220,16 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 			mouseOut             : "mouseout.{ns}",
 			mouseOver            : "mouseover.{ns}",
 			mouseUp              : "mouseup.{ns}",
+			panStart             : "panstart.{ns}",
+			pan                  : "pan.{ns}",
+			panEnd               : "panend.{ns}",
 			resize               : "resize.{ns}",
+			scaleStart           : "scalestart.{ns}",
+			scaleEnd             : "scaleend.{ns}",
+			scale                : "scale.{ns}",
 			scroll               : "scroll.{ns}",
 			select               : "select.{ns}",
+			swipe                : "swipe.{ns}",
 			touchCancel          : "touchcancel.{ns}",
 			touchEnd             : "touchend.{ns}",
 			touchLeave           : "touchleave.{ns}",
@@ -223,7 +270,7 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 
 			var namespaceDash  = "fs-" + namespace,
 				namespaceDot   = "fs." + namespace,
-				namespaceClean = "fs" + namespace.replace(/(^|\s)([a-z])/g, function(m, p1, p2) { return p1 + p2.toUpperCase(); });
+				namespaceClean = "fs"  + namespace.replace(/(^|\s)([a-z])/g, function(m, p1, p2) { return p1 + p2.toUpperCase(); });
 
 			/**
 			 * @method private
@@ -233,18 +280,23 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 			 */
 
 			function initialize(options) {
-				// Extend Defaults
+				// Maintain Chain
 
-				var hasOptions = $.type(options) === "object";
+				var hasOptions = $.type(options) === "object",
+					$targets = this,
+					$postTargets = $(),
+					$element,
+					i,
+					count;
+
+				// Extend Defaults
 
 				options = $.extend(true, {}, settings.defaults || {}, (hasOptions ? options : {}));
 
-				// Maintain Chain
+				// All targets
 
-				var $targets = this;
-
-				for (var i = 0, count = $targets.length; i < count; i++) {
-					var $element = $targets.eq(i);
+				for (i = 0, count = $targets.length; i < count; i++) {
+					$element = $targets.eq(i);
 
 					// Gaurd Against Exiting Instances
 
@@ -270,8 +322,22 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 						// Constructor
 
 						settings.methods._construct.apply($element, [ data ].concat(Array.prototype.slice.call(arguments, (hasOptions ? 1 : 0) )));
+
+						// Post Constructor
+
+						$postTargets = $postTargets.add($element);
 					}
 
+				}
+
+				// Post targets
+
+				for (i = 0, count = $postTargets.length; i < count; i++) {
+					$element = $postTargets.eq(i);
+
+					// Post Constructor
+
+					settings.methods._postConstruct.apply($element, [ getData($element) ]);
 				}
 
 				return $targets;
@@ -425,8 +491,9 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 
 				_setup         : $.noop,    // Document ready
 				_construct     : $.noop,    // Constructor
+				_postConstruct : $.noop,    // Post Constructor
 				_destruct      : $.noop,    // Destructor
-				_resize        : false,    // Window resize
+				_resize        : false,     // Window resize
 
 				// Public Methods
 
@@ -499,6 +566,19 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 
 				// Sort handlers on push
 				Formstone.ResizeHandlers.sort(sortPriority);
+			}
+
+			// RAF handler
+
+			if (settings.methods._raf) {
+				Formstone.RAFHandlers.push({
+					namespace: namespace,
+					priority: settings.priority,
+					callback: settings.methods._raf
+				});
+
+				// Sort handlers on push
+				Formstone.RAFHandlers.sort(sortPriority);
 			}
 
 			return settings;
@@ -645,6 +725,22 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 	Formstone.$window.on("resize.fs", onWindowResize);
 	onWindowResize();
 
+	// RAF
+
+	function handleRAF() {
+		if (Formstone.support.raf) {
+			Formstone.window.requestAnimationFrame(handleRAF);
+
+			for (var i in Formstone.RAFHandlers) {
+				if (Formstone.RAFHandlers.hasOwnProperty(i)) {
+					Formstone.RAFHandlers[i].callback.call(window);
+				}
+			}
+		}
+	}
+
+	handleRAF();
+
 	// Sort Priority
 
 	function sortPriority(a, b) {
@@ -657,6 +753,9 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 		Formstone.$body = $("body");
 
 		$Ready.resolve();
+
+		// ie8 fallback support
+		Formstone.support.nativeMatchMedia = Formstone.support.matchMedia && !$("html").hasClass("no-matchmedia");
 	});
 
 	// Custom Events
@@ -669,4 +768,4 @@ var Formstone = this.Formstone = (function ($, window, document, undefined) {
 
 	return Formstone;
 
-})(jQuery, this, document);
+})(jQuery, window, document);

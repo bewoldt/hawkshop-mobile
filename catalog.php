@@ -107,7 +107,7 @@
 				<div class="col-xs-6 col-sm-3">
 					<img src="images/extra-3a.jpg">
 				</div>
-			</div><!-- end .row -->
+			</div>
 		</div>
 		<?php include 'includes/footer.php'; ?>
 	</main>

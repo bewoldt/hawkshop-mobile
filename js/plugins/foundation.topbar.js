@@ -10,9 +10,9 @@
       index : 0,
       start_offset : 0,
       sticky_class : 'sticky',
-      custom_back_text : true,
+      custom_back_text : false,
       back_text : 'Back',
-      mobile_show_parent_link : true,
+      mobile_show_parent_link : false,
       is_hover : true,
       scrolltop : true, // jump to top when sticky nav menu toggle is clicked
       sticky_on : 'all',
@@ -387,7 +387,7 @@
           if (settings.custom_back_text == true) {
             $('h5>a', $titleLi).html(settings.back_text);
           } else {
-            $('h5>a', $titleLi).html('&laquo; ' + $link.html());
+            $('h5>a', $titleLi).html(' ' + $link.html());
           }
           $dropdown.prepend($titleLi);
         }

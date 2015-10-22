@@ -12,9 +12,8 @@ h1,h2,h3,h4,h5,h6 {
     color: #333;
     font-family: $heading-font;
     margin: 1em 0 0.5em;
-
     line-height: 1.1;
-    font-weight: 900;
+    font-weight: bold;
     text-rendering: optimizelegibility;
 }
 h1 {

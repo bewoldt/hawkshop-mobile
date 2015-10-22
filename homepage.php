@@ -17,7 +17,7 @@
 	<main id="main-content" tabindex="-1">
 		<div class="owl-carousel home-hero1">
 			<div>
-				<img src="images/back1.jpg" alt="">
+				<img src="images/back5.jpg" alt="">
 			</div>
 			<div>
 				<img src="images/back2.jpg" alt="">
@@ -26,30 +26,29 @@
 				<img src="images/back3.jpg" alt="">
 			</div>
 			<div>
-				<img src="images/back5.jpg" alt="">
+				<img src="images/back1.jpg" alt="">
 			</div>
 		</div>
 		<br />
 		<div class="container">
-			<br />
 			<div class="row">
 				<div class="col-sm-4">
-					<img src="http://placehold.it/330x280">
-					<!-- <img src="images/callout-3.jpg"> -->
+					<!-- <img src="images/banner1.png"> -->
+					<img src="images/callout-3.jpg">
 				</div>
 				<div class="col-sm-4">
-					<img src="http://placehold.it/330x280">
-					<!-- <img src="images/callout-3b.jpg"> -->
+					<!-- <img src="images/banner2.png"> -->
+					<img src="images/callout-3b.jpg">
 				</div>
 				<div class="col-sm-4">
-					<img src="http://placehold.it/330x280">
-					<!-- <img src="images/callout-3c.jpg"> -->
+					<!-- <img src="images/banner3.png"> -->
+					<img src="images/callout-3c.jpg">
 				</div>
 			</div><!-- end .row -->
 		</div>
 
 		<?php include 'includes/home-featured.php'; ?>
-			<br /><br /><br />
+		<br /><br /><br />
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6 col-sm-3">
