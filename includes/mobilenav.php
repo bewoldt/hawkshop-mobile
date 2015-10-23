@@ -135,11 +135,4 @@
 			</form>
 		</li>
 	</ul> <!-- cd-single-item-wrapper -->
-
-	<div class="cd-navigation socials">
-		<a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-		<a class="cd-github cd-img-replace" href="#0">Git Hub</a>
-		<a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
-		<a class="cd-google cd-img-replace" href="#0">Google Plus</a>
-	</div> <!-- socials -->
 </nav>

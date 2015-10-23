@@ -4,7 +4,6 @@
 	z-index: 40;
 }
 
-
 /* -----------------------------------------------------------------
 Logo
 ----------------------------------------------------------------- */
@@ -194,7 +193,30 @@ Shopping Cart
 	font-weight: normal !important;
 }
 
-/* My Account */
+/* -----------------------------------------------------------------
+Mobile Shopping Cart Icon
+----------------------------------------------------------------- */
+.icon-shopping-cart {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 0;
+	font-size: 17px;
+	right: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+
+
+/* -----------------------------------------------------------------
+My Account
+----------------------------------------------------------------- */
 .header-phone {
 	background: #000;
 	border-right: 1px solid #3f3f43;
@@ -257,100 +279,6 @@ Shopping Cart
 .account-dropdown.open .header-account {
 	background-color: #fff;
 	color: #333;
-}
-
-
-/* My Cart */
-.mobile-cart {
-	font-size: 20px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 40px;
-	text-align: center;
-	background-color: #111;
-	& a {
-		color: #eee;
-		display: block;
-		height: 60px;
-		line-height: 60px;
-		&:hover, &:focus, &:active {
-			text-decoration: none;
-		}
-	}
-	@media (min-width: 701px) {
-		display: none;
-	}
-}
-.mobile-searchtoggle {
-	font-size: 16px;
-	position: absolute;
-	top: 0;
-	right: 40px;
-	width: 40px;
-	text-align: center;
-	background-color: #111;
-	& a {
-		color: #eee;
-		display: block;
-		height: 60px;
-		line-height: 60px;
-		&:hover, &:focus, &:active {
-			text-decoration: none;
-		}
-	}
-	@media (min-width: 701px) {
-		display: none;
-	}
-}
-.mobile-searchtoggle.active .icon-search:before {
-	content: "\e608";
-}
-
-/* Mobile shopping cart icon */
-.icon-shopping-cart {
-	width: 50px;
-	height: 50px;
-	display: block;
-	position: absolute;
-	top: 0;
-	font-size: 17px;
-	right: 50px;
-	line-height: 50px;
-	color: #fff;
-	text-align: center;
-	&:hover, &:focus {
-		text-decoration: none;
-	}
-}
-
-
-/* Mobile dropdown menu */
-.mobilenav-top {
-	border-bottom: 1px solid #ddd;
-	line-height: normal;
-	text-align: center;
-	& a {
-		color: #333;
-		display: inline-block;
-		line-height: 1.5;
-		font-size: 12px;
-		width: 32%;
-		margin: 15px 0;
-		text-transform: uppercase;
-		& span {
-			padding-right: 5px;
-			font-size: 16px;
-    		vertical-align: text-top;
-		}
-	}
-	@media (min-width: $break-medium) {
-		display: none;
-	}
-}
-.mobilenav-top .mobilenav-location {
-	border-right: 1px solid #ddd;
-	border-left: 1px solid #ddd;
 }
 
 
