@@ -8,12 +8,13 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
+					'js/plugins/mobilenav.js',
 					'js/plugins/owl.carousel.js',
-					'js/plugins/core.js',
-					'js/plugins/mediaquery.js',
-					'js/plugins/swap.js',
+					// 'js/plugins/core.js',
+					// 'js/plugins/mediaquery.js',
+					// 'js/plugins/swap.js',
 					// 'js/plugins/touch.js',
-					'js/plugins/navigation.js',
+					// 'js/plugins/navigation.js',
 					// 'js/plugins/jquery.fs.shifter.js',
 					'js/plugins/dropdown.js',
 					// 'js/plugins/foundation.min.js',

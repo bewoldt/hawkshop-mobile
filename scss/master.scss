@@ -1,6 +1,6 @@
 /* ePOS styles
 -------------------------------------------*/
-@import "site/masterstyles";
+// @import "site/masterstyles";
 
 
 /* Global Settings
@@ -15,29 +15,23 @@
 
 /* Components
 -------------------------------------------*/
-/*@import "components/button-bootstrap";*/
-/*@import "components/form-bootstrap";*/
 @import "components/grid-bootstrap";
-/*@import "components/tables-bootstrap";*/
 
 
 /* Plugins
 -------------------------------------------*/
-/*@import "plugins/navigation";*/
-/*@import "plugins/flickity";*/
-/*@import "plugins/shifter";*/
 @import "plugins/owl.carousel";
 
 /* Layout
 -------------------------------------------*/
 @import "site/breadcrumbs";
 /*@import "site/mainnav";*/
-@import "site/topbar";
-// @import "site/offcanvas";
-@import "site/formstone-navigation";
+@import "site/mobilenav";
+@import "site/mainnav";
+// @import "site/topbar";
 @import "site/footer";
 @import "site/header";
-@import "site/checkout";
+// @import "site/checkout";
 @import "site/browse";
 @import "site/product";
 @import "site/textbooks";

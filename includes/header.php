@@ -1,5 +1,5 @@
 <!-- Header -->
-<header id="header" class="header" role="banner">
+<header id="header" class="header cd-header" role="banner">
 	<div class="top-wrapper">
 		<div class="top-cart right">
 			<a href="#" class="cart-toggler">
@@ -35,9 +35,11 @@
 	<div class="container clearfix">
 		<div class="logo-container">
 			<a class="logo" href="#"><img src="images/iowahawkshop.jpg" alt="Logo"></a>
+			<a href="#" class="icon-shopping-cart"></a>
+			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</div>
 	</div>
 	<div class="">
-		<?php include'includes/mobile-nav.php'; ?>
+		<?php include 'includes/main-nav.php'; ?>
 	</div>
 </header>

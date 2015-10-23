@@ -13,16 +13,29 @@
 </head>
 <body class="">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
+
 	<?php include 'includes/header.php'; ?>
 
-	<main id="main-content" tabindex="-1">
+	<!-- <header class="fixed cd-header ">
+		<a id="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Homepage"></a>
+		<nav id="cd-top-nav">
+			<ul>
+				<li><a href="#0">Tour</a></li>
+				<li><a href="#0">Login</a></li>
+				<li><a href="#0">Login</a></li>
+			</ul>
+		</nav>
+		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+	</header> -->
+
+	<main id="main-content" tabindex="-1" class="cd-main-content">
 		<div>
 			<picture>
 				<!--[if IE 9]><video style="display: none;"><![endif]-->
 				<source srcset="images/amazon-banner.jpg" media="(min-width: 981px)">
 				<source srcset="images/amazon-banner-md.jpg" media="(min-width: 480px)">
 				<!--[if IE 9]></video><![endif]-->
-				<img srcset="images/amazon-banner-sm.jpg" alt="…">
+				<img srcset="images/amazon-banner.jpg" alt="…">
 			</picture>
 		</div>
 		<div class="container">
@@ -93,7 +106,7 @@
 					</div>
 				</div>
 			</div>
-			<br />
+			<!-- <br />
 			<div class="row">
 				<div class="col-xs-6 col-sm-3">
 					<img src="images/extra-3a.jpg">
@@ -107,10 +120,12 @@
 				<div class="col-xs-6 col-sm-3">
 					<img src="images/extra-3a.jpg">
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<?php include 'includes/footer.php'; ?>
 	</main>
+
+	<?php include 'includes/mobilenav.php'; ?>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>

@@ -1,29 +1,30 @@
 @import 'bourbon/bourbon'; // http://bourbon.io/
 
+/* --------------------------------
+Variables
+-------------------------------- */
 // colors
-
 $main-text: #4e6361; // main text
-$link: #ccc; // anchor tags
+$link: #6cac70; // anchor tags
 $background: #fff; // body background color
 
-$color-1: #222; // green dark
-$color-2: #222; // green darker
+$color-1: #4e6361; // green dark
+$color-2: #242e30; // green darker
 $color-3: #aab5b7; // green light
 
 // z-index
-
 $secondary-nav: 1;
 $content-zindex: 2;
 $header-zindex: 3;
 
 // header height
-
 $header-S: 50px;
 $header-M: 70px;
 
-/* Mixins */
+/* --------------------------------
+Mixins
+-------------------------------- */
 // rem fallback - credits: http://zerosixthree.se/
-
 @function calculateRem($size) {
   $remSize: $size / 16px;
   @return $remSize * 1rem;
@@ -35,7 +36,6 @@ $header-M: 70px;
 }
 
 // center vertically and/or horizontally an absolute positioned element
-
 @mixin center($xy:xy) {
   @if $xy == xy {
     left: 50%;
@@ -57,16 +57,17 @@ $header-M: 70px;
 }
 
 // border radius
-
 @mixin border-radius($radius:.25em) {
   border-radius: $radius;
 }
 
-/* Layout */
-// breakpoints
 
+/* --------------------------------
+Layout
+-------------------------------- */
+// breakpoints
 $S:     320px;
-$M:     769px;
+$M:     768px;
 $L:     1170px;
 
 // media queries
@@ -84,21 +85,21 @@ $L:     1170px;
 }
 
 // super light grid - it works with the .cd-container class inside style.scss
-
 @mixin column($percentage, $float-direction:left) {
   width: 100% * $percentage;
   float: $float-direction;
 }
 
+
 /* --------------------------------
-
-Primary style
-
+Primary styles
 -------------------------------- */
 
-html, body {
-	/* you need to set this to assign to the main element a min height of 100% */
-	height: 100%;
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 /* --------------------------------
@@ -132,7 +133,7 @@ Main components
 	z-index: $content-zindex;
 
 	//we assign a top padding since the header is in position absolute or fixed
-	/*padding-top: $header-S;*/
+	padding-top: $header-S;
 
 	/* Force Hardware Acceleration in WebKit */
 	-webkit-transform: translateZ(0);
@@ -147,110 +148,119 @@ Main components
 	}
 
 	@include MQ(M) {
-		/*padding-top: $header-M;*/
+		padding-top: $header-M;
 	}
 }
 
-header {
-	position: relative;
-	top: 0;
-	left: 0;
-	/*height: $header-S;*/
-	width: 100%;
-	background: $color-1;
-	z-index: $header-zindex;
+.cd-header {
+	@media (max-width: $break-medium - 1) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: $header-S;
+		width: 100%;
+		background: $color-1;
+		z-index: $header-zindex;
 
-	/* Force Hardware Acceleration in WebKit */
-	-webkit-transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
+		/* Force Hardware Acceleration in WebKit */
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
 
-	@include transition-property(transform);
-	@include transition-duration(.4s);
-	&.lateral-menu-is-open {
-		/* translate to show the lateral menu */
-		@include transform(translateX(-260px));
-	}
-	//assign this class to the header if you want a fixed navigation
-	&.is-fixed {
-		@media (max-width: $break-medium -1) {
-			position: fixed;
+		@include transition-property(transform);
+		@include transition-duration(.4s);
+
+		&.lateral-menu-is-open {
+			/* translate to show the lateral menu */
+			// @include transform(translateX(-260px));
 		}
 
+		//assign this class to the header if you want a fixed navigation
+		&.is-fixed {
+			position: fixed;
+		}
 	}
-	@include MQ(M) {
-		height: auto;
-		position: relative;
-	}
+
 }
 
-
-/* Trigger */
 #cd-menu-trigger {
 	position: absolute;
 	right: 0;
 	top: 0;
 	height: 100%;
 	width: 50px;
-	background-color: lighten($color-1, 10%);
-	@include MQ(M) {
+	background-color: #222;
+	.cd-menu-text {
+		height: 100%;
+		text-transform: uppercase;
+		color: #FFF;
+		font-weight: 600;
 		display: none;
+	}
+
+	.cd-menu-icon {
+		/* this span is the central line in the menu menu */
+		display: inline-block;
+		position: absolute;
+		@include center; // mixin inside partials > _mixings.scss
+		width: 18px;
+		height: 2px;
+		background-color: #FFF;
+
+		/* these are the upper and lower lines in the menu menu */
+		&::before, &:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: inherit;
+			left: 0;
+		}
+		&::before {
+			bottom: 5px;
+		}
+		&::after {
+			top: 5px;
+		}
+	}
+
+	&.is-clicked {
+		.cd-menu-icon {
+			background-color: rgba(#FFF, 0);
+
+			&::before, &::after {
+				background-color: rgba(#FFF, 1);
+			}
+
+			&::before {
+				bottom: 0;
+				@include transform(rotate(45deg));
+			}
+
+			&::after {
+				top: 0;
+				@include transform(rotate(-45deg));
+			}
+		}
+	}
+
+	@include MQ(M) {
 		width: 110px;
 		padding-left: 1.25em;
+		.cd-menu-text {
+			display: inline-block;
+			line-height: $header-M;
+		}
+		.cd-menu-icon {
+			left: auto;
+			right: 1.25em;
+			@include transform(translateX(0));
+		}
 	}
 }
-/* Menu text */
-#cd-menu-trigger .cd-menu-text {
-	height: 100%;
-	text-transform: uppercase;
-	color: #FFF;
-	display: none;
-	@include MQ(M) {
-		display: inline-block;
-		line-height: $header-M;
-	}
-}
-#cd-menu-trigger.is-clicked .cd-menu-icon {
-	background-color: rgba(#FFF, 0);
-	&::before, &::after {
-		background-color: rgba(#FFF, 1);
-	}
-	&::before {
-		bottom: 0;
-		@include transform(rotate(45deg));
-	}
-	&::after {
-		top: 0;
-		@include transform(rotate(-45deg));
-	}
-}
-#cd-menu-trigger .cd-menu-icon {
-	/* this span is the central line in the menu menu */
-	display: inline-block;
-	position: absolute;
-	@include center; // mixin inside partials > _mixings.scss
-	width: 18px;
-	height: 2px;
-	background-color: #FFF;
 
-	/* these are the upper and lower lines in the menu menu */
-	&::before, &:after {
-		content: '';
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background-color: inherit;
-		left: 0;
-	}
-	&::before {
-		bottom: 5px;
-	}
-	&::after {
-		top: 5px;
-	}
-	@include MQ(M) {
-		left: auto;
-		right: 1.25em;
-		@include transform(translateX(0));
+#cd-menu-trigger {
+	@media (min-width: $break-medium) {
+		display: none;
 	}
 }
 
@@ -260,12 +270,13 @@ header {
 	right: 0;
 	top: 0;
 	visibility: hidden;
+	padding-top: 60px;
 
 	/* the secondary navigation is covered by the main element */
 	z-index: $secondary-nav; // see partials > _variables.scss
 
 	width: 260px;
-	background-color: $color-2;
+	background-color: #222;
 
 	overflow-y: auto;
 
@@ -285,18 +296,16 @@ header {
 	}
 
 	.sub-menu {
-		margin: 0;
-		list-style: none;
 		padding: 0 10px 20px 15px;
 		display: none;
 	}
 
 	a {
 		display: block;
-		line-height: 2em;
-		padding: 10px 16px 10px 32px;
-		color: #ddd;
-		border-bottom: 1px solid #333;
+		line-height: 3em;
+		padding: 0 16px 0 32px;
+		color: #fff;
+		font-size: 13px;
 
 		&.current {
 			background-color: lighten($color-2, 10%);
@@ -341,7 +350,7 @@ header {
 		position: absolute;
 		@include center(y);
 		right: 1em;
-		background: url('../images/cd-arrow.png') no-repeat center center;
+		background: url('../images/cd-arrow.svg') no-repeat center center;
 		background-size: 8px 11px;
 
 		@include transition-property(transform);
@@ -407,19 +416,22 @@ header {
 		}
 	}
 }
-
-.cd-search input[type="search"] {
-    width: 100%;
-    height: 50px;
-    padding: 0 20px 0 32px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-color: #333;
-    color: #ffffff;
-    border: none;
-    border-radius: 0;
-    box-sizing: border-box;
+.form {
+	margin: 0;
+	padding: 0 16px 0 32px;
+	& input {
+		border: none;
+		font-size: 13px;
+		height: 30px;
+		padding: 4px 10px;
+		line-height: 30px;
+		background-color: #fff;
+		outline: none;
+		color: #333;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border-radius: 0;
+	}
 }
