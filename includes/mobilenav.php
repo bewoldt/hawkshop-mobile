@@ -1,5 +1,4 @@
 <nav id="cd-lateral-nav" aria-hidden="true">
-	<p>Need help?</p>
 	<ul class="cd-navigation">
 		<li class="item-has-children">
 			<a href="#0">Textbooks</a>
