@@ -13,11 +13,11 @@
 <body>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
-	<main id="main-content" tabindex="-1">
+	<main id="main-content" tabindex="-1" class="cd-main-content">
 		<div class="container">
 			<div class="clearfix">
 				<div class="column-main">
-					<?php include 'includes/breadcrumbs.php'; ?>
+					<?php include 'includes/subcats-two.php'; ?>
 					<div itemscope itemtype="http://schema.org/Product" id="itemDisplay" class="item-wrapper" store="103">
 						<div class="clearfix">
 							<div id="itemPhoto">
@@ -40,7 +40,7 @@
 										<div id="attrSelector">
 											<div id="otherSelector1">
 												<input name="attr_code.1" wpc="1017" value="45" type="hidden" id="attrCode1" >
-												<select name="attr_value.1" tabindex="1" id="otherAttr1" class="itemMenu" >
+												<select name="attr_value.1" id="otherAttr1" class="itemMenu" >
 													<option value="null" >--Select One--</option>
 													<option value="Sm" optid="1948747" >Sm</option>
 													<option value="Med" optid="1948705" >Med</option>
@@ -51,7 +51,7 @@
 											</div>
 											<div id="otherSelector2">
 												<input name="attr_code.2" wpc="1017" value="86" type="hidden" id="attrCode2" >
-												<select name="attr_value.2" tabindex="2" id="otherAttr2" class="itemMenu" >
+												<select name="attr_value.2" id="otherAttr2" class="itemMenu" >
 													<option value="null" >--Select One--</option>
 													<option value="Gold" optid="3728307" >Gold</option>
 												</select>
@@ -61,7 +61,7 @@
 										<div id="itemOrder">
 											<div id="orderOptions" maxqty="40" cartqty="0" class="clearfix">
 												<div class="dropdown">
-													<select name="qty" tabindex="1" size="1" id="itemQty" class="qtyMenu">
+													<select name="qty" size="1" id="itemQty" class="qtyMenu">
 														<option value="1" >1</option>
 														<option value="2" >2</option>
 														<option value="3" >3</option>
@@ -79,7 +79,7 @@
 												<div id="qtyCart" class="optionLimit"></div>
 												<span class="addtocart-btn">
 													<span class="icon-shopping-cart"></span>
-													<input name="Add Cart" value="Add to Cart" type="submit" tabindex="2" onclick="_gaq.push(['_trackEvent', 'Ecommerce', 'Add To Cart']);" id="cartAdd" border="0" alt="Add to Cart" >
+													<input name="Add Cart" value="Add to Cart" type="submit" id="cartAdd" border="0" alt="Add to Cart" aria-label="Add to cart" >
 												</span>
 											</div>
 										</div>
@@ -115,26 +115,12 @@
 					</div>
 					<?php include 'includes/suggested-items.php'; ?>
 				</div>
-				<div class="row">
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3a.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3b.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3c.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3a.jpg">
-				</div>
-			</div><!-- end .row -->
 			</div>
 		</div>
-		<?php include 'includes/mission.php'; ?>
 		<?php include 'includes/footer.php'; ?>
 	</main>
 
+	<?php include 'includes/mobilenav.php'; ?>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>

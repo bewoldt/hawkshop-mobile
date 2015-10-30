@@ -16,18 +16,6 @@
 
 	<?php include 'includes/header.php'; ?>
 
-	<!-- <header class="fixed cd-header ">
-		<a id="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Homepage"></a>
-		<nav id="cd-top-nav">
-			<ul>
-				<li><a href="#0">Tour</a></li>
-				<li><a href="#0">Login</a></li>
-				<li><a href="#0">Login</a></li>
-			</ul>
-		</nav>
-		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
-	</header> -->
-
 	<main id="main-content" tabindex="-1" class="cd-main-content">
 		<div>
 			<picture>
@@ -47,10 +35,10 @@
 						</div>
 						<ul class="justify catalog-icons">
 							<li class="justify-item">
+								<h2 class="icon-title"><a href="#">Tops</a></h2>
 								<a href="#" class="icon-link">
 									<img data-original="images/CW0609-t.jpg" alt="" class="lazy" alt="">
 								</a>
-								<h2 class="icon-title"><a href="#">Tops</a></h2>
 							</li>
 							<li class="justify-item">
 								<a href="#" class="icon-link">

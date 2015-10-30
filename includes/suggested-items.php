@@ -30,7 +30,6 @@
 			<div class="thumbnail-info">
 				<h2 class="thumbnail-title"><a href="#"><span class="brand">Nike</span> Iowa Women's Rewind Run Game Shirt</a></h2>
 				<p class="thumbnail-price">$32.00</p>
-				<p class="more-colors">more colors available</p>
 			</div>
 		</li>
 		<li class="gallery-cell">

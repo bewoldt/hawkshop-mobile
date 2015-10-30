@@ -11,19 +11,19 @@ jQuery(document).ready(function($){
 		"menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
 	  );
 	}
-	//POPUP jQuery
 	$(".js-social-share").on("click", function(e) {
 	  e.preventDefault();
 	  windowPopup($(this).attr("href"), 500, 300);
 	});
 
+
 	// scroll to top of page
-	$('.scrollup').click(function () {
-		$("html, body").animate({
-			scrollTop: 0
-		}, 600);
-		return false;
-	});
+	// $('.scrollup').click(function () {
+	// 	$("html, body").animate({
+	// 		scrollTop: 0
+	// 	}, 600);
+	// 	return false;
+	// });
 
 
 	// homepage carousel
@@ -196,9 +196,6 @@ jQuery(document).ready(function($){
 		}
 	});
 
-
-
-
 	// sub-catalog slider
 	$(".owl-sub-catalogs").owlCarousel({
 		margin:10,
@@ -222,7 +219,7 @@ jQuery(document).ready(function($){
 	// Header dropdown menus
 	$('.dropdown-toggle').dropdown()
 
-
+	// Footer tabs
 	$('body').addClass('js');
 	  var $tab = $('.tab');
 
@@ -233,29 +230,17 @@ jQuery(document).ready(function($){
 	  $this.next('.panel').toggleClass('active');
 	});
 
+	// Lazy Load
 	$("img.lazy").lazyload({
 		threshold : 200,
 		effect : "fadeIn"
 	});
 	$("html,body").trigger("scroll");
 
-	// var sticky = new Waypoint.Sticky({
-	// 	element: $('.top-bar')[0]
-	// })
+	// Sticky header
+	var sticky = new Waypoint.Sticky({
+		element: $('#header')[0]
+	})
 
-
-
-
-	$('.mobile-searchtoggle').click(function(e){
-		$(this).toggleClass('active');
-		$('.top-wrapper').toggleClass('search-open');
-		$('.top-wrapper').slideToggle();
-		if ($('.top-wrapper').hasClass('search-open')) {
-			$('#search').focus();
-		} else {
-			$('#search').blur();
-		}
-		return false;
-	});
 
 });

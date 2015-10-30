@@ -207,6 +207,7 @@ Tabs to Full
 .tab {
 	border-bottom: 1px solid #333;
 	color: $yellow;
+	font-family: $body-font;
 	font-size: 13px;
 	font-weight: normal;
 	padding: 1.4em 1em;
@@ -218,13 +219,10 @@ Tabs to Full
 		color: #fff;
 		border-bottom: 2px solid #ffd900;
 		font-size: 12px;
-		font-weight: normal;
+		font-weight: bold;
 		letter-spacing: 1px;
 		padding: 0 0 4px;
 		text-transform: uppercase;
-	}
-	@media (min-width: $break-large) {
-		font-size: 13px;
 	}
 }
 .tab:after {

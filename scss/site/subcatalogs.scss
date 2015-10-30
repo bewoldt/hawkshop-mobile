@@ -1,0 +1,50 @@
+/* -----------------------------------------------------------------
+Sub-Catalog Slider
+----------------------------------------------------------------- */
+.sub-cats {
+	background-color: #f4f4f4;
+	list-style: none;
+	margin: 0;
+	white-space: nowrap;
+	xoverflow-x: scroll;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	@media (min-width: $break-medium ) {
+		display: none;
+	}
+	& ul {
+		display: inline-block;
+		margin: 0;
+		list-style: none;
+	}
+}
+.sub-cats li, .sub-cats li, .onbranchli .onbranch {
+	display: inline-block;
+	& a {
+		color: #333;
+		display: block;
+		font-size: 14px;
+		padding: 10px 10px;
+	}
+}
+.onbranchli .onbranch {
+	font-weight: bold;
+	&:after {
+		content: '\003e';
+		position: relative;
+		left: 12px;
+	}
+}
+.sub-cats .onleafli {
+	text-decoration: underline;
+}
+.level2 .branchli .subnav-level2 {
+    display: none;
+}
+.level3 > .leafli, .level3 > .branchli {
+	display: none;
+}
+.level4 .onbranchli .subnav-level2 > .leafli,
+.level4 .onbranchli .subnav-level2 > .branchli {
+	display: none;
+}

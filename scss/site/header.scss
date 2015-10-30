@@ -2,27 +2,67 @@
 	background-color: #000;
 	position: relative;
 	z-index: 40;
+	height: $header-S;
+	box-shadow: 0 2px 3px rgba(0,0,0,.15);
+	@media only screen and (min-width: $break-small) {
+		height: $header-M;
+	}
+	@media only screen and (min-width: 701px) {
+		height: auto;
+	}
+}
+#header.stuck {
+	@media (max-width: $break-medium - 1) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+	}
 }
 
 /* -----------------------------------------------------------------
 Logo
 ----------------------------------------------------------------- */
 .logo-container {
+	height: $header-S;
 	text-align: left;
+	@media(min-width: $break-small) {
+		height: $header-M;
+	}
 	@media(min-width: $break-medium) {
 		text-align: center;
+		height: auto;
 	}
 }
 .logo {
 	display: inline-block;
-	margin: 15px 0;
 	vertical-align: middle;
+	padding: 15px 0;
+	@media(min-width: $break-small) {
+		padding: 21px 0;
+	}
+	@media(min-width: 600px) {
+		padding: 19px 0;
+	}
+	@media(min-width: $break-medium) {
+		padding: 10px 0;
+	}
 }
 .logo img {
 	display: block;
 	width: 170px;
 	@media(min-width: $break-small) {
-
+		width: 230px;
+	}
+	@media(min-width: 600px) {
+		width: 270px;
+	}
+	@media(min-width: $break-medium) {
+		width: 389px;
+	}
+	@media(min-width: $break-large) {
+		width: 439px;
 	}
 }
 
@@ -196,7 +236,7 @@ Shopping Cart
 /* -----------------------------------------------------------------
 Mobile Shopping Cart Icon
 ----------------------------------------------------------------- */
-.icon-shopping-cart {
+.logo-container .icon-shopping-cart {
 	width: 50px;
 	height: 50px;
 	display: block;
@@ -209,6 +249,16 @@ Mobile Shopping Cart Icon
 	text-align: center;
 	&:hover, &:focus {
 		text-decoration: none;
+	}
+	@media only screen and (min-width: $break-small) {
+		height: $header-M;
+		line-height: $header-M;
+		right: 110px;
+		width: 70px;
+	}
+	@media only screen and (min-width: 701px) {
+		display: none;
+		visibility: hidden;
 	}
 }
 

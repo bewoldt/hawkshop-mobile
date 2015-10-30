@@ -1,14 +1,14 @@
 .breadcrumbs-wrapper {
 	display: none;
-	// border-bottom: 1px solid #eee;
-	padding: 10px 0;
+	border-bottom: 1px solid #e9e9ea;
+	padding: .5em 1em;
 	@media (min-width: $break-medium) {
 		display: block;
 	}
 }
 .breadcrumbs {
 	color: #555;
-	font-size: 14px;
+	font-size: 13px;
 	margin: 0;
 	text-align: center;
 	& a {

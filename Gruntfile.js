@@ -22,10 +22,9 @@ module.exports = function(grunt) {
 					// 'js/plugins/foundation.offcanvas.js',
 					'js/plugins/foundation.topbar.js',
 					'js/plugins/jquery.lazyload.js',
-
-					// 'js/plugins/jquery.waypoints.js',
-					// 'js/plugins/sticky.js',
-					// 'js/plugins/menubar.js',
+					'js/plugins/jquery.waypoints.js',
+					'js/plugins/sticky.js',
+					'js/plugins/menubar.js',
 					'js/main.js'
 				],
 				dest: 'js/build/production.js'

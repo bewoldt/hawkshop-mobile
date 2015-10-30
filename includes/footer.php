@@ -99,8 +99,8 @@
 			</p>
 			<p>Hours: Mon-Fri 8am - 5pm</p>
 		</div>
-		<div class="back-to-top">
+		<!-- <div class="back-to-top">
 			<a href="#" class="scrollup"><span></span>Back to the Top<span></span></a>
-		</div>
+		</div> -->
 	</div>
 </footer>

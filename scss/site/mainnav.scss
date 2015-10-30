@@ -1,9 +1,11 @@
 
 .mainnav-wrapper {
+	background-color: #000;
 	clear: both;
 	position: relative;
 	@media (max-width: $break-medium - 1) {
 		display: none;
+		visibility: hidden;
 	}
 }
 .main-nav {
@@ -34,25 +36,28 @@
 .main-nav li a {
 	color: #fff;
 	display: block;
-	font-family: arial, sans-serif;
-	font-family: $heading-font;
-	font-weight: normal;
-	letter-spacing: 1px;
 	font-size: 13px;
 	padding: 10px 12px;
 	text-decoration: none;
 	transition: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	@media (min-width: $break-large) {
+	@media (min-width: 850px) {
+		padding: 10px 15px;
+	}
+	@media (min-width: 900px) {
 		font-size: 14px;
-		padding: 8px 21px;
+		padding: 10px 19px;
 	}
 	@media (min-width: $break-xlarge) {
 		padding: 10px 27px;
 	}
 }
-.main-nav li a:hover, .main-nav > li:hover a, .main-nav > li:focus, .main-nav li a:focus, .main-nav li.active a {
+.main-nav li a:hover,
+.main-nav > li:hover a,
+.main-nav > li:focus,
+.main-nav li a:focus,
+.main-nav li.active a {
 	background-color: #fff;
 	color: #333;
 }
@@ -63,7 +68,7 @@
 	content: '';
 	background-color: $yellow;
 	width: 100%;
-	height: 2px;
+	height: 3px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -82,6 +87,7 @@ Dropdowns
 	min-width: 180px;
 	list-style: none;
 	box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+	padding: 10px 0;
 }
 .main-nav li:hover ul,
 .main-nav li:focus ul,
@@ -100,47 +106,26 @@ ul.show-menu {
 	right: 0;
 }*/
 .main-nav ul li {
-	float: none;
+	padding: 0 10px;
 	position: static;
 }
 .main-nav ul .divider {
-	border-top: 1px solid #ddd;
 	margin: 0;
 }
 .main-nav ul a {
 	color: #333;
 	float: none;
 	display: block;
-	font-size: 12px;
-	font-weight: normal;
-	letter-spacing: 0;
+	font-size: 13px;
 	line-height: 1.3;
-	padding: 12px 20px;
+	padding: 10px;
 	text-align: left;
 	text-transform: none;
-	border-bottom: 1px solid #eee;
 }
 .main-nav ul a:hover,
 .main-nav ul a:focus,
 .main-nav ul li.active a {
-	background: #f0f0f0;
-	color: #333;
+	background: #000;
+	border-radius: 3px;
+	color: #fff;
 }
-
-.main-nav-bg.stuck {
-	@media (min-width: 940px) {
-		position:fixed;
-		top:0;
-		z-index: 100;
-		width: 100%;
-		box-shadow: 0 2px 2px rgba(0,0,0,.2);
-	}
-}
-
-/* ------------------------------------------------------
-Shifter Handle
---------------------------------------------------------- */
-.shifter-handle {
-
-}
-

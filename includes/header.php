@@ -17,16 +17,16 @@
 		<div class="help-center">
 			<a href="#" class="header-location" data-toggle="dropdown">Help <span class="caret"></span></a>
 			<ul class="dropdown-menu" aria-labelledby="dLabel">
+				<li><a href="#">Contact</a></li>
 				<li><a href="#">Shipping</a></li>
 				<li><a href="#">Returns</a></li>
-				<li><a href="#">FAQ</a></li>
 	  		</ul>
 	  	</div>
 	  	<div class="account-dropdown">
-			<a href="#" class="header-account" data-toggle="dropdown">My Account <span class="caret"></span></a>
+			<a href="#" class="header-account" data-toggle="dropdown">Account <span class="caret"></span></a>
 			<ul class="dropdown-menu" aria-labelledby="dLabel">
-				<li><a href="#">Account home</a></li>
-				<li><a href="#">Orders</a></li>
+				<li><a href="#">My Account</a></li>
+				<li><a href="#">Order History</a></li>
 				<li><a href="#">Log in</a></li>
 				<li><a href="#">Gift Cards</a></li>
 	  		</ul>
@@ -39,7 +39,5 @@
 			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</div>
 	</div>
-	<div class="">
-		<?php include 'includes/main-nav.php'; ?>
-	</div>
+	<?php include 'includes/main-nav.php'; ?>
 </header>
