@@ -24,7 +24,8 @@ module.exports = function(grunt) {
 					'js/plugins/jquery.lazyload.js',
 					'js/plugins/jquery.waypoints.js',
 					'js/plugins/sticky.js',
-					'js/plugins/menubar.js',
+					// 'js/plugins/menubar.js',
+					'js/plugins/jquery-accessibleMegaMenu.js',
 					'js/main.js'
 				],
 				dest: 'js/build/production.js'

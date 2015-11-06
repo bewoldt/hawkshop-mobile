@@ -1,5 +1,33 @@
 jQuery(document).ready(function($){
 
+	// MAIN NAVIGATION SETTINGS
+	$("#dawgdrops").accessibleMegaMenu({
+		/* prefix for generated unique id attributes, which are required
+			to indicate aria-owns, aria-controls and aria-labelledby */
+		uuidPrefix: "accessible-megamenu",
+
+		/* css class used to define the megamenu styling */
+		menuClass: "nav-menu",
+
+		/* css class for a top-level navigation item in the megamenu */
+		topNavItemClass: "nav-item",
+
+		/* css class for a megamenu panel */
+		panelClass: "sub-nav",
+
+		/* css class for a group of items within a megamenu panel */
+		panelGroupClass: "sub-nav-group",
+
+		/* css class for the hover state */
+		hoverClass: "hover",
+
+		/* css class for the focus state */
+		focusClass: "focus",
+
+		/* css class for the open state */
+		openClass: "open"
+	});
+
 	// POPUP WINDOW FOR SOCIAL MEDIA
 	function windowPopup(url, width, height) {
 	  // Calculate the position of the popup so it's centered on the screen.
@@ -238,9 +266,9 @@ jQuery(document).ready(function($){
 	$("html,body").trigger("scroll");
 
 	// Sticky header
-	var sticky = new Waypoint.Sticky({
-		element: $('#header')[0]
-	})
+	// var sticky = new Waypoint.Sticky({
+	// 	element: $('#header')[0]
+	// })
 
 
 });

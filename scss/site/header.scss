@@ -1,24 +1,21 @@
 #header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
 	background-color: #000;
-	position: relative;
-	z-index: 40;
 	height: $header-S;
 	box-shadow: 0 2px 3px rgba(0,0,0,.15);
 	@media only screen and (min-width: $break-small) {
 		height: $header-M;
 	}
-	@media only screen and (min-width: 701px) {
+	@media only screen and (min-width: $break-medium) {
 		height: auto;
+		position: relative;
 	}
-}
-#header.stuck {
-	@media (max-width: $break-medium - 1) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		z-index: 100;
-	}
+
 }
 
 /* -----------------------------------------------------------------
@@ -75,11 +72,6 @@ Search
 	border-left: 1px solid #444;
 	position: relative;
 	width: 200px;
-	@media (max-width: 700px) {
-		background-color: #fff;
-		width: 100%;
-		border-left: none;
-	}
 }
 .searchcontainer input {
 	border: none;
@@ -95,10 +87,6 @@ Search
 	-webkit-transition: width 0.2s ease, background-color 0.2s ease;
 	-moz-transition: width 0.2s ease, background-color 0.2s ease;
 	transition: width 0.2s ease, background-color 0.2s ease;
-	@media (max-width: 700px) {
-		height: 40px;
-		line-height: 40px;
-	}
 }
 .searchcontainer .icon-search {
 	border: none;
@@ -127,35 +115,36 @@ Search
 Shopping Cart
 ----------------------------------------------------------------- */
 .top-wrapper {
-	background: #111;
-	border-bottom: 1px solid #3f3f43;
-	width: 100%;
-	white-space: nowrap;
-	font-size: 11px;
-	line-height: 30px;
-	/*text-transform: uppercase;*/
-	letter-spacing: .5px;
-	z-index: 1500;
-	position: relative;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	-webkit-transition: all 0s ease-in;
-	transition: all 0s ease-in;
-	height: 31px;
-	box-shadow: 0 1px 1px rgba(0,0,0,.5);
-	@media (max-width: 700px) {
-		display: none;
+	display: none;
+	@media (min-width: $break-medium) {
+		display: block;
 		height: 40px;
+		background: #111;
+		border-bottom: 1px solid #3f3f43;
+		width: 100%;
+		white-space: nowrap;
+		font-size: 11px;
+		line-height: 30px;
+		letter-spacing: .5px;
+		z-index: 1500;
+		position: relative;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transition: all 0s ease-in;
+		transition: all 0s ease-in;
+		height: 31px;
+		box-shadow: 0 1px 1px rgba(0,0,0,.5);
 	}
 }
 .right {
     float: right !important;
 }
 .top-cart {
+	display: none;
 	height: 30px;
 	position: relative;
-	@media (max-width: 700px) {
-		display: none;
+	@media (min-width: $break-medium) {
+		display: block;
 	}
 }
 .top-cart .cart-toggler {
@@ -256,7 +245,7 @@ Mobile Shopping Cart Icon
 		right: 110px;
 		width: 70px;
 	}
-	@media only screen and (min-width: 701px) {
+	@media only screen and (min-width: $break-medium) {
 		display: none;
 		visibility: hidden;
 	}
@@ -287,11 +276,12 @@ My Account
 	}
 }
 .help-center {
+	display: none;
 	background: #000;
 	border-right: 1px solid #3f3f43;
 	float: left;
-	@media (max-width: 700px) {
-		display: none;
+	@media (min-width: $break-medium) {
+		display: block;
 	}
 }
 .help-center .header-location {
@@ -308,12 +298,13 @@ My Account
 	color: #333;
 }
 .account-dropdown {
+	display: none;
 	background: #000;
 	border-right: 1px solid #3f3f43;
 	float: left;
 	position: relative;
-	@media (max-width: 700px) {
-		display: none;
+	@media (min-width: $break-medium) {
+		display: block;
 	}
 }
 .account-dropdown .header-account {

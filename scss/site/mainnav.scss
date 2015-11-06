@@ -15,18 +15,6 @@
 	display: table;
 	position: relative;
 }
-/*.stuck .main-nav:before {
-	background: url(../images/nav-logo.jpg) no-repeat left top;
-	content:'';
-	width: 40px;
-	height: 38px;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.stuck .main-nav {
-	padding-left: 40px;
-}*/
 .main-nav > li {
 	position:  relative;
 	@media (min-width: $break-medium) {
@@ -48,6 +36,9 @@
 	@media (min-width: 900px) {
 		font-size: 14px;
 		padding: 10px 19px;
+	}
+	@media (min-width: 1024px) {
+		padding: 10px 25px;
 	}
 	@media (min-width: $break-xlarge) {
 		padding: 10px 27px;

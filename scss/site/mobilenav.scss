@@ -29,21 +29,21 @@ Mixins
 // center vertically and/or horizontally an absolute positioned element
 @mixin center($xy:xy) {
   @if $xy == xy {
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    @include transform(translateX(-50%) translateY(-50%));
+	 left: 50%;
+	 top: 50%;
+	 bottom: auto;
+	 right: auto;
+	 @include transform(translateX(-50%) translateY(-50%));
   }
   @else if $xy == x {
-    left: 50%;
-    right: auto;
-    @include transform(translateX(-50%));
+	 left: 50%;
+	 right: auto;
+	 @include transform(translateX(-50%));
   }
   @else if $xy == y {
-    top: 50%;
-    bottom: auto;
-    @include transform(translateY(-50%));
+	 top: 50%;
+	 bottom: auto;
+	 @include transform(translateY(-50%));
   }
 }
 
@@ -59,13 +59,13 @@ $L:     1170px;
 
 @mixin MQ($canvas) {
   @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; }
+	@media only screen and (min-width: $S) { @content; }
   }
   @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; }
+	@media only screen and (min-width: $M) { @content; }
   }
   @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; }
+	@media only screen and (min-width: $L) { @content; }
   }
 }
 
@@ -91,7 +91,12 @@ Main Content
 	&.lateral-menu-is-open {
 		/* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
 		@include transform(translateX(-260px));
+		@media (min-width: $break-medium) {
+			@include transform(translateX(0));
+		}
 	}
+
+
 }
 
 /* -----------------------------------------------------------------
@@ -211,43 +216,6 @@ Nav
 	/* this creates the subtle slide in animation of the navigation */
 	@include transform(translateX(80px));
 
-	.cd-navigation {
-		margin: 10px 0 16px;
-	}
-
-	.sub-menu {
-		margin: 0;
-		list-style: none;
-		padding: 0 15px;
-		display: none;
-		background-color: #333;
-		box-shadow: inset 2px 0 12px 0px rgba(0,0,0,.9);
-	}
-	a {
-		border-bottom: 1px solid rgba(255,255,255,.1);
-		display: block;
-		line-height: 3.5em;
-		padding: 0 16px 0 32px;
-		color: #fff;
-		font-size: 13px;
-		transition: .2s ease-in-out;
-
-		&.current {
-
-		}
-
-		.no-touch &:hover {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-
-	@include MQ(M) {
-		.cd-navigation {
-			margin: 20px 0;
-		}
-	}
-
 	&.lateral-menu-is-open {
 		@include transform(translateX(0));
 		visibility: visible;
@@ -258,14 +226,45 @@ Nav
 		/* smooth the scrolling on touch devices - webkit browsers */
 		-webkit-overflow-scrolling: touch;
 	}
+	@media (min-width: $break-small) {
+		padding-top: $header-M;
+	}
+
+}
+#cd-lateral-nav .cd-navigation {
+	margin: 0;
+	list-style: none;
 }
 
-#cd-lateral-nav .sub-menu a {
+#cd-lateral-nav .cd-navigation a {
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	display: block;
+	line-height: 3.5em;
+	padding: 0 20px;
+	color: #fff;
+	font-size: 13px;
+	transition: .2s ease-in-out;
+	.no-touch &:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+/* 2nd level menus */
+#cd-lateral-nav .cd-navigation .sub-menu {
+	margin: 0;
+	list-style: none;
+	padding: 0 15px;
+	display: none;
+	background-color: #333;
+	box-shadow: inset 2px 0 12px 0px rgba(0,0,0,.9);
+}
+
+#cd-lateral-nav .cd-navigation .sub-menu a {
 	padding: 0 16px;
 	text-transform: none;
 }
 
-#cd-lateral-nav .sub-menu .sub-menu {
+#cd-lateral-nav .cd-navigation .sub-menu .sub-menu {
 	background-color: #3a3a3a;
 	box-shadow: none;
 }
@@ -299,9 +298,12 @@ Nav
 /* -----------------------------------------------------------------
 Search
 ----------------------------------------------------------------- */
+.mobilenav-form {
+	margin: 2em 0;
+	padding: 0 20px;
+}
 .form {
 	margin: 0;
-	padding: 0 16px 0 32px;
 	& input {
 		border: none;
 		font-size: 13px;
@@ -316,5 +318,88 @@ Search
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		border-radius: 0;
+	}
+}
+.mobilenav-form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.mobilenav-form .search {
+	position: relative;
+}
+.mobilenav-form .search:before {
+	content: "\e600";
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	position: absolute;
+	left: 9px;
+	top: 8px;
+	color: #666;
+	font-size: 19px;
+	z-index: 1;
+}
+.mobilenav-form .quicksearch-input {
+	background: #fff;
+	box-shadow: none;
+	border: none;
+	color: #333;
+	display: inline-block;
+	font-size: 13px;
+	height: auto;
+	line-height: normal;
+	padding: 10px 10px 10px 40px;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	margin-bottom: 0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-transition: width 0.2s ease, background-color 0.2s ease;
+	-moz-transition: width 0.2s ease, background-color 0.2s ease;
+	transition: width 0.2s ease, background-color 0.2s ease;
+}
+.mobilenav-form .icon-search {
+	 border: 0;
+	 clip: rect(0 0 0 0);
+	 height: 1px;
+	 margin: -1px;
+	 overflow: hidden;
+	 padding: 0;
+	 position: absolute;
+	 width: 1px;
+}
+
+/* -----------------------------------------------------------------
+Address
+----------------------------------------------------------------- */
+#cd-lateral-nav .address {
+	color: #fff;
+	font-size: 13px;
+	margin: 20px;
+	h3 {
+		color: #fff;
+		font-weight: normal;
+	}
+	hr {
+		border-top-color: #666;
+		border-bottom-color: #222;
+	}
+	a {
+		color: #fff;
+		display: block;
+		padding: 5px 0;
+		text-decoration: underline;
 	}
 }

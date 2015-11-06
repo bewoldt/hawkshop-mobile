@@ -1,6 +1,3 @@
-<!-- <h4 id="handle"></h4> -->
-<!-- <nav role="navigation" class="mainnav-wrapper" aria-label="Main menu" data-navigation-handle="#handle" data-navigation-content="#content"> -->
-
 <nav role="navigation" class="mainnav-wrapper clearfix" aria-label="Main menu">
 	<ul class="main-nav clearfix">
 		<li class="first"><a href="#">Textbooks</a>

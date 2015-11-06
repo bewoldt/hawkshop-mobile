@@ -39,5 +39,5 @@
 			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</div>
 	</div>
-	<?php include 'includes/main-nav.php'; ?>
+	<?php include 'includes/megamenu.php'; ?>
 </header>

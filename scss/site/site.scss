@@ -17,7 +17,7 @@ body {
 	margin: 0;
 	padding: 0;
 	@media (min-width: $break-xlarge) {
-		background: #F5F5F1;
+		background: #f5f5f5;
 	}
 }
 
@@ -41,8 +41,15 @@ Layout
 	min-height: 100%;
 	position: relative;
 	z-index: 2;
+	padding-top: $header-S;
+	@media (min-width: $break-small) {
+		padding-top: $header-M;
+	}
+	@media only screen and (min-width: $break-medium) {
+		padding-top: 0;
+	}
 	@media (min-width: $break-xlarge) {
-		background-color: #F5F5F1;
+		background-color: #f5f5f5;
 	}
 }
 .column-left {
@@ -52,10 +59,16 @@ Layout
 .column-main {
 	background-color: #fff;
 	position: relative;
+	min-height: 600px;
 	@media (min-width: $break-xlarge) {
 		margin: 1em 0;
 		border: 1px solid #e5e5e5;
 		border-radius: 2px;
+	}
+}
+.xlarge {
+	@media (min-width: $break-xlarge) {
+		padding: 1em;
 	}
 }
 .page {
