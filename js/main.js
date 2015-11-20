@@ -28,6 +28,7 @@ jQuery(document).ready(function($){
 		openClass: "open"
 	});
 
+
 	// POPUP WINDOW FOR SOCIAL MEDIA
 	function windowPopup(url, width, height) {
 	  // Calculate the position of the popup so it's centered on the screen.
@@ -73,7 +74,7 @@ jQuery(document).ready(function($){
 				center:true,
 				dots: false,
 				nav: true,
-				stagePadding: 100,
+				stagePadding: 50,
 				autoplay:true,
 				navSpeed: 1200,
 				autoplaySpeed: 1200,
@@ -128,40 +129,49 @@ jQuery(document).ready(function($){
 				nav:true,
 				stagePadding: 120,
 				slideBy: 4
+			},
+			1140:{
+				items:5,
+				loop:false,
+				center:false,
+				dots: false,
+				nav:true,
+				stagePadding: 120,
+				slideBy: 5
 			}
 		}
 	});
 
-	$(".catalog-featured").owlCarousel({
-		loop:false,
-		margin:10,
-		responsive:{
-			0:{
-				items:2,
-				loop:true,
-				center:true,
-				dots: false
-			},
-			480:{
-				items:3,
-				loop:true,
-				center:true,
-				dots: false,
-				stagePadding: 70
-			},
-			768:{
-				items:4,
-				//stagePadding: 70,
-				loop:true,
-				center:true,
-				dots: false
-			},
-			980:{
-				items:5,
-				dots: false
-			}
-		}
-	});
+	// $(".catalog-featured").owlCarousel({
+	// 	loop:false,
+	// 	margin:10,
+	// 	responsive:{
+	// 		0:{
+	// 			items:2,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		480:{
+	// 			items:3,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false,
+	// 			stagePadding: 70
+	// 		},
+	// 		768:{
+	// 			items:4,
+	// 			//stagePadding: 70,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		980:{
+	// 			items:5,
+	// 			dots: false
+	// 		}
+	// 	}
+	// });
 
 	$('.suggested-gallery').owlCarousel({
 		loop:false,
@@ -188,12 +198,39 @@ jQuery(document).ready(function($){
 	});
 
 	// Featured items on Browse pages
-	$('.product-list .browse-featured').owlCarousel({
-		items:1
-	});
+	// $('.product-list .browse-featured').owlCarousel({
+	// 	loop:false,
+	// 	margin:10,
+	// 	responsive:{
+	// 		0:{
+	// 			items:2,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		480:{
+	// 			items:3,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false,
+	// 			stagePadding: 70
+	// 		},
+	// 		768:{
+	// 			items:4,
+	// 			//stagePadding: 70,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		980:{
+	// 			items:5,
+	// 			dots: false
+	// 		}
+	// 	}
+	// });
 
 	// Featured items on Catalog pages
-	$('.catalog-list .browse-featured').owlCarousel({
+	$('.featured-item-list .catalog-featured').owlCarousel({
 		loop:false,
 		margin:10,
 		responsive:{
@@ -265,10 +302,10 @@ jQuery(document).ready(function($){
 	});
 	$("html,body").trigger("scroll");
 
-	// Sticky header
-	// var sticky = new Waypoint.Sticky({
-	// 	element: $('#header')[0]
-	// })
+	//Sticky header
+	var sticky = new Waypoint.Sticky({
+		element: $('#dawgdrops')[0]
+	})
 
 
 });

@@ -1,3 +1,19 @@
+.home-page, .home-page #main-content {
+	background-color: #fff;
+}
+.home-promos .gallery-cell {
+	width: 100%;
+	& img {
+		width: 100%;
+		display: block;
+	}
+	@media (min-width: $break-small) {
+		width: 80%;
+	}
+}
+
+
+
 .home-hero1 .owl-nav .owl-next,
 .home-hero1 .owl-nav .owl-prev {
 	border-radius: 0;

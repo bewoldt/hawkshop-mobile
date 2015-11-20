@@ -55,22 +55,18 @@ Photos
 Title
 ----------------------------------------------------------------- */
 #itemTitle {
-	font-size: 22px;
+	font-size: 24px;
 	line-height: 1.3;
 	text-align: center;
 	@media (min-width: 640px) {
-		font-size: 30px;
 		line-height: 1.4;
 		margin: 0 0 .25em 0;
 	}
 	@media (min-width: $break-medium) {
 		text-align: left;
 	}
-	@media (min-width: $break-xlarge) {
-		font-size: 34px;
-		line-height: 1.4;
-		margin: 0 0 .25em 0;
-		text-align: left;
+	@media (min-width: $break-large) {
+		font-size: 30px;
 	}
 }
 
@@ -83,9 +79,9 @@ Price
 #itemOptions {
 	@media (min-width: $break-medium) {
 		// background-color: #fafafa;
-		padding: 1em;
-		border-radius: 10px;
-		border: 6px solid #e5e5e1;
+		// padding: 1em;
+		// border-radius: 10px;
+		// border: 6px solid #e5e5e1;
 	}
 }
 #itemPrice, #menuPrice {

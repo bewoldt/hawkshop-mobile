@@ -256,7 +256,6 @@ Nav
 	padding: 0 15px;
 	display: none;
 	background-color: #333;
-	box-shadow: inset 2px 0 12px 0px rgba(0,0,0,.9);
 }
 
 #cd-lateral-nav .cd-navigation .sub-menu a {
@@ -401,5 +400,27 @@ Address
 		display: block;
 		padding: 5px 0;
 		text-decoration: underline;
+	}
+}
+
+/* -----------------------------------------------------------------
+ Exit
+----------------------------------------------------------------- */
+.offscreen-exit {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5)!important;
+	cursor: pointer;
+	transition: background 0.5s ease;
+	z-index: 1;
+}
+.lateral-menu-is-open .offscreen-exit {
+	display: block;
+	@media (min-width: $break-medium) {
+		display: none;
 	}
 }

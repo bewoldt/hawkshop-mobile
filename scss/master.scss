@@ -21,19 +21,16 @@
 /* Plugins
 -------------------------------------------*/
 @import "plugins/owl.carousel";
+@import "plugins/flickity";
 
 /* Layout
 -------------------------------------------*/
 @import "site/breadcrumbs";
-/*@import "site/mainnav";*/
 @import "site/mobilenav";
-@import "site/mainnav";
 @import "site/megamenu";
 @import "site/subcatalogs-two";
-// @import "site/topbar";
 @import "site/footer";
 @import "site/header";
-// @import "site/checkout";
 @import "site/browse";
 @import "site/product";
 @import "site/textbooks";

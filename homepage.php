@@ -11,10 +11,10 @@
 	<script src="js/modernizr.js"></script>
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js"></script>
 </head>
-<body class="">
+<body class="home-page">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
-	<main id="main-content" tabindex="-1">
+	<main id="main-content" tabindex="-1" class="cd-main-content">
 		<div class="owl-carousel home-hero1">
 			<div>
 				<img src="images/back5.jpg" alt="">
@@ -29,12 +29,12 @@
 				<img src="images/back1.jpg" alt="">
 			</div>
 		</div>
-		<br />
+		<br /><br />
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- <img src="images/banner1.png"> -->
-					<img src="images/callout-3.jpg">
+					<a href="http://google.com" target="_blank"><img src="images/callout-3.jpg"></a>
 				</div>
 				<div class="col-sm-4">
 					<!-- <img src="images/banner2.png"> -->
@@ -67,12 +67,13 @@
 			<br />
 		</div><!-- end .container -->
 		<?php include 'includes/footer.php'; ?>
+		<div class="offscreen-exit"></div>
 	</main>
+
+	<?php include 'includes/mobilenav.php'; ?>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
-	<script>
-      $(document).foundation();
-    </script>
+
 </body>
 </html>

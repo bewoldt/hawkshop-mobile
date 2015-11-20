@@ -27,90 +27,76 @@
 			</picture>
 		</div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<section>
-						<div class="catalogcontent">
-							<h1 class="catalog-title">Women</h1>
-						</div>
-						<ul class="justify catalog-icons">
-							<li class="justify-item">
-								<h2 class="icon-title"><a href="#">Tops</a></h2>
-								<a href="#" class="icon-link">
-									<img data-original="images/CW0609-t.jpg" alt="" class="lazy" alt="">
-								</a>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/BW0502-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">Sweatshirts</a></h2>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/PR0331-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">Pants</a></h2>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/DW0341-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">Shorts</a></h2>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/N0335-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">Outerwear</a></h2>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/A0744-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">Hats</a></h2>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/TB0001-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">Accessories</a></h2>
-							</li>
-							<li class="justify-item">
-								<a href="#" class="icon-link">
-									<img data-original="images/CW0877-t.jpg" alt="" class="lazy" alt="">
-								</a>
-								<h2 class="icon-title"><a href="#">New Arrivals</a></h2>
-							</li>
-							<li class="justify-item filler"></li>
-							<li class="justify-item filler"></li>
-						</ul>
-					</section>
-					<!-- Featured Items -->
-					<div class="catalog-list">
-						<ul>
-							<?php include 'includes/browse-featured.php'; ?>
-						</ul>
+			<div class="column-main">
+				<div class="row">
+					<div class="col-md-12">
+						<section class="catalog-page">
+							<div class="catalogcontent">
+								<h1 class="catalog-title">Women</h1>
+							</div>
+							<div class="icon-wrapper">
+								<ul class="justify catalog-icons">
+									<li class="justify-item">
+										<h2 class="icon-title"><a href="#">Tops</a></h2>
+										<a href="#" class="icon-link">
+											<img data-original="images/CW0609-t.jpg" alt="" class="lazy" alt="">
+										</a>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/BW0502-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">Sweatshirts</a></h2>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/PR0331-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">Pants</a></h2>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/DW0341-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">Shorts</a></h2>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/N0335-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">Outerwear</a></h2>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/A0744-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">Hats</a></h2>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/TB0001-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">Accessories</a></h2>
+									</li>
+									<li class="justify-item">
+										<a href="#" class="icon-link">
+											<img data-original="images/CW0877-t.jpg" alt="" class="lazy" alt="">
+										</a>
+										<h2 class="icon-title"><a href="#">New Arrivals</a></h2>
+									</li>
+									<li class="justify-item filler"></li>
+									<li class="justify-item filler"></li>
+								</ul>
+							</div>
+						</section>
+						<!-- Featured Items -->
+						<?php include 'includes/catalog-featured.php'; ?>
 					</div>
 				</div>
 			</div>
-			<!-- <br />
-			<div class="row">
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3a.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3b.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3c.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3a.jpg">
-				</div>
-			</div> -->
 		</div>
 		<?php include 'includes/footer.php'; ?>
+		<div class="offscreen-exit"></div>
 	</main>
 
 	<?php include 'includes/mobilenav.php'; ?>

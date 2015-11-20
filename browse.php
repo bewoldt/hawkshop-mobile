@@ -16,31 +16,29 @@
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
 		<div>
-			<picture>
-				<!--[if IE 9]><video style="display: none;"><![endif]-->
-				<source srcset="images/amazon-banner.jpg" media="(min-width: 981px)">
-				<source srcset="images/amazon-banner-md.jpg" media="(min-width: 480px)">
-				<!--[if IE 9]></video><![endif]-->
-				<img srcset="images/amazon-banner-sm.jpg" alt="…">
-			</picture>
+			<a href="#">
+				<picture>
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/catalog-top.jpg" media="(min-width: 981px)">
+					<source srcset="images/amazon-banner-md.jpg" media="(min-width: 480px)">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="images/amazon-banner-sm.jpg" alt="…">
+				</picture>
+			</a>
 		</div>
 
 		<div class="container">
 			<div class="column-main">
-
 				<div class="row">
 					<div class="col-md-12">
 						<?php include 'includes/subcats-two.php'; ?>
 						<?php /* include 'includes/breadcrumbs.php';*/ ?>
-						<section class="">
+						<section class="browse-page">
 							<div class="catalogcontent">
 								<h1 class="catalog-title">Shirts &amp; Tanks <span>(24 items)</span></h1>
 							</div>
 							<div class="product-list-wrapper">
 								<ul class="justify product-list">
-									<!-- Featured items include -->
-									<?php include 'includes/browse-featured.php'; ?>
-
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
 											<img data-original="images/items/DW1000-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
@@ -200,20 +198,20 @@
 								</ul>
 							</div>
 							<?php include 'includes/pagination.php'; ?>
+							<!-- Featured items include -->
+							<?php include 'includes/catalog-featured.php'; ?>
 						</section>
 					</div><!-- end .col -->
 				</div><!-- end .row -->
 			</div>
 		</div><!-- end .container -->
 		<?php include 'includes/footer.php'; ?>
+		<div class="offscreen-exit"></div>
 	</main>
 
 	<?php include 'includes/mobilenav.php'; ?>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
-	<script>
-      $(document).foundation();
-    </script>
 </body>
 </html>

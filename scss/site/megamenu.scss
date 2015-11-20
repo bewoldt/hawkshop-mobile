@@ -1,9 +1,17 @@
 /* mega menu list */
 #dawgdrops {
+	background-color: #000;
 	display: none;
 	@media (min-width: $break-medium) {
 		display: block;
 	}
+}
+#dawgdrops.stuck {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 2px 3px rgba(0,0,0,.15);
 }
 .nav-menu {
 	list-style: none;
@@ -20,7 +28,7 @@
 	display: table-cell;
 	padding: 0;
 	margin: 0;
-	position: relative;
+	// position: relative;
 }
 
 /* first descendant link within a top level navigation item */
@@ -30,14 +38,11 @@
 	border-top-right-radius: 1px;
 	display: block;
 	font-size: 13px;
-	padding: 10px 12px;
+	padding: 10px 15px;
 	text-decoration: none;
 	transition: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	@media (min-width: 850px) {
-		padding: 10px 15px;
-	}
 	@media (min-width: 900px) {
 		font-size: 14px;
 		padding: 10px 19px;
@@ -56,6 +61,7 @@
 .nav-item > a.open {
 	background-color: #fff;
 	color: #333;
+	position: relative;
 	&:after {
 		content: '';
 		background-color: $yellow;
@@ -89,10 +95,26 @@
 	padding: 10px 0;
 	border-radius: 1px;
 }
+/* transparent background padding */
+.sub-nav:after {
+	content: '';
+	background-color: transparent;
+	position: absolute;
+	width: 102%;
+	height: 104%;
+	top: 0;
+	left: -1%;
+	z-index: -1;
+}
 
 /* sub-navigation panel open state */
 .sub-nav.open {
 	display: block;
+}
+/* last nav item right align */
+.nav-item:last-of-type .sub-nav.open,
+.nav-item:nth-last-child(2) .sub-nav.open {
+	right: 0;
 }
 
 /* sub-navigation with groups */
@@ -106,7 +128,7 @@
 	}
 }
 .sub-nav.group-2 {
-	width: 360px;
+	width: 40%;
 	& .sub-nav-group {
 		width: 50%;
 	}
@@ -118,9 +140,19 @@
 	}
 }
 .sub-nav.group-4 {
-	width: 720px;
+	width: 100%;
+	left: 0;
+	// width: 720px;
 	& .sub-nav-group {
 		width: 25%;
+	}
+}
+.sub-nav.group-5 {
+	width: 100%;
+	left: 0;
+	// width: 720px;
+	& .sub-nav-group {
+		width: 20%;
 	}
 }
 
@@ -154,14 +186,22 @@
 	}
 }
 
+/* Dividers */
+.sub-nav li.divider {
+	border-top: 1px solid #ddd;
+	margin: 6px 0;
+}
 /* Headings */
 .sub-nav .sub-nav-heading {
 	margin: 0;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: bold;
 	font-family: $body-font;
 	text-transform: uppercase;
+	padding: 8px 10px;
 	& a {
+		font-size: 12px;
+		padding: 0;
 		text-transform: uppercase;
 		&:hover, &:focus {
 			color: #333;
@@ -175,12 +215,15 @@
 }
 .sub-nav .featured .sub-nav-img {
 	position: absolute;
-	left: 0;
+	left: 50%;
 	bottom: -10px;
+	margin-left: -40%;
+	width: 80%;
 }
 .sub-nav .featured h4 {
-	font-size: 21px;
-	margin:0 0 5px 0;
+	font-size: 18px;
+	line-height: 1.3;
+	margin: 0 0 5px 0;
 }
 .sub-nav .featured p {
 	font-size: 13px;

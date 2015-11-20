@@ -125,7 +125,7 @@ limitations under the License.
                 190: "."
             }
         };
-        
+
     /**
      * @desc Creates a new accessible mega menu instance.
      * @param {jquery} element
@@ -142,16 +142,16 @@ limitations under the License.
      */
     function AccessibleMegaMenu(element, options) {
         this.element = element;
-        
+
         // merge optional settings and defaults into settings
         this.settings = $.extend({}, defaults, options);
-        
+
         this._defaults = defaults;
         this._name = pluginName;
-        
+
         this.init();
     }
-    
+
     AccessibleMegaMenu.prototype = (function () {
 
         /* private attributes and methods ------------------------ */
@@ -172,7 +172,7 @@ limitations under the License.
             _mouseOverHandler,
             _mouseOutHandler,
             _toggleExpandedEventHandlers;
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_getPlugin
          * @desc Returns the parent accessibleMegaMenu instance for a given element
@@ -184,11 +184,11 @@ limitations under the License.
         _getPlugin = function (element) {
             return $(element).closest(':data(plugin_' + pluginName + ')').data("plugin_" + pluginName);
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_addUniqueId
          * @desc Adds a unique id and element.
-         * The id string starts with the 
+         * The id string starts with the
          * string defined in settings.uuidPrefix.
          * @param {jQuery} element
          * @memberof jQuery.fn.accessibleMegaMenu
@@ -202,7 +202,7 @@ limitations under the License.
                 element.attr("id", settings.uuidPrefix + "-" + new Date().getTime() + "-" + (++uuid));
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_togglePanel
          * @desc Toggle the display of mega menu panels in response to an event.
@@ -221,11 +221,11 @@ limitations under the License.
                 topli = target.closest('.' + settings.topNavItemClass),
                 panel = target.hasClass(settings.panelClass) ? target : target.closest('.' + settings.panelClass),
                 newfocus;
-            
+
             _toggleExpandedEventHandlers.call(this, hide);
             $('html').off('mouseup.outside-accessible-megamenu, touchend.outside-accessible-megamenu, mspointerup.outside-accessible-megamenu, pointerup.outside-accessible-megamenu', _clickOutsideHandler);
             menu.find('[aria-expanded].' + this.settings.panelClass).off('DOMAttrModified.accessible-megamenu');
-            
+
             if (hide) {
                 topli = menu.find('.' + settings.topNavItemClass + ' .' + settings.openClass + ':first').closest('.' + settings.topNavItemClass);
                 if (!(topli.is(event.relatedTarget) || topli.has(event.relatedTarget).length > 0)) {
@@ -269,11 +269,11 @@ limitations under the License.
                     target.focus();
                     that.justFocused = false;
                 }
-                
+
                 _toggleExpandedEventHandlers.call(that);
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_clickHandler
          * @desc Handle click event on mega menu item
@@ -306,7 +306,7 @@ limitations under the License.
                 }
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_clickOutsideHandler
          * @desc Handle click event outside of a the megamenu
@@ -322,7 +322,7 @@ limitations under the License.
                 _togglePanel.call(this, event, true);
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_DOMAttrModifiedHandler
          * @desc Handle DOMAttrModified event on panel to respond to Windows 8 Narrator ExpandCollapse pattern
@@ -340,7 +340,7 @@ limitations under the License.
                 _togglePanel.call(this, event, true);
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_focusInHandler
          * @desc Handle focusin event on mega menu item.
@@ -359,7 +359,7 @@ limitations under the License.
                 _togglePanel.call(this, event);
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_focusOutHandler
          * @desc Handle focusout event on mega menu item.
@@ -377,14 +377,14 @@ limitations under the License.
             target
                 .removeClass(this.settings.focusClass)
                 .off('click.accessible-megamenu', _clickHandler);
-            
+
             if (window.cvox) {
                 // If ChromeVox is running...
                 that.focusTimeoutID = setTimeout(function () {
                     window.cvox.Api.getCurrentNode(function (node) {
                         if (topli.has(node).length) {
                             // and the current node being voiced is in
-                            // the mega menu, clearTimeout, 
+                            // the mega menu, clearTimeout,
                             // so the panel stays open.
                             clearTimeout(that.focusTimeoutID);
                         } else {
@@ -400,7 +400,7 @@ limitations under the License.
                 }, 300);
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_keyDownHandler
          * @desc Handle keydown event on mega menu.
@@ -445,7 +445,7 @@ limitations under the License.
                 } else {
                     found = (tabbables.filter(':gt(' + tabbables.index(target) + '):first').focus().length === 1);
                 }
-                
+
                 if (!found && window.opera && opera.toString() === "[object Opera]" && (event.ctrlKey || event.metaKey)) {
                     tabbables = $(':tabbable');
                     i = tabbables.index(target);
@@ -469,7 +469,7 @@ limitations under the License.
                 } else if (!isTopNavItem) {
                     found = (tabbables.filter(':lt(' + tabbables.index(target) + '):last').focus().length === 1);
                 }
-                    
+
                 if (!found && window.opera && opera.toString() === "[object Opera]" && (event.ctrlKey || event.metaKey)) {
                     tabbables = $(':tabbable');
                     i = tabbables.index(target);
@@ -485,7 +485,7 @@ limitations under the License.
                         // if the current panel contains panel groups, and we are able to focus the first tabbable element of the next panel group
                         found = (panelGroups.filter(':gt(' + panelGroups.index(currentPanelGroup) + '):first').find(':tabbable:first').focus().length === 1);
                     }
-                    
+
                     if (!found) {
                         found = (topli.find(':tabbable:first').focus().length === 1);
                     }
@@ -500,7 +500,7 @@ limitations under the License.
                         // if the current panel contains panel groups, and we are able to focus the first tabbable element of the previous panel group
                         found = (panelGroups.filter(':lt(' + panelGroups.index(currentPanelGroup) + '):last').find(':tabbable:first').focus().length === 1);
                     }
-                    
+
                     if (!found) {
                         found = (topli.find(':tabbable:first').focus().length === 1);
                     }
@@ -533,7 +533,7 @@ limitations under the License.
                         found = ($(':tabbable:gt(' + $(':tabbable').index(target) + '):first').focus().length === 1);
                     }
                 }
-                
+
                 if (found) {
                     event.preventDefault();
                 }
@@ -545,14 +545,14 @@ limitations under the License.
                 }
                 break;
             default:
-                // alphanumeric filter    
+                // alphanumeric filter
                 clearTimeout(this.keydownTimeoutID);
                 keydownSearchString += newString !== keydownSearchString ? newString : '';
-                
+
                 if (keydownSearchString.length === 0) {
                     return;
                 }
-                
+
                 this.keydownTimeoutID = setTimeout(function () {
                     keydownSearchString = '';
                 }, keydownTimeoutDuration);
@@ -575,9 +575,9 @@ limitations under the License.
                         break;
                     }
                 }
-                
+
                 regex = new RegExp('^' + keydownSearchString.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, '\\$&'), 'i');
-                    
+
                 for (i = start; i < tabbables.length; i++) {
                     o = tabbables.eq(i);
                     label = $.trim(o.text());
@@ -601,7 +601,7 @@ limitations under the License.
             }
             that.justFocused = false;
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_mouseDownHandler
          * @desc Handle mousedown event on mega menu.
@@ -615,7 +615,7 @@ limitations under the License.
                 clearTimeout(this.focusTimeoutID);
             }, 1);
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_mouseOverHandler
          * @desc Handle mouseover event on mega menu.
@@ -633,7 +633,7 @@ limitations under the License.
                 $('html').on('keydown.accessible-megamenu', _keyDownHandler.bind(event.target));
             }
         };
-        
+
         /**
          * @name jQuery.fn.accessibleMegaMenu~_mouseOutHandler
          * @desc Handle mouseout event on mega menu.
@@ -646,7 +646,7 @@ limitations under the License.
             var that = this;
             $(event.target)
                 .removeClass(that.settings.hoverClass);
-            
+
             that.mouseTimeoutID = setTimeout(function () {
                 _togglePanel.call(that, event, true);
             }, 250);
@@ -654,26 +654,26 @@ limitations under the License.
                 $('html').off('keydown.accessible-megamenu');
             }
         };
-        
+
         _toggleExpandedEventHandlers = function (hide) {
             var menu = this.menu;
             if (hide) {
                 $('html').off('mouseup.outside-accessible-megamenu, touchend.outside-accessible-megamenu, mspointerup.outside-accessible-megamenu,  pointerup.outside-accessible-megamenu', _clickOutsideHandler);
-                
+
                 menu.find('[aria-expanded].' + this.settings.panelClass).off('DOMAttrModified.accessible-megamenu', _DOMAttrModifiedHandler);
             } else {
                 $('html').on('mouseup.outside-accessible-megamenu, touchend.outside-accessible-megamenu, mspointerup.outside-accessible-megamenu,  pointerup.outside-accessible-megamenu', _clickOutsideHandler.bind(this));
-                
-                /* Narrator in Windows 8 automatically toggles the aria-expanded property on double tap or click. 
+
+                /* Narrator in Windows 8 automatically toggles the aria-expanded property on double tap or click.
                    To respond to the change to collapse the panel, we must add a listener for a DOMAttrModified event. */
                 menu.find('[aria-expanded=true].' + this.settings.panelClass).on('DOMAttrModified.accessible-megamenu', _DOMAttrModifiedHandler.bind(this));
             }
         };
-        
+
         /* public attributes and methods ------------------------- */
         return {
             constructor: AccessibleMegaMenu,
-            
+
             /**
              * @lends jQuery.fn.accessibleMegaMenu
              * @desc Initializes an instance of the accessibleMegaMenu plugins
@@ -715,7 +715,7 @@ limitations under the License.
                             .attr("aria-labelledby", topnavitemlink.attr("id"));
                     }
                 });
-                
+
                 this.panels = menu.find("." + settings.panelClass);
 
                 menu.on("focusin.accessible-megamenu", ":tabbable, :focusable, ." + settings.panelClass, _focusInHandler.bind(this))
@@ -724,14 +724,14 @@ limitations under the License.
                     .on("mouseover.accessible-megamenu", _mouseOverHandler.bind(this))
                     .on("mouseout.accessible-megamenu", _mouseOutHandler.bind(this))
                     .on("mousedown.accessible-megamenu", _mouseDownHandler.bind(this));
-                
+
 				if (isTouch) {
 					menu.on("touchstart.accessible-megamenu", _clickHandler.bind(this));
 				}
-                
+
 				menu.find("hr").attr("role", "separator");
             },
-            
+
             /**
              * @desc Get default values
              * @example $(selector).accessibleMegaMenu("getDefaults");
@@ -742,7 +742,7 @@ limitations under the License.
             getDefaults: function () {
                 return this._defaults;
             },
-            
+
             /**
              * @desc Get any option set to plugin using its name (as string)
              * @example $(selector).accessibleMegaMenu("getOption", some_option);
@@ -754,7 +754,7 @@ limitations under the License.
             getOption: function (opt) {
                 return this.settings[opt];
             },
-            
+
             /**
              * @desc Get all options
              * @example $(selector).accessibleMegaMenu("getAllOptions");
@@ -765,7 +765,7 @@ limitations under the License.
             getAllOptions: function () {
                 return this.settings;
             },
-            
+
             /**
              * @desc Set option
              * @example $(selector).accessibleMegaMenu("setOption", "option_name",  "option_value",  reinitialize);
@@ -783,14 +783,14 @@ limitations under the License.
             }
         };
     }());
-        
-    /* lightweight plugin wrapper around the constructor, 
+
+    /* lightweight plugin wrapper around the constructor,
        to prevent against multiple instantiations */
-       
+
     /**
      * @class accessibleMegaMenu
      * @memberOf jQuery.fn
-     * @classdesc Implements an accessible mega menu as a jQuery plugin. 
+     * @classdesc Implements an accessible mega menu as a jQuery plugin.
      * <p>The mega-menu It is modeled after the mega menu on {@link http://adobe.com|adobe.com} but has been simplified for use by others. A brief description of the interaction design choices can be found in a blog post at {@link http://blogs.adobe.com/accessibility/2013/05/adobe-com.html|Mega menu accessibility on adobe.com}.</p>
      * <h3>Keyboard Accessibility</h3>
      * <p>The accessible mega menu supports keyboard interaction modeled after the behavior described in the {@link http://www.w3.org/TR/wai-aria-practices/#menu|WAI-ARIA Menu or Menu bar (widget) design pattern}, however we also try to respect users' general expectations for the behavior of links in a global navigation. To this end, the accessible mega menu implementation permits tab focus on each of the six top-level menu items. When one of the menu items has focus, pressing the Enter key, Spacebar or Down arrow will open the submenu panel, and pressing the Left or Right arrow key will shift focus to the adjacent menu item. Links within the submenu panels are included in the tab order when the panel is open. They can also be navigated with the arrow keys or by typing the first character in the link name, which speeds up keyboard navigation considerably. Pressing the Escape key closes the submenu and restores focus to the parent menu item.</p>
@@ -842,7 +842,7 @@ limitations under the License.
     &lt;/ul&gt;
 &lt;/nav&gt;
      * @example <h4>CSS</h4><hr/>
-&#47;* Rudimentary mega menu CSS for demonstration *&#47;    
+&#47;* Rudimentary mega menu CSS for demonstration *&#47;
 
 &#47;* mega menu list *&#47;
 .nav-menu {
@@ -871,14 +871,14 @@ limitations under the License.
     border: 1px solid transparent;
 }
 
-&#47;* focus/open states of first descendant link within a top level 
+&#47;* focus/open states of first descendant link within a top level
    navigation item *&#47;
 .nav-item &gt; a:focus,
 .nav-item &gt; a.open {
     border: 1px solid #dedede;
 }
 
-&#47;* open state of first descendant link within a top level 
+&#47;* open state of first descendant link within a top level
    navigation item *&#47;
 .nav-item &gt; a.open {
     background-color: #fff;
@@ -916,7 +916,7 @@ limitations under the License.
     list-style-type: none;
     margin: 0;
     padding: 0;
-}     
+}
      * @example <h4>JavaScript</h4><hr/>
 &lt;!-- include jquery --&gt;
 &lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
@@ -929,25 +929,25 @@ limitations under the License.
     $(&quot;nav:first&quot;).accessibleMegaMenu({
         &#47;* prefix for generated unique id attributes, which are required to indicate aria-owns, aria-controls and aria-labelledby *&#47;
         uuidPrefix: &quot;accessible-megamenu&quot;,
-        
+
         &#47;* css class used to define the megamenu styling *&#47;
         menuClass: &quot;nav-menu&quot;,
-        
+
         &#47;* css class for a top-level navigation item in the megamenu *&#47;
         topNavItemClass: &quot;nav-item&quot;,
-        
+
         &#47;* css class for a megamenu panel *&#47;
         panelClass: &quot;sub-nav&quot;,
-        
+
         &#47;* css class for a group of items within a megamenu panel *&#47;
         panelGroupClass: &quot;sub-nav-group&quot;,
-        
+
         &#47;* css class for the hover state *&#47;
         hoverClass: &quot;hover&quot;,
-        
+
         &#47;* css class for the focus state *&#47;
         focusClass: &quot;focus&quot;,
-        
+
         &#47;* css class for the open state *&#47;
         openClass: &quot;open&quot;
     });
@@ -969,10 +969,10 @@ limitations under the License.
             }
         });
     };
-        
-    /* :focusable and :tabbable selectors from 
+
+    /* :focusable and :tabbable selectors from
        https://raw.github.com/jquery/jquery-ui/master/ui/jquery.ui.core.js */
-        
+
     /**
      * @private
      */
@@ -981,7 +981,7 @@ limitations under the License.
             return $.css(this, "visibility") === "hidden";
         }).length;
     }
-        
+
     /**
      * @private
      */
@@ -1004,7 +1004,7 @@ limitations under the License.
                             // the element and all of its ancestors must be visible
                             visible(element);
     }
-        
+
     $.extend($.expr[":"], {
         data: $.expr.createPseudo ? $.expr.createPseudo(function (dataName) {
             return function (elem) {
@@ -1014,11 +1014,11 @@ limitations under the License.
                 function (elem, i, match) {
                     return !!$.data(elem, match[3]);
                 },
-    
+
         focusable: function (element) {
             return focusable(element, !isNaN($.attr(element, "tabindex")));
         },
-    
+
         tabbable: function (element) {
             var tabIndex = $.attr(element, "tabindex"),
                 isTabIndexNaN = isNaN(tabIndex);

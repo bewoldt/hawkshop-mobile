@@ -118,6 +118,7 @@
 			</div>
 		</div>
 		<?php include 'includes/footer.php'; ?>
+		<div class="offscreen-exit"></div>
 	</main>
 
 	<?php include 'includes/mobilenav.php'; ?>
