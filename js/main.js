@@ -55,92 +55,144 @@ jQuery(document).ready(function($){
 	// });
 
 
+	// Flickity
+	$('.home-gallery').flickity({
+		initialIndex: 1,
+		wrapAround: true,
+		imagesLoaded: true,
+		selectedAttraction: 0.01,
+		friction: 0.15,
+		autoPlay: true,
+		autoPlay: 6000
+	});
+
+	$('.home-featured').flickity({
+		imagesLoaded: true,
+		cellAlign: 'left',
+		freeScroll: true,
+		contain: true,
+		// disable previous & next buttons and dots
+		prevNextButtons: true,
+		pageDots: false
+	});
+
+
+	$('.catalog-featured').flickity({
+		imagesLoaded: true,
+		cellAlign: 'left',
+		freeScroll: true,
+		contain: true,
+		// disable previous & next buttons and dots
+		prevNextButtons: false,
+		pageDots: false
+	});
+
+	$('.suggested-gallery').flickity({
+		imagesLoaded: true,
+		cellAlign: 'left',
+		freeScroll: true,
+		contain: true,
+		// disable previous & next buttons and dots
+		prevNextButtons: false,
+		pageDots: false
+	});
+
+	//photoThumb
+	// $('#photoThumb').flickity({
+	// 	imagesLoaded: true,
+	// 	contain: true,
+	// 	// disable previous & next buttons and dots
+	// 	prevNextButtons: true,
+	// 	pageDots: true
+	// });
+
+
 	// homepage carousel
-	$(".home-hero1").owlCarousel({
-		responsive:{
-			0:{
-				items:1,
-				loop:true,
-				center:true,
-				dots: true,
-				nav: false,
-				autoplay:true,
-				dotsSpeed: 1200,
-				autoplaySpeed: 1200
-			},
-			768:{
-				items:1,
-				loop:true,
-				center:true,
-				dots: false,
-				nav: true,
-				stagePadding: 50,
-				autoplay:true,
-				navSpeed: 1200,
-				autoplaySpeed: 1200,
-				autoplayTimeout: 6000
-			},
-			1140:{
-				items:1,
-				loop:true,
-				center:true,
-				dots: false,
-				nav: true,
-				stagePadding: 200,
-				autoplay:true,
-				navSpeed: 1200,
-				autoplaySpeed: 1200,
-				autoplayTimeout: 6000
-			}
-		}
-	});
+	// $(".home-hero1").owlCarousel({
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: true,
+	// 			nav: false,
+	// 			autoplay:true,
+	// 			dotsSpeed: 1200,
+	// 			autoplaySpeed: 1200
+	// 		},
+	// 		768:{
+	// 			items:1,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false,
+	// 			nav: true,
+	// 			stagePadding: 50,
+	// 			autoplay:true,
+	// 			navSpeed: 1200,
+	// 			autoplaySpeed: 1200,
+	// 			autoplayTimeout: 6000
+	// 		},
+	// 		1140:{
+	// 			items:1,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false,
+	// 			nav: true,
+	// 			stagePadding: 200,
+	// 			autoplay:true,
+	// 			navSpeed: 1200,
+	// 			autoplaySpeed: 1200,
+	// 			autoplayTimeout: 6000
+	// 		}
+	// 	}
+	// });
 
 
-	$(".home-featured").owlCarousel({
-		loop:false,
-		margin:10,
-		lazyLoad:true,
-		responsive:{
-			0:{
-				items:2,
-				loop:true,
-				center:true,
-				dots: false
-			},
-			480:{
-				items:3,
-				loop:true,
-				center:true,
-				dots: false,
-				stagePadding: 70
-			},
-			768:{
-				items:4,
-				loop:false,
-				center:false,
-				dots: true,
-				stagePadding: 70
-			},
-			980:{
-				items:4,
-				loop:false,
-				center:false,
-				dots: false,
-				nav:true,
-				stagePadding: 120,
-				slideBy: 4
-			},
-			1140:{
-				items:5,
-				loop:false,
-				center:false,
-				dots: false,
-				nav:true,
-				stagePadding: 120,
-				slideBy: 5
-			}
-		}
-	});
+	// $(".home-featured").owlCarousel({
+	// 	loop:false,
+	// 	margin:10,
+	// 	lazyLoad:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:2,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		480:{
+	// 			items:3,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false,
+	// 			stagePadding: 70
+	// 		},
+	// 		768:{
+	// 			items:4,
+	// 			loop:false,
+	// 			center:false,
+	// 			dots: true,
+	// 			stagePadding: 70
+	// 		},
+	// 		980:{
+	// 			items:4,
+	// 			loop:false,
+	// 			center:false,
+	// 			dots: false,
+	// 			nav:true,
+	// 			stagePadding: 120,
+	// 			slideBy: 4
+	// 		},
+	// 		1140:{
+	// 			items:5,
+	// 			loop:false,
+	// 			center:false,
+	// 			dots: false,
+	// 			nav:true,
+	// 			stagePadding: 120,
+	// 			slideBy: 5
+	// 		}
+	// 	}
+	// });
 
 	// $(".catalog-featured").owlCarousel({
 	// 	loop:false,
@@ -173,29 +225,29 @@ jQuery(document).ready(function($){
 	// 	}
 	// });
 
-	$('.suggested-gallery').owlCarousel({
-		loop:false,
-		margin:10,
-		responsive:{
-			0:{
-				items:2,
-				loop:false,
-				center:false,
-				dots: true
-			},
-			480:{
-				items:3,
-				loop:false,
-				center:false,
-				dots: true
-			},
-			768:{
-				items:4,
-				dots: false,
-				loop:false
-			}
-		}
-	});
+	// $('.suggested-gallery').owlCarousel({
+	// 	loop:false,
+	// 	margin:10,
+	// 	responsive:{
+	// 		0:{
+	// 			items:2,
+	// 			loop:false,
+	// 			center:false,
+	// 			dots: true
+	// 		},
+	// 		480:{
+	// 			items:3,
+	// 			loop:false,
+	// 			center:false,
+	// 			dots: true
+	// 		},
+	// 		768:{
+	// 			items:4,
+	// 			dots: false,
+	// 			loop:false
+	// 		}
+	// 	}
+	// });
 
 	// Featured items on Browse pages
 	// $('.product-list .browse-featured').owlCarousel({
@@ -230,56 +282,56 @@ jQuery(document).ready(function($){
 	// });
 
 	// Featured items on Catalog pages
-	$('.featured-item-list .catalog-featured').owlCarousel({
-		loop:false,
-		margin:10,
-		responsive:{
-			0:{
-				items:2,
-				loop:true,
-				center:true,
-				dots: false
-			},
-			480:{
-				items:3,
-				loop:true,
-				center:true,
-				dots: false,
-				stagePadding: 70
-			},
-			768:{
-				items:4,
-				//stagePadding: 70,
-				loop:true,
-				center:true,
-				dots: false
-			},
-			980:{
-				items:5,
-				dots: false
-			}
-		}
-	});
+	// $('.featured-item-list .catalog-featured').owlCarousel({
+	// 	loop:false,
+	// 	margin:10,
+	// 	responsive:{
+	// 		0:{
+	// 			items:2,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		480:{
+	// 			items:3,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false,
+	// 			stagePadding: 70
+	// 		},
+	// 		768:{
+	// 			items:4,
+	// 			//stagePadding: 70,
+	// 			loop:true,
+	// 			center:true,
+	// 			dots: false
+	// 		},
+	// 		980:{
+	// 			items:5,
+	// 			dots: false
+	// 		}
+	// 	}
+	// });
 
 	// sub-catalog slider
-	$(".owl-sub-catalogs").owlCarousel({
-		margin:10,
-		dots:false,
-		responsive:{
-			0:{
-				items:3
-			},
-			480:{
-				items:4
-			},
-			768:{
-				items:5
-			},
-			980:{
-				items:6
-			}
-		}
-	});
+	// $(".owl-sub-catalogs").owlCarousel({
+	// 	margin:10,
+	// 	dots:false,
+	// 	responsive:{
+	// 		0:{
+	// 			items:3
+	// 		},
+	// 		480:{
+	// 			items:4
+	// 		},
+	// 		768:{
+	// 			items:5
+	// 		},
+	// 		980:{
+	// 			items:6
+	// 		}
+	// 	}
+	// });
 
 	// Header dropdown menus
 	$('.dropdown-toggle').dropdown()

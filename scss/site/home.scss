@@ -1,69 +1,78 @@
 .home-page, .home-page #main-content {
 	background-color: #fff;
 }
-.home-promos .gallery-cell {
-	width: 100%;
-	& img {
-		width: 100%;
-		display: block;
-	}
+
+/* Flickity */
+.home-gallery .gallery-cell {
+	width: 90%;
+	// margin-right: 10px;
+	position: relative;
 	@media (min-width: $break-small) {
 		width: 80%;
 	}
-}
-
-
-
-.home-hero1 .owl-nav .owl-next,
-.home-hero1 .owl-nav .owl-prev {
-	border-radius: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100px;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	text-indent: -999em;
-	background-color: rgba(0,0,0,.5);
-	transition: all .2s linear;
-	@media (min-width: $break-xlarge) {
-		width: 200px;
+	@media (min-width: $break-xxlarge) {
+		width: 75%;
 	}
-	&:hover, &:focus {
+	@media (min-width: 1300px) {
+		width: 70%;
+	}
+	@media (min-width: 1400px) {
+		width: 60%;
+	}
+	& img {
+		width: 100%;
+	}
+	&:after {
+		content:'';
+		background-color: rgba(0,0,0,0);
+		transition: background-color .5s ease;
+	}
+	&:not(.is-selected):after {
+		content:'';
+		position: absolute;
+		width: 100%;
+		height: 100%;
 		background-color: rgba(0,0,0,.6);
-		&:after {
-			color: #fff;
-		}
+		transition: background-color .5s ease;
+		top: 0;
+		left: 0;
 	}
 }
-.home-hero1 .owl-nav .owl-next {
-	left: auto;
-	right: 0;
+.home-gallery .flickity-page-dots {
+	@media (min-width: $break-medium) {
+		display: none;
+	}
 }
-.home-hero1 .owl-nav .owl-next:after,
-.home-hero1 .owl-nav .owl-prev:after {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	content: "\e607";
-	position: absolute;
-	left: 20%;
-	top: 50%;
-	color: #fff;
-	color: rgba(255,255,255,.7);
-	margin-top: -15px;
-	text-indent: 0;
-	font-size: 30px;
+.home-gallery .flickity-prev-next-button {
+	display: none;
+	@media (min-width: $break-medium) {
+		display: block;
+	}
 }
-.home-hero1 .owl-nav .owl-prev:after {
-	content: "\e60c";
-	left: auto;
-	right: 20%;
+
+/* featured */
+.home-featured {
+	list-style: none;
+	margin: 0;
+}
+.home-featured .gallery-cell {
+	width: 65%;
+	padding: 0 5px;
+	@media (min-width: $break-small) {
+		width: 40%;
+	}
+	@media (min-width: 700px) {
+		width: 28%;
+	}
+	@media (min-width: $break-large) {
+		width: 20%;
+	}
+}
+.home-featured .flickity-prev-next-button {
+	display: none;
+	visibility: hidden;
+	@media (min-width: $break-medium) {
+		display: block;
+		visibility: visible;
+	}
 }

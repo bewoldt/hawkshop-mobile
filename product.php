@@ -22,10 +22,10 @@
 						<div class="clearfix">
 							<div id="itemPhoto">
 								<div id="photoThumb">
-									<a class="">
+									<a class="gallery-cell">
 										<img src="images/PR0216.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
 									</a>
-									<a class="">
+									<a class="gallery-cell">
 										<img src="images/CW0901.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
 									</a>
 								</div>
@@ -125,29 +125,6 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
-	<script>
-      $(document).foundation();
-    </script>
-    <script>
-    	jQuery(document).ready(function($){
-    		// initialize owlcarousel
-			$('#photoThumb').owlCarousel({
-				responsive:{
-	            0:{
-	                items:1,
-	            },
-	            650:{
-	                items:1,
-	                center:true,
-	                stagePadding: 150
-	            },
-	            769:{
-	                items:1
-	            }
-	        }
-			});
-		});
-    </script>
 	<!--<script type="text/javascript" src="js/plugins/itemDisplay.js"></script>-->
 </body>
 </html>

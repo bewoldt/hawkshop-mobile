@@ -15,18 +15,22 @@
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
-		<div class="owl-carousel home-hero1">
-			<div>
-				<img src="images/back5.jpg" alt="">
+
+		<div class="home-gallery">
+			<div class="gallery-cell">
+				<a href="#"><img src="images/back1.jpg" alt=""></a>
 			</div>
-			<div>
-				<img src="images/back2.jpg" alt="">
+			<div class="gallery-cell">
+				<a href="#"><img src="images/back2.jpg" alt=""></a>
 			</div>
-			<div>
-				<img src="images/back3.jpg" alt="">
+			<div class="gallery-cell">
+				<a href="#"><img src="images/back3.jpg" alt=""></a>
 			</div>
-			<div>
-				<img src="images/back1.jpg" alt="">
+			<div class="gallery-cell">
+				<a href="#"><img src="images/back4.jpg" alt=""></a>
+			</div>
+			<div class="gallery-cell">
+				<a href="#"><img src="images/back5.jpg" alt=""></a>
 			</div>
 		</div>
 		<br /><br />
@@ -34,7 +38,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- <img src="images/banner1.png"> -->
-					<a href="http://google.com" target="_blank"><img src="images/callout-3.jpg"></a>
+					<a href="#"><img src="images/callout-3.jpg"></a>
 				</div>
 				<div class="col-sm-4">
 					<!-- <img src="images/banner2.png"> -->
@@ -45,11 +49,12 @@
 					<img src="images/callout-3c.jpg">
 				</div>
 			</div><!-- end .row -->
-		</div>
-
-		<?php include 'includes/home-featured.php'; ?>
-		<br /><br /><br />
-		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<?php include 'includes/home-featured.php'; ?>
+					<br />
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-6 col-sm-3">
 					<img src="images/extra-3a.jpg">
@@ -64,8 +69,10 @@
 					<img src="images/extra-3a.jpg">
 				</div>
 			</div><!-- end .row -->
-			<br />
-		</div><!-- end .container -->
+		</div>
+
+
+
 		<?php include 'includes/footer.php'; ?>
 		<div class="offscreen-exit"></div>
 	</main>

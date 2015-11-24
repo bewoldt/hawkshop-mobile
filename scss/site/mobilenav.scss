@@ -128,13 +128,13 @@ Trigger
 	}
 
 	@media only screen and (min-width: $break-small) {
-		width: 110px;
+		width: 105px;
 		padding-left: 1.25em;
 	}
 }
 
 /* Menu text */
-#cd-menu-trigger .cd-menu-text {
+.cd-menu-text {
 	height: 100%;
 	text-transform: uppercase;
 	color: #fff;
@@ -178,7 +178,7 @@ Trigger
 	}
 }
 
-#cd-menu-trigger {
+#cd-menu-trigger, .cart-trigger {
 	@media (min-width: $break-medium) {
 		display: none;
 	}

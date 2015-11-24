@@ -35,7 +35,7 @@
 	<div class="container clearfix">
 		<div class="logo-container">
 			<a class="logo" href="#"><img src="images/iowahawkshop.png" alt="Iowa Hawk Shop"></a>
-			<a href="#" class="icon-shopping-cart"></a>
+			<a href="#" class="cart-trigger"><span class="cd-menu-text">Cart</span><span class="icon-shopping-cart"></span></a>
 			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</div>
 	</div>

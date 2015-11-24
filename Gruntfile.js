@@ -9,23 +9,12 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 					'js/plugins/mobilenav.js',
-					'js/plugins/owl.carousel.js',
-					// 'js/plugins/core.js',
-					// 'js/plugins/mediaquery.js',
-					// 'js/plugins/swap.js',
-					// 'js/plugins/touch.js',
-					// 'js/plugins/navigation.js',
-					// 'js/plugins/jquery.fs.shifter.js',
 					'js/plugins/dropdown.js',
-					// 'js/plugins/foundation.min.js',
-					'js/plugins/foundation.js',
-					// 'js/plugins/foundation.offcanvas.js',
-					'js/plugins/foundation.topbar.js',
 					'js/plugins/jquery.lazyload.js',
 					'js/plugins/jquery.waypoints.js',
 					'js/plugins/sticky.js',
-					// 'js/plugins/menubar.js',
 					'js/plugins/jquery-accessibleMegaMenu.js',
+					'js/plugins/flickity.pkgd.js',
 					'js/main.js'
 				],
 				dest: 'js/build/production.js'

@@ -228,6 +228,16 @@ Shopping Cart
 /* -----------------------------------------------------------------
 Mobile Shopping Cart Icon
 ----------------------------------------------------------------- */
+.cart-trigger {
+	position: absolute;
+	right: 50px;
+	width: 50px;
+	@media only screen and (min-width: $break-small) {
+		padding-left: 1.25em;
+		width: 105px;
+		right: 105px;
+	}
+}
 .logo-container .icon-shopping-cart {
 	width: 50px;
 	height: 50px;
@@ -235,7 +245,7 @@ Mobile Shopping Cart Icon
 	position: absolute;
 	top: 0;
 	font-size: 17px;
-	right: 50px;
+	right: 0;
 	line-height: 50px;
 	color: #fff;
 	text-align: center;
@@ -245,8 +255,6 @@ Mobile Shopping Cart Icon
 	@media only screen and (min-width: $break-small) {
 		height: $header-M;
 		line-height: $header-M;
-		right: 110px;
-		width: 70px;
 	}
 	@media only screen and (min-width: $break-medium) {
 		display: none;
