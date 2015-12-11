@@ -17,10 +17,10 @@
 	<?php include 'includes/header.php'; ?>
 
 	<main id="main-content" tabindex="-1" class="cd-main-content">
-		<div>
+		<div class="cat-promo-img">
 			<picture>
 				<!--[if IE 9]><video style="display: none;"><![endif]-->
-				<source srcset="images/amazon-banner.jpg" media="(min-width: 981px)">
+				<source srcset="http://placehold.it/1400x300" media="(min-width: 981px)">
 				<source srcset="images/amazon-banner-md.jpg" media="(min-width: 480px)">
 				<!--[if IE 9]></video><![endif]-->
 				<img srcset="images/amazon-banner.jpg" alt="…">
@@ -31,58 +31,62 @@
 				<div class="row">
 					<div class="col-md-12">
 						<section class="catalog-page">
-							<div class="catalogcontent">
+							<div class="catalogcontent-heading">
 								<h1 class="catalog-title">Women</h1>
 							</div>
-							<div class="icon-wrapper">
+							<div class="catalog-wrapper">
 								<ul class="justify catalog-icons">
 									<li class="justify-item">
-										<h2 class="icon-title"><a href="#">Tops</a></h2>
-										<a href="#" class="icon-link">
-											<img data-original="images/CW0609-t.jpg" alt="" class="lazy" alt="">
+										<h2 class="catalog-heading"><a href="#">Tops</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/CW0609-t.jpg" alt="">
 										</a>
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/BW0502-t.jpg" alt="" class="lazy" alt="">
+										<h2 class="catalog-heading"><a href="#">Sweatshirts</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/BW0502-t.jpg" alt="">
 										</a>
-										<h2 class="icon-title"><a href="#">Sweatshirts</a></h2>
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/PR0331-t.jpg" alt="" class="lazy" alt="">
+										<h2 class="catalog-heading"><a href="#">Pants</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/PR0331-t.jpg" alt="">
 										</a>
-										<h2 class="icon-title"><a href="#">Pants</a></h2>
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/DW0341-t.jpg" alt="" class="lazy" alt="">
+										<h2 class="catalog-heading"><a href="#">Shorts</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/DW0341-t.jpg" alt="">
 										</a>
-										<h2 class="icon-title"><a href="#">Shorts</a></h2>
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/N0335-t.jpg" alt="" class="lazy" alt="">
+										<h2 class="catalog-heading"><a href="#">Outerwear</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/N0335-t.jpg" alt="">
 										</a>
-										<h2 class="icon-title"><a href="#">Outerwear</a></h2>
+
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/A0744-t.jpg" alt="" class="lazy" alt="">
-										</a>
 										<h2 class="icon-title"><a href="#">Hats</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/A0744-t.jpg" alt="">
+										</a>
+
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/TB0001-t.jpg" alt="" class="lazy" alt="">
-										</a>
 										<h2 class="icon-title"><a href="#">Accessories</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/TB0001-t.jpg" alt="">
+										</a>
+
 									</li>
 									<li class="justify-item">
-										<a href="#" class="icon-link">
-											<img data-original="images/CW0877-t.jpg" alt="" class="lazy" alt="">
-										</a>
 										<h2 class="icon-title"><a href="#">New Arrivals</a></h2>
+										<a href="#" class="catalog-thumb">
+											<img src="images/CW0877-t.jpg" alt="">
+										</a>
+
 									</li>
 									<li class="justify-item filler"></li>
 									<li class="justify-item filler"></li>
@@ -103,8 +107,5 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
-	<script>
-      $(document).foundation();
-    </script>
 </body>
 </html>

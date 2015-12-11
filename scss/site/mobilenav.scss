@@ -354,7 +354,7 @@ Search
 	border: none;
 	color: #333;
 	display: inline-block;
-	font-size: 13px;
+	font-size: 16px;
 	height: auto;
 	line-height: normal;
 	padding: 10px 10px 10px 40px;
@@ -362,11 +362,7 @@ Search
 	vertical-align: middle;
 	width: 100%;
 	margin-bottom: 0;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	-webkit-transition: width 0.2s ease, background-color 0.2s ease;
-	-moz-transition: width 0.2s ease, background-color 0.2s ease;
+	border-radius: 18px;
 	transition: width 0.2s ease, background-color 0.2s ease;
 }
 .mobilenav-form .icon-search {

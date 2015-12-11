@@ -7,17 +7,18 @@ Catalog Content
 		font-size: 16px;
 	}
 }
-.catalogcontent .catalog-title {
-	@include rem(30);
+.catalogcontent-heading .catalog-title {
+	font-size: 30px;
+	line-height: 1.3;
 	margin-top: .5em;
 	text-align: center;
 	@media (min-width: $break-medium) {
-		@include rem(34);
-		margin-top:.75em;
-		margin-bottom: .75em;
+		font-size: 34px;
+		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 }
-.catalogcontent .catalog-title span {
+.catalogcontent-heading .catalog-title span {
 	display: block;
 	font-weight: normal;
 	font-size: 50%;
@@ -114,7 +115,7 @@ Thumbnail Image
 Thumbnail Info
 ----------------------------------------------------------------- */
 .thumbnail-info {
-	color: #555;
+	color: #333;
 	font-size: 13px;
 	line-height: 1.4;
 	text-align: center;

@@ -1,6 +1,7 @@
 /* mega menu list */
 #dawgdrops {
-	background-color: #000;
+	background-color: #fff;
+	border-top: 2px solid $yellow;
 	display: none;
 	@media (min-width: $break-medium) {
 		display: block;
@@ -33,25 +34,30 @@
 
 /* first descendant link within a top level navigation item */
 .nav-item > a {
-	color: #fff;
+	color: #111;
 	border-top-left-radius: 1px;
 	border-top-right-radius: 1px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 	display: block;
 	font-size: 13px;
-	padding: 10px 15px;
+	padding: 9px 15px;
 	text-decoration: none;
 	transition: none;
 	text-transform: uppercase;
 	white-space: nowrap;
 	@media (min-width: 900px) {
 		font-size: 14px;
-		padding: 10px 19px;
+		padding: 9px 19px;
 	}
 	@media (min-width: 1024px) {
-		padding: 10px 25px;
+		padding: 9px 25px;
 	}
 	@media (min-width: $break-xlarge) {
-		padding: 10px 27px;
+		padding: 9px 27px;
+	}
+	@media (min-width: $break-xxlarge) {
+		padding: 9px 30px;
 	}
 }
 
@@ -60,6 +66,8 @@
 .nav-item > a:focus,
 .nav-item > a.open {
 	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 	color: #333;
 	position: relative;
 	&:after {
@@ -68,9 +76,9 @@
 		border-top-left-radius: 1px;
 		border-top-right-radius: 1px;
 		width: 100%;
-		height: 3px;
+		height: 1px;
 		position: absolute;
-		top: 0;
+		top: -3px;
 		left: 0;
 	}
 }
@@ -85,6 +93,8 @@
 
 /* sub-navigation panel */
 .sub-nav {
+	border-top: 1px solid #ddd;
+	margin-top: -1px;
 	background-color: #fff;
 	position: absolute;
 	display: none;
@@ -112,9 +122,13 @@
 	display: block;
 }
 /* last nav item right align */
-.nav-item:last-of-type .sub-nav.open,
-.nav-item:nth-last-child(2) .sub-nav.open {
+.nav-item:last-of-type .sub-nav.open {
 	right: 0;
+}
+.nav-item:nth-last-child(2) .sub-nav.open {
+	@media (max-width: $break-large - 1) {
+		right: 0;
+	}
 }
 
 /* sub-navigation with groups */
@@ -209,6 +223,13 @@
 		}
 	}
 }
+
+/* Arrow Icon */
+.sub-nav .icon-chevron-right:before {
+	float: right;
+}
+
+
 /* Featured Product */
 .sub-nav .featured .inner {
 	padding: 10px 10px 0;

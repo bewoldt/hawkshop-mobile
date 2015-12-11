@@ -20,6 +20,9 @@ object,embed { height: 100%; }
 .clearfix:after { clear: both;}
 .clearfix { *zoom: 1;}
 
+.inline-block {display:inline-block;}
+.block {display:block;}
+.block-center {margin: 0 auto;}
 .left {float: left;}
 .right{float: right;}
 img.left  {margin-right: 1em; margin-bottom: 1em;}

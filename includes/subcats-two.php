@@ -96,5 +96,5 @@
 			<li class="leafli"><a href="#">Wrestling</a></li>
 		</ul>
 	</li>
-	<li><a href="#">Shirts &amp; Tanks</a></li>
+	<!-- <li><a href="#">Shirts &amp; Tanks</a></li> -->
 </ul>

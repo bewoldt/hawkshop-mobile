@@ -1,45 +1,5 @@
 
 /* -----------------------------------------------------------------
-Homepage featured
------------------------------------------------------------------ */
-.home-featured-title {
-	margin: 2em 0 0;
-	font-size: 28px;
-	font-weight: normal;
-	text-align: center;
-	text-transform: uppercase;
-	overflow: hidden;
-}
-.home-featured-text {
-	margin: .5em 0 2em;
-	text-align: center;
-	font-size: 14px;
-}
-.title-center span {
-	padding: 0 15px;
-	border: 0;
-	display: inline-block;
-	position: relative;
-}
-.title-center span:after, .title-center span:before {
-    content: ' ';
-    display: block;
-    height: 0;
-    border-bottom: 3px solid #EEE;
-    width: 1000px;
-    position: absolute;
-    top: 50%;
-}
-.title-center span:before {
-    left: -1010px;
-}
-.title-center span:after {
-    right: -1010px;
-}
-
-
-
-/* -----------------------------------------------------------------
 Catalog/Browse page featured
 ----------------------------------------------------------------- */
 .featured-item-list .catalog-featured {
@@ -72,7 +32,7 @@ Catalog/Browse page featured
 }
 .catalog-featured .gallery-cell {
 	width: 65%;
-	padding: 0 5px;
+	padding: 0 7px;
 	@media (min-width: $break-small) {
 		width: 40%;
 	}
@@ -88,7 +48,7 @@ Catalog/Browse page featured
 Suggested items
 ----------------------------------------------------------------- */
 .suggested-wrapper {
-	border-top: 3px solid #444;
+	border-top: 1px solid #ddd;
 	clear: both;
 	margin-top: 2em;
 	padding: 2em 0;

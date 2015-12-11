@@ -14,21 +14,21 @@
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
+		<?php include 'includes/subcats.php'; ?>
 		<div class="container">
 			<div class="clearfix">
 				<div class="column-main">
-					<?php include 'includes/subcats-two.php'; ?>
+					<?php include 'includes/breadcrumbs.php'; ?>
+
 					<div itemscope itemtype="http://schema.org/Product" id="itemDisplay" class="item-wrapper" store="103">
 						<div class="clearfix">
 							<div id="itemPhoto">
 								<div id="photoThumb">
-									<a class="gallery-cell">
-										<img src="images/PR0216.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
-									</a>
-									<a class="gallery-cell">
-										<img src="images/CW0901.jpg" itemprop="image" id="attrMainImg" border="0" alt="" />
-									</a>
+									<img src="images/PR0216.jpg" alt="Women's Iowa Hawkeyes Vertical T-Shirt" />
+									<img src="images/PR0216.jpg" alt="black" />
+									<img src="images/CW0901.jpg" alt="grey" />
 								</div>
+								<p class="caption"></p>
 							</div>
 							<div id="itemInfo" class="hasImage">
 								<h1 id="itemTitle" itemprop="name"><span itemprop="brand">Champion</span> Women's Iowa Hawkeyes Vertical T-Shirt</h1>
@@ -38,6 +38,14 @@
 										</div>
 										<!-- Size / Color Attributes Selector -->
 										<div id="attrSelector">
+											<div id="otherSelector2">
+												<input name="attr_code.2" wpc="1017" value="86" type="hidden" id="attrCode2" >
+												<select name="attr_value.2" id="imageAttr" class="itemMenu" >
+													<option value="null" >--Select One--</option>
+													<option value="Gold" optid="3728307" >black</option>
+													<option value="Gold" optid="3728307" >grey</option>
+												</select>
+											</div>
 											<div id="otherSelector1">
 												<input name="attr_code.1" wpc="1017" value="45" type="hidden" id="attrCode1" >
 												<select name="attr_value.1" id="otherAttr1" class="itemMenu" >
@@ -49,13 +57,7 @@
 													<option value="2X" optid="1948711" >2X</option>
 												</select>
 											</div>
-											<div id="otherSelector2">
-												<input name="attr_code.2" wpc="1017" value="86" type="hidden" id="attrCode2" >
-												<select name="attr_value.2" id="otherAttr2" class="itemMenu" >
-													<option value="null" >--Select One--</option>
-													<option value="Gold" optid="3728307" >Gold</option>
-												</select>
-											</div>
+
 										</div>
 										<!-- Quantity Selector -->
 										<div id="itemOrder">
@@ -107,9 +109,7 @@
 									<a href="https://twitter.com/intent/tweet?text=hello%20world&url=https%3A%2F%2Fjonsuh.com%2F&via=iowahawkshop" class="js-social-share"><span class="icon-twitter"></span></a>
 									<a href="#" class="js-social-share"><span class="icon-pinterest"></span></a>
 								</div>
-								<div>
-									<img src="images/why.jpg" alt="">
-								</div>
+								<p><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=578&design=p3"><img src="images/why2.jpg" alt="why shop at Iowa Hawk Shop"></a></p>
 							</div>
 						</div>
 					</div>

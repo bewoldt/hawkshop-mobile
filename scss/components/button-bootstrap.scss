@@ -1,23 +1,10 @@
-button {
-  background-image: none;
-  border: 0;
-  cursor: pointer;
-  font-family: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-  text-transform: none;
-  -webkit-appearance: button;
-}
+
 .btn {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.428571429;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -74,61 +61,6 @@ button {
   }
 }
 
-
-/* Warning ========== */
-
-.btn-warning {
-  color: #ffffff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
-  &:hover, &:focus, &:active {
-    color: #ffffff;
-    background-color: #ed9c28;
-    border-color: #d58512;
-  }
-}
-
-
-/* Danger ========== */
-
-.btn-danger {
-  color: #ffffff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
-  &:hover, &:focus, &:active {
-    color: #ffffff;
-    background-color: #d2322d;
-    border-color: #ac2925;
-  }
-}
-
-
-/* Success ========== */
-
-.btn-success {
-  color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  &:hover, &:focus, &:active {
-    color: #ffffff;
-    background-color: #47a447;
-    border-color: #398439;
-  }
-}
-
-
-/* Info ========== */
-
-.btn-info {
-  color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
-  &:hover, &:focus, &:active {
-    color: #ffffff;
-    background-color: #39b3d7;
-    border-color: #269abc;
-  }
-}
 
 
 /* Link ========== */

@@ -11,8 +11,8 @@ module.exports = function(grunt) {
 					'js/plugins/mobilenav.js',
 					'js/plugins/dropdown.js',
 					'js/plugins/jquery.lazyload.js',
-					'js/plugins/jquery.waypoints.js',
-					'js/plugins/sticky.js',
+					'js/plugins/jquery.waypoints.min.js',
+					'js/plugins/sticky.min.js',
 					'js/plugins/jquery-accessibleMegaMenu.js',
 					'js/plugins/flickity.pkgd.js',
 					'js/main.js'
@@ -28,16 +28,44 @@ module.exports = function(grunt) {
 			}
 		},
 
+		// sass: {
+		// 	dist: {
+		// 		options: {
+		// 			style: 'compressed'
+		// 		},
+		// 		files: {
+		// 			'css/p3.css': 'scss/master.scss'
+		// 		}
+		// 	}
+		// },
+
 		sass: {
+			options: {
+				// sourceMap: true,
+				style: 'compressed'
+			},
 			dist: {
-				options: {
-					style: 'compressed'
-				},
 				files: {
 					'css/p3.css': 'scss/master.scss'
 				}
 			}
 		},
+
+		postcss: {
+         options: {
+             map: true,
+             processors: [
+                 require('autoprefixer')({
+                     browsers: ['not ie <= 8']
+                 })
+             ]
+         },
+         dist: {
+				files:{
+       			'css/p3.css':'css/p3.css'
+				}
+         }
+     },
 
 		imagemin: {
 			dynamic: {
@@ -62,8 +90,9 @@ module.exports = function(grunt) {
 				}
 			},
 			css: {
+
 				files: ['scss/*.scss', 'scss/**/*.scss'],
-				tasks: ['sass'],
+				tasks: ['sass', 'postcss'],
 				options: {
 					spawn: false,
 				}
@@ -76,6 +105,7 @@ module.exports = function(grunt) {
 			}
 		},
 
+
 	});
 
 	// Load the plugin that provides the "uglify" task.
@@ -84,9 +114,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-postcss');
 
 	// Default task(s).
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss:dist', 'watch']);
 
 
 };

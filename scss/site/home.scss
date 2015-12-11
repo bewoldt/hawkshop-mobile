@@ -2,7 +2,9 @@
 	background-color: #fff;
 }
 
-/* Flickity */
+/* -----------------------------------------------------------------
+Flickity
+----------------------------------------------------------------- */
 .home-gallery .gallery-cell {
 	width: 90%;
 	// margin-right: 10px;
@@ -17,25 +19,10 @@
 		width: 70%;
 	}
 	@media (min-width: 1400px) {
-		width: 60%;
+		width: 65%;
 	}
 	& img {
 		width: 100%;
-	}
-	&:after {
-		content:'';
-		background-color: rgba(0,0,0,0);
-		transition: background-color .5s ease;
-	}
-	&:not(.is-selected):after {
-		content:'';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0,0,0,.6);
-		transition: background-color .5s ease;
-		top: 0;
-		left: 0;
 	}
 }
 .home-gallery .flickity-page-dots {
@@ -50,7 +37,33 @@
 	}
 }
 
-/* featured */
+/* -----------------------------------------------------------------
+Promotional banner images
+----------------------------------------------------------------- */
+.home-promo {
+	display: block;
+	margin: 0 auto;
+	@media (max-width: $break-medium - 1 ) {
+		margin-bottom: 1em;
+	}
+}
+
+/* -----------------------------------------------------------------
+Homepage featured items
+----------------------------------------------------------------- */
+.home-featured-title {
+	margin: 2em 0 0;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+.home-featured-text {
+	margin: .5em 0 2em;
+	text-align: center;
+	font-size: 14px;
+}
 .home-featured {
 	list-style: none;
 	margin: 0;

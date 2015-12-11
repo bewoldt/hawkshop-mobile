@@ -3,7 +3,6 @@
 	margin: 1em 0;
 }
 #itemPhoto {
-	padding-bottom: 1em;
 	@media (min-width: $break-medium) {
 		float: left;
 		width: 55%;
@@ -24,10 +23,8 @@ Photos
 		display: block;
 	}
 }
-#photoThumb .gallery-cell {
-  width: 100%; /* full width */
-  xheight: 350px; /* height of gallery */
-  margin-right: 10px;
+#photoThumb.flickity-enabled {
+	padding-bottom: 2em;
 }
 #photoThumb img {
 	display: block;
@@ -49,16 +46,26 @@ Photos
   width: 100%; /* full width */
 }
 #photoThumb .flickity-prev-next-button {
-	display: none;
+	// display: none;
 	@media (min-width: $break-small) {
 		display: block;
 	}
 }
 
 #itemInfo {
-	@media (min-width: $break-xlarge) {
+	@media (min-width: $break-large) {
 		padding-right: 1em;
 	}
+}
+
+.caption {
+	font-size: 13px;
+	margin: 10px;
+	padding: 0;
+	text-align: center;
+}
+#photoThumb .flickity-page-dots {
+  bottom: 0px;
 }
 
 /* -----------------------------------------------------------------
@@ -67,16 +74,17 @@ Title
 #itemTitle {
 	font-size: 24px;
 	line-height: 1.3;
+	margin: .5em 0 .25em 0;
 	text-align: center;
 	@media (min-width: 640px) {
 		line-height: 1.4;
-		margin: 0 0 .25em 0;
+
 	}
 	@media (min-width: $break-medium) {
 		text-align: left;
 	}
 	@media (min-width: $break-large) {
-		font-size: 30px;
+		font-size: 33px;
 	}
 }
 
@@ -123,39 +131,39 @@ Size Options
 	line-height: 1.6;
 }
 .options li {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  padding: 0;
-  background-color: #ffffff;
-  margin: 0px 0 4px 0;
-  cursor: pointer;
-  border: #e1e1e1 1px solid !important;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #333333;
-  font-family: helvetica, arial, sans-serif;
-  width: 15.7%;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	padding: 0;
+	background-color: #ffffff;
+	margin: 0px 0 4px 0;
+	cursor: pointer;
+	border: #e1e1e1 1px solid !important;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #333333;
+	font-family: helvetica, arial, sans-serif;
+	width: 15.7%;
 }
 .options li:hover, .options li:focus {
-  background-color: #e4e4e4;
+	background-color: #e4e4e4;
 }
 .options li.selected {
-  border: #fff 1px solid !important;
-  background-color: #666666;
-  color: white;
+	border: #fff 1px solid !important;
+	background-color: #666666;
+	color: white;
 }
 .options li span {
-  display: block;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  text-align: center;
-  margin-left: 0px;
-  margin-right: 0px;
+	display: block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 #orderOptions .dropdown {
 	float: left;
@@ -165,41 +173,38 @@ Size Options
 
 /* Select */
 .form-control, #attrSelector .itemMenu, .qtyMenu {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #666;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #666;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 .form-control, #attrSelector .itemMenu, .qtyMenu {
-  border-radius: 3px;
-  height: 40px;
-  margin-bottom: 8px;
-  padding-left: 24px;
-  padding-right: 24px;
+	border-radius: 3px;
+	height: 40px;
+	margin-bottom: 8px;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 .form-control, #attrSelector .itemMenu, .qtyMenu {
-  padding-right: 12px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+	padding-right: 12px;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
 .form-control, #attrSelector .itemMenu, .qtyMenu {
-  -webkit-appearance: none;
-  background-image: url(../images/select-down2.png);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-  padding-right: 45px;
+	-webkit-appearance: none;
+	background-image: url(../images/select-down2.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	padding-right: 45px;
 }
 .form-control:hover, #attrSelector .itemMenu:hover, .qtyMenu {
 	cursor: pointer;

@@ -56,6 +56,19 @@ jQuery(document).ready(function($){
 
 
 	// Flickity
+	// show
+	// var $gallery = $('.home-gallery').removeClass('is-hidden');
+	// $gallery[0].offsetHeight;
+	// $gallery.flickity({
+	// 	initialIndex: 1,
+	// 	wrapAround: true,
+	// 	imagesLoaded: true,
+	// 	selectedAttraction: 0.01,
+	// 	friction: 0.15,
+	// 	autoPlay: true,
+	// 	autoPlay: 6000
+	// });
+
 	$('.home-gallery').flickity({
 		initialIndex: 1,
 		wrapAround: true,
@@ -106,27 +119,51 @@ jQuery(document).ready(function($){
 	// 	pageDots: true
 	// });
 
-
-
-	// sub-catalog slider
-	// $(".owl-sub-catalogs").owlCarousel({
-	// 	margin:10,
-	// 	dots:false,
-	// 	responsive:{
-	// 		0:{
-	// 			items:3
-	// 		},
-	// 		480:{
-	// 			items:4
-	// 		},
-	// 		768:{
-	// 			items:5
-	// 		},
-	// 		980:{
-	// 			items:6
-	// 		}
-	// 	}
+	// var $gallery = $('#photoThumb').flickity({
+	// 	cellSelector: 'img',
+	// 	imagesLoaded: true,
+	// 	percentPosition: false
 	// });
+	// var $caption = $('.caption');
+	// // Flickity instance
+	// var flkty = $gallery.data('flickity');
+
+	// $gallery.on( 'cellSelect', function() {
+	// 	// set image caption using img's alt
+	// 	$caption.text( flkty.selectedElement.alt )
+	// });
+
+	// initialize flickity(new)
+			var $gallery = $('#photoThumb').flickity({
+				cellSelector: 'img',
+				imagesLoaded: true,
+				percentPosition: false
+			});
+			// Flickity instance
+			var flkty = $gallery.data('flickity');
+			// Caption
+			var $caption = $('.caption');
+			// elements
+			var $cellButtonGroup = $('#imageAttr');
+			var $cellButtons = $cellButtonGroup.find('option');
+
+			// update selected cellButtons
+			$gallery.on( 'cellSelect', function() {
+				$caption.text( flkty.selectedElement.alt )
+				$cellButtons.filter('.is-selected').removeClass('is-selected');
+				$cellButtons.eq( flkty.selectedIndex ).addClass('is-selected').prop("selected", "selected");
+			});
+
+			// select cell on button click
+			$cellButtonGroup.change(function () {
+				$( "#imageAttr option:selected" ).each(function() {
+					var index = $(this).index();
+					$gallery.flickity( 'select', index );
+				})
+			});
+
+
+
 
 	// Header dropdown menus
 	$('.dropdown-toggle').dropdown()
@@ -144,7 +181,7 @@ jQuery(document).ready(function($){
 
 	// Lazy Load
 	$("img.lazy").lazyload({
-		threshold : 200,
+		threshold : 300,
 		effect : "fadeIn"
 	});
 	$("html,body").trigger("scroll");
@@ -152,7 +189,7 @@ jQuery(document).ready(function($){
 	//Sticky header
 	var sticky = new Waypoint.Sticky({
 		element: $('#dawgdrops')[0]
-	})
+	});
 
 
 });

@@ -5,7 +5,7 @@
 		display: block;
 	}
 }
-.icon-wrapper {
+.catalog-wrapper {
 	@media (min-width: $break-small) {
 		padding: 0 1em;
 	}
@@ -70,15 +70,16 @@
 	padding: 0;
 }
 
-.icon-link {
+.catalog-thumb {
 	border: 1px solid #000;
 	display: block;
+	padding: 5px;
 }
-.icon-link img {
+.catalog-thumb img {
 	display: block;
 	width: 100%;
 }
-.icon-title {
+.catalog-heading {
 	background-color: #000;
 	font-size: 13px;
 	font-family: $heading-font;
@@ -93,6 +94,25 @@
 		color: #fff;
 		display: block;
 		font-family: $heading-font;
-		padding: 8px 0;
+		padding: 5px;
 	}
 }
+
+
+/* -----------------------------------------------------------------
+Top Promotional Image
+----------------------------------------------------------------- */
+.cat-promo-img {
+
+	& img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+
+

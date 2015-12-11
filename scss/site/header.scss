@@ -8,6 +8,7 @@
 	background-color: #000;
 	height: $header-S;
 	box-shadow: 0 2px 3px rgba(0,0,0,.15);
+	// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	@media only screen and (min-width: $break-small) {
 		height: $header-M;
 	}
@@ -43,7 +44,7 @@ Logo
 		padding: 19px 0;
 	}
 	@media(min-width: $break-medium) {
-		padding: 10px 0;
+		padding: 15px 0;
 	}
 }
 .logo img {
@@ -62,7 +63,7 @@ Logo
 		width: 439px;
 	}
 	@media(min-width: $break-xlarge) {
-		width: 459px;
+		width: 479px;
 	}
 }
 
@@ -118,25 +119,25 @@ Search
 Shopping Cart
 ----------------------------------------------------------------- */
 .top-wrapper {
-	display: none;
-	@media (min-width: $break-medium) {
-		display: block;
-		height: 40px;
-		background: #111;
-		border-bottom: 1px solid #3f3f43;
-		width: 100%;
-		white-space: nowrap;
-		font-size: 11px;
-		line-height: 30px;
-		letter-spacing: .5px;
-		z-index: 1500;
-		position: relative;
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		-webkit-transition: all 0s ease-in;
-		transition: all 0s ease-in;
-		height: 31px;
-		box-shadow: 0 1px 1px rgba(0,0,0,.5);
+	display: block;
+	height: 40px;
+	background: #111;
+	border-bottom: 1px solid #3f3f43;
+	width: 100%;
+	white-space: nowrap;
+	font-size: 11px;
+	line-height: 30px;
+	letter-spacing: .5px;
+	z-index: 1500;
+	position: relative;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: all 0s ease-in;
+	transition: all 0s ease-in;
+	height: 31px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.5);
+	@media (max-width: $break-medium - 1 ) {
+		display: none;
 	}
 }
 .right {

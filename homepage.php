@@ -18,19 +18,29 @@
 
 		<div class="home-gallery">
 			<div class="gallery-cell">
-				<a href="#"><img src="images/back1.jpg" alt=""></a>
+				<a href="#">
+					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+				</a>
 			</div>
 			<div class="gallery-cell">
-				<a href="#"><img src="images/back2.jpg" alt=""></a>
+				<a href="#">
+					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+				</a>
 			</div>
 			<div class="gallery-cell">
-				<a href="#"><img src="images/back3.jpg" alt=""></a>
+				<a href="#">
+					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+				</a>
 			</div>
 			<div class="gallery-cell">
-				<a href="#"><img src="images/back4.jpg" alt=""></a>
+				<a href="#">
+					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+				</a>
 			</div>
 			<div class="gallery-cell">
-				<a href="#"><img src="images/back5.jpg" alt=""></a>
+				<a href="#">
+					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+				</a>
 			</div>
 		</div>
 		<br /><br />
@@ -38,15 +48,15 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- <img src="images/banner1.png"> -->
-					<a href="#"><img src="images/callout-3.jpg"></a>
+					<a href="#"><img src="images/banner1.png" class="home-promo"></a>
 				</div>
 				<div class="col-sm-4">
 					<!-- <img src="images/banner2.png"> -->
-					<img src="images/callout-3b.jpg">
+					<img src="http://placehold.it/350x250" class="home-promo">
 				</div>
 				<div class="col-sm-4">
 					<!-- <img src="images/banner3.png"> -->
-					<img src="images/callout-3c.jpg">
+					<img src="http://placehold.it/350x250" class="home-promo">
 				</div>
 			</div><!-- end .row -->
 			<div class="row">
@@ -55,6 +65,7 @@
 					<br />
 				</div>
 			</div>
+			<br /><br />
 			<div class="row">
 				<div class="col-xs-6 col-sm-3">
 					<img src="images/extra-3a.jpg">
@@ -79,7 +90,7 @@
 
 	<?php include 'includes/mobilenav.php'; ?>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="js/build/production.min.js"></script>
 
 </body>

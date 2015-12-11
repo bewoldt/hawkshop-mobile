@@ -2,34 +2,34 @@
 	<nav>
 		<ul class="cd-navigation">
 			<li class="item-has-children">
-				<a href="#0">Textbooks</a>
+				<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=450&amp;design=p3">Textbooks</a>
 				<ul class="sub-menu">
-					<li><a href="http://www.hawkshop.com/ePOS?form=shared3/gm/browse.html&cat=1">Textbook Search</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=593">Textbook Buyback</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=465">Textbook Rental</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=464">For Faculty</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=466">Graduation</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS?form=shared3/gm/browse.html&cat=1&amp;design=p3">Textbook Search</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=593&amp;design=p3">Textbook Buyback</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=465&amp;design=p3">Textbook Rental</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=464&amp;design=p3">For Faculty</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=466&amp;design=p3">Graduation</a></li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
 				<a href="#0">Men</a>
 				<ul class="sub-menu">
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=386">T-Shirts &amp; Tanks</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=714">Long Sleeve Shirts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=55">Sweatshirts &amp; Hoodies</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=62">Polos &amp; Dress Shirts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=658">Jerseys</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=57">Pants</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=57">Shorts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=59">Outerwear</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=386&amp;design=p3">T-Shirts &amp; Tanks</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=714&amp;design=p3">Long Sleeve Shirts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=55&amp;design=p3">Sweatshirts &amp; Hoodies</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=62&amp;design=p3">Polos &amp; Dress Shirts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=658&amp;design=p3">Jerseys</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=57&amp;design=p3">Pants</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=57&amp;design=p3">Shorts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=59&amp;design=p3">Outerwear</a></li>
 					<li class="item-has-children">
-						<a href="#0">Accessories</a>
+						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=402&amp;design=p3">Accessories</a>
 						<ul class="sub-menu">
 							<li><a href="#">Footwear &amp; Socks</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=756">Gloves &amp; Scarves</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=65">Caps &amp; Hats</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=221">Scrubs</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=756&amp;design=p3">Gloves &amp; Scarves</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=65&amp;design=p3">Caps &amp; Hats</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=221&amp;design=p3">Scrubs</a></li>
 							<li><a href="#">Ties &amp; Belts</a></li>
 							<li><a href="#">Wallets &amp; Lanyards</a></li>
 						</ul>
@@ -38,22 +38,22 @@
 						<a href="#0">Featured Shops</a>
 						<ul class="sub-menu">
 							<li><a href="#">Fall Weather Gear</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692">Hawkeye Values</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=780">New Arrivals</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692&amp;design=p3">Hawkeye Values</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=780&amp;design=p3">New Arrivals</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/greatbuys.html&design=p3&this_category=26">Clearance</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=26">Best Sellers</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=26&amp;design=p3">Best Sellers</a></li>
 						</ul>
 					</li>
 					<li class="item-has-children">
-						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=399">Shop by Brand</a>
+						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=399&amp;design=p3">Shop by Brand</a>
 						<ul class="sub-menu">
-							<li><a href="#">Alta Gracia</a></li>
-							<li><a href="#">Champion</a></li>
-							<li><a href="#">Columbia</a></li>
-							<li><a href="#">Cutter &amp; Buck</a></li>
-							<li><a href="#">Nike</a></li>
-							<li><a href="#">Russell</a></li>
-							<li><a href="#">Under Armour</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=389&amp;design=p3">Alta Gracia</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=440&amp;design=p3">Champion</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=286&amp;design=p3">Columbia</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=63&amp;design=p3">Cutter &amp; Buck</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=793&amp;design=p3">Nike</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=439&amp;design=p3">Russell</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=361&amp;design=p3">Under Armour</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -62,20 +62,20 @@
 			<li class="item-has-children">
 				<a href="#0">Women</a>
 				<ul class="sub-menu">
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=379">T-Shirts &amp; Tanks</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=985">Long Sleeve Shirts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=383">Sweatshirts &amp; Hoodies</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=986">Polos &amp; Dress Shirts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=380">Pants</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=755">Shorts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=382">Outerwear</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=379&amp;design=p3">T-Shirts &amp; Tanks</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=985&amp;design=p3">Long Sleeve Shirts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=383&amp;design=p3">Sweatshirts &amp; Hoodies</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=986&amp;design=p3">Polos &amp; Dress Shirts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=380&amp;design=p3">Pants</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=755&amp;design=p3">Shorts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=382&amp;design=p3">Outerwear</a></li>
 					<li class="item-has-children">
-						<a href="#0">Accessories</a>
+						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=259&amp;design=p3">Accessories</a>
 						<ul class="sub-menu">
 							<li><a href="#">Footwear &amp; Socks</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=951">Gloves &amp; Scarves</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=381">Caps &amp; Hats</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=727">Jewelry</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=951&amp;design=p3">Gloves &amp; Scarves</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=381&amp;design=p3">Caps &amp; Hats</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=727&amp;design=p3">Jewelry</a></li>
 							<li><a href="#">Bags &amp; Totes</a></li>
 							<li><a href="#">Lanyards</a></li>
 						</ul>
@@ -84,138 +84,136 @@
 						<a href="#0">Featured Shops</a>
 						<ul class="sub-menu">
 							<li><a href="#">Fall Weather Gear</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692">Hawkeye Values</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=782">New Arrivals</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692&amp;design=p3">Hawkeye Values</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=782&amp;design=p3">New Arrivals</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/greatbuys.html&design=p3&this_category=64">Clearance</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=64">Best Sellers</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=64&amp;design=p3">Best Sellers</a></li>
 						</ul>
 					</li>
 					<li class="item-has-children">
 						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=399">Shop by Brand</a>
 						<ul class="sub-menu">
-							<li><a href="#">Alta Gracia</a></li>
-							<li><a href="#">Champion</a></li>
-							<li><a href="#">Columbia</a></li>
-							<li><a href="#">Cutter &amp; Buck</a></li>
-							<li><a href="#">Nike</a></li>
-							<li><a href="#">Russell</a></li>
-							<li><a href="#">Under Armour</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=389&amp;design=p3">Alta Gracia</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=440&amp;design=p3">Champion</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=286&amp;design=p3">Columbia</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=63&amp;design=p3">Cutter &amp; Buck</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=793&amp;design=p3">Nike</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=439&amp;design=p3">Russell</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=361&amp;design=p3">Under Armour</a></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
-				<a href="#0" class="current">Kids</a>
+				<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=252&amp;design=p3" class="current">Kids</a>
 				<ul class="sub-menu">
-					<li><a href="#">Youth Boys</a></li>
-					<li><a href="#">Youth Girls</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=742">Infant &amp; Toddler</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=407">Accessories</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=783">New Arrivals</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/greatbuys.html&design=p3&this_category=252">Clearance</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=252">Best Sellers</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=403&amp;design=p3">Youth Tops</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=404&amp;design=p3">Youth Bottoms</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=742&amp;design=p3">Infant &amp; Toddler</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=407&amp;design=p3">Accessories</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=783&amp;design=p3">New Arrivals</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/greatbuys.html&design=p3&this_category=252&amp;design=p3">Clearance</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=252&amp;design=p3">Best Sellers</a></li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
-				<a href="#0">Home &amp; Gifts</a>
+				<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=30&amp;design=p3">Home &amp; Gifts</a>
 				<ul class="sub-menu">
-					<li><a href="#">Auto Accessories</a></li>
-					<li><a href="#">Gameday &amp; Tailgating</a></li>
-					<li><a href="#">Holiday Gifts</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=156&amp;design=p3">Auto Accessories</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=315&amp;design=p3">Gameday &amp; Tailgating</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=157&amp;design=p3">Holiday Gifts</a></li>
 					<li class="item-has-children">
-						<a href="#0">Home &amp; Kitchen</a>
+						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=372&amp;design=p3">Home &amp; Kitchen</a>
 						<ul class="sub-menu">
-							<li><a href="#">Home Decor</a></li>
-							<li><a href="#">Drinkware</a></li>
-							<li><a href="#">Flags &amp; Pennants</a></li>
-							<li><a href="#">Kitchen &amp; Dining</a></li>
-							<li><a href="#">Lighting</a></li>
-							<li><a href="#">Prints &amp; Posters</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=891&amp;design=p3">Home Decor</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=74&amp;design=p3">Drinkware</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=160&amp;design=p3">Flags &amp; Pennants</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=374&amp;design=p3">Kitchen &amp; Dining</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=152&amp;design=p3">Prints &amp; Posters</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Office &amp; Desk</a></li>
-					<li><a href="#">Patio, Lawn, &amp; Garden</a></li>
-					<li><a href="#">Pet Accessories</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=305&amp;design=p3">Office &amp; Desk</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=893&amp;design=p3">Patio, Lawn, &amp; Garden</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=175&amp;design=p3">Pet Accessories</a></li>
 					<li class="item-has-children">
-						<a href="#0">Souvenirs</a>
+						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=49&amp;design=p3">Souvenirs</a>
 						<ul class="sub-menu">
 							<li><a href="#">Bags</a></li>
-							<li><a href="#">Balls</a></li>
-							<li><a href="#">Books, DVSs, &amp; CDs</a></li>
-							<li><a href="#">Decals</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=378&amp;design=p3">Balls</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=151&amp;design=p3">Books, DVSs, &amp; CDs</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=271&amp;design=p3">Decals</a></li>
 							<li><a href="#">Luggage Tags</a></li>
 							<li><a href="#">Media Programs</a></li>
-							<li><a href="#">Helmets</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=310&amp;design=p3">Helmets</a></li>
 							<li><a href="#">Magnets &amp; Stickers</a></li>
 							<li><a href="#">Pins</a></li>
 							<li><a href="#">Tattoos</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Toys &amp; Games</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=68&amp;design=p3">Toys &amp; Games</a></li>
 					<li class="item-has-children">
 						<a href="#0">Featured Shops</a>
 						<ul class="sub-menu">
-							<li><a href="#">Alumni</a></li>
-							<li><a href="#">Museum of Art</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=719&amp;design=p3">Alumni</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=716&amp;design=p3">Museum of Art</a></li>
 							<li class="divider"></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=681">New Arrivals</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=681&amp;design=p3">New Arrivals</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/greatbuys.html&design=p3&this_category=30">Clearance</a></li>
-							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=30">Best Sellers</a></li>
+							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/bestsellers.html&this_category=30&amp;design=p3">Best Sellers</a></li>
 						</ul>
 					</li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
-				<a href="#0">Sports</a>
+				<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=682&amp;design=p3">Sports</a>
 				<ul class="sub-menu">
-					<li><a href="#">Baseball &amp; Softball</a></li>
-					<li><a href="#">Basketball</a></li>
-					<li><a href="#">Football</a></li>
-					<li><a href="#">Golf</a></li>
-					<li><a href="#">Wrestling</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=696&amp;design=p3">Baseball &amp; Softball</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=685&amp;design=p3">Basketball</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=683&amp;design=p3">Football</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=686&amp;design=p3">Golf</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=684&amp;design=p3">Wrestling</a></li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
-				<a href="#0">Supplies</a>
+				<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=514&amp;design=p3">Supplies</a>
 				<ul class="sub-menu">
-					<li><a href="#">Calculators</a></li>
-					<li><a href="#">Folders &amp; Notebooks</a></li>
-					<li><a href="#">Writing Instruments</a></li>
-					<li><a href="#">Binders</a></li>
-					<li><a href="#">General Supplies</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=585&amp;design=p3">Calculators</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=643&amp;design=p3">Folders &amp; Notebooks</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=644&amp;design=p3">Writing Instruments</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=647&amp;design=p3">Binders</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=645&amp;design=p3">General Supplies</a></li>
 					<li><a href="#">Backpacks</a></li>
-					<li><a href="#">Design Kit</a></li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
-				<a href="#0">Tech</a>
+				<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=452&amp;design=p3">Tech</a>
 				<ul class="sub-menu">
-					<li><a href="#">Apple</a></li>
-					<li><a href="#">Computers</a></li>
-					<li><a href="#">Computer Accessories</a></li>
-					<li><a href="#">Phone Accessories</a></li>
-					<li><a href="#">Printers &amp; Ink</a></li>
-					<li><a href="#">Headphones / Earbuds</a></li>
-					<li><a href="#">Cameras</a></li>
-					<li><a href="#">Wearable Tech</a></li>
-					<li><a href="#">Apple Service Center</a></li>
-					<li><a href="#">Events</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=472&amp;design=p3">Apple</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=599&amp;design=p3">Computers</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=604&amp;design=p3">Computer Accessories</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=778&amp;design=p3">Phone Accessories</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=485&amp;design=p3">Printers &amp; Ink</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=473&amp;design=p3">Audio</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=479&amp;design=p3">Cameras</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=902&amp;design=p3">Wearable Tech</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=906&amp;design=p3">Apple Service Center</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=905&amp;design=p3">Events</a></li>
 				</ul>
 			</li>
 
 			<li class="item-has-children">
 				<a href="#0">Info</a>
 				<ul class="sub-menu">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Gift Cards</a></li>
-					<li><a href="#">Request a Catalog</a></li>
-					<li><a href="#">Sizing Chart</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=578&amp;design=p3">About Us</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=567&amp;design=p3">Contact</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=item.html&item=W40469&amp;design=p3">Gift Cards</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=596&amp;design=p3">Request a Catalog</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=589&amp;design=p3">Sizing Chart</a></li>
 					<li><a href="#">Jobs</a></li>
 					<li><a href="#">Meet the Models</a></li>
 				</ul>
@@ -233,10 +231,10 @@
 			<li class="item-has-children">
 				<a href="#0">Help</a>
 				<ul class="sub-menu">
-					<li><a href="#0">Shipping</a></li>
-					<li><a href="#0">Returns &amp; Exchanges</a></li>
-					<li><a href="#0">Contact</a></li>
-					<li><a href="#0">About Us</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=571&amp;design=p3">Shipping</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=991&amp;design=p3">Returns &amp; Exchanges</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=567&amp;design=p3">Contact</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=578&amp;design=p3">About Us</a></li>
 				</ul>
 			</li>
 		</ul>

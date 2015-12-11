@@ -15,26 +15,25 @@
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
-		<div>
+		<div class="cat-promo-img">
 			<a href="#">
 				<picture>
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/catalog-top.jpg" media="(min-width: 981px)">
-					<source srcset="images/amazon-banner-md.jpg" media="(min-width: 480px)">
+					<source srcset="http://placehold.it/1400x300" media="(min-width: 981px)">
+					<source srcset="http://placehold.it/1000x400" media="(min-width: 480px)">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/amazon-banner-sm.jpg" alt="…">
+					<img srcset="http://placehold.it/480x300" alt="…">
 				</picture>
 			</a>
 		</div>
-
+		<?php include 'includes/subcats.php'; ?>
 		<div class="container">
 			<div class="column-main">
 				<div class="row">
 					<div class="col-md-12">
-						<?php include 'includes/subcats-two.php'; ?>
 						<?php /* include 'includes/breadcrumbs.php';*/ ?>
 						<section class="browse-page">
-							<div class="catalogcontent">
+							<div class="catalogcontent-heading">
 								<h1 class="catalog-title">Shirts &amp; Tanks <span>(24 items)</span></h1>
 							</div>
 							<div class="product-list-wrapper">

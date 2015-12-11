@@ -16,7 +16,8 @@
 /* Components
 -------------------------------------------*/
 @import "components/grid-bootstrap";
-
+@import "components/tables-bootstrap";
+@import "components/button-bootstrap";
 
 /* Plugins
 -------------------------------------------*/
@@ -27,7 +28,8 @@
 @import "site/breadcrumbs";
 @import "site/mobilenav";
 @import "site/megamenu";
-@import "site/subcatalogs-two";
+@import "site/subcatalogs";
+// @import "site/subcatalogs-two";
 @import "site/footer";
 @import "site/header";
 @import "site/browse";
@@ -36,6 +38,7 @@
 @import "site/featureditems";
 @import "site/pagination";
 @import "site/catalog";
+@import "site/about";
 @import "site/home";
 
 

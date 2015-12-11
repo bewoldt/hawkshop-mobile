@@ -1,0 +1,67 @@
+
+// .cat-578 .catalogcontent {
+// 	@media (min-width: $break-large) {
+// 		background: url(../images/campus.jpg) no-repeat center bottom;
+// 		padding-bottom: 400px;
+// 	}
+// }
+.cat-578 .catalogcontent-heading {
+	display: none;
+}
+.about-hero {
+	background-image: url(../images/imu2.jpg);
+	background-size: cover;
+	padding-bottom: 18%;
+	margin-left: -1em;
+	margin-right: -1em;
+	& h1 {
+		color: #ffffff;
+		font-size: 66px;
+		line-height: 48px;
+		padding-top: 18%;
+		margin-bottom: 24px;
+		margin-top: 0;
+	}
+	& p {
+		color: #ffffff;
+		margin: 0;
+		font-weight: 300;
+		padding: 0 10%;
+		font-size: 24px;
+		line-height: 32px;
+	}
+	@media (min-width: $break-large) {
+		margin-left: -2em;
+		margin-right: -2em;
+	}
+}
+.about-gallery .gallery-cell {
+	width: 100%;
+	& img {
+		width: 100%;
+	}
+}
+.about-gallery .flickity-page-dots {
+  bottom: 10px;
+}
+/* white circles */
+.about-gallery .flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.about-gallery .flickity-page-dots .dot.is-selected {
+  background: white;
+}
+.section-inner-wrap {
+	border-bottom: 1px solid #ddd;
+
+	padding: 30px 0;
+	@media (min-width: $break-medium) {
+		margin: 0 48px;
+		padding: 60px 0;
+	}
+}

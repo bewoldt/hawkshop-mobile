@@ -10,7 +10,7 @@ Sub-Catalog Slider
 	xoverflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
 	@media (min-width: $break-medium ) {
-		xdisplay: none;
+		display: none;
 	}
 	& ul {
 		display: inline-block;
