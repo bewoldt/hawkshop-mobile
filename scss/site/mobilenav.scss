@@ -144,6 +144,10 @@ Trigger
 		display: inline-block;
 		line-height: $header-M;
 	}
+	@media only screen and (min-width: $break-medium) {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 /* Menu hamburger icon */
