@@ -12,10 +12,9 @@
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js"></script>
 </head>
 <body class="">
+	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
-
 	<?php include 'includes/header.php'; ?>
-
 	<main id="main-content" tabindex="-1" class="cd-main-content">
 		<div class="cat-promo-img">
 			<picture>
@@ -68,21 +67,21 @@
 
 									</li>
 									<li class="justify-item">
-										<h2 class="icon-title"><a href="#">Hats</a></h2>
+										<h2 class="catalog-heading"><a href="#">Hats</a></h2>
 										<a href="#" class="catalog-thumb">
 											<img src="images/A0744-t.jpg" alt="">
 										</a>
 
 									</li>
 									<li class="justify-item">
-										<h2 class="icon-title"><a href="#">Accessories</a></h2>
+										<h2 class="catalog-heading"><a href="#">Accessories</a></h2>
 										<a href="#" class="catalog-thumb">
 											<img src="images/TB0001-t.jpg" alt="">
 										</a>
 
 									</li>
 									<li class="justify-item">
-										<h2 class="icon-title"><a href="#">New Arrivals</a></h2>
+										<h2 class="catalog-heading"><a href="#">New Arrivals</a></h2>
 										<a href="#" class="catalog-thumb">
 											<img src="images/CW0877-t.jpg" alt="">
 										</a>

@@ -9,17 +9,19 @@
 	<link rel="stylesheet" href="css/p3.css">
 	<?php include 'includes/google-font.php'; ?>
 	<script src="js/modernizr.js"></script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
 </head>
 <body>
+	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
+		<?php include 'includes/promo-image.php'; ?>
 		<?php include 'includes/subcats.php'; ?>
 		<div class="container">
 			<div class="clearfix">
 				<div class="column-main">
 					<?php include 'includes/breadcrumbs.php'; ?>
-
 					<div itemscope itemtype="http://schema.org/Product" id="itemDisplay" class="item-wrapper" store="103">
 						<div class="clearfix">
 							<div id="itemPhoto">
@@ -80,7 +82,8 @@
 												<div id="cartLimit"></div>
 												<div id="qtyCart" class="optionLimit"></div>
 												<span class="addtocart-btn">
-													<span class="icon-shopping-cart"></span>
+													<svg class="icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg>
+													<!-- <span class="icon-shopping-cart"></span> -->
 													<input name="Add Cart" value="Add to Cart" type="submit" id="cartAdd" border="0" alt="Add to Cart" aria-label="Add to cart" >
 												</span>
 											</div>
@@ -109,11 +112,46 @@
 									<a href="https://twitter.com/intent/tweet?text=hello%20world&url=https%3A%2F%2Fjonsuh.com%2F&via=iowahawkshop" class="js-social-share"><span class="icon-twitter"></span></a>
 									<a href="#" class="js-social-share"><span class="icon-pinterest"></span></a>
 								</div>
-								<p><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=578&design=p3"><img src="images/why2.jpg" alt="why shop at Iowa Hawk Shop"></a></p>
+								<div class="cell-3">
+							<ul>
+								<li>
+									<strong>We're a non-profit</strong> Nullam quis risus eget urna mollis ornare vel eu leo ed posuere.
+								</li>
+								<li>
+									<strong>We help student orgs</strong> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+								</li>
+								<li>
+									<strong>Community Giving</strong> Nullam id dolor id nibh ultricies vehicula ut id elit urabitur blandit tempus.
+								</li>
+							</ul>
+						</div>
 							</div>
 						</div>
 					</div>
 					<?php include 'includes/suggested-items.php'; ?>
+					<div class="why-shop clearfix">
+						<div class="cell-1">
+							<h3>Why<br/>Shop the<br/>Hawk Shop?</h3>
+							<span class="bar"></span>
+							<p>The Iowa Hawk Shop is owned and operated by the University of Iowa. All proceeds support student programs and success initiatives. Our mission is to support academic excellence and build Hawkeye tradition. <a href="#">Learn more</a>.</p>
+						</div>
+						<div class="cell-2">
+
+						</div>
+						<div class="cell-3">
+							<ul>
+								<li>
+									<strong>We're a non-profit</strong> Nullam quis risus eget urna mollis ornare vel eu leo ed posuere.
+								</li>
+								<li>
+									<strong>We help students</strong> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+								</li>
+								<li>
+									<strong>Community Partnerships</strong> Nullam id dolor id nibh ultricies vehicula ut id elit urabitur blandit tempus.
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -126,5 +164,37 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/build/production.min.js"></script>
 	<!--<script type="text/javascript" src="js/plugins/itemDisplay.js"></script>-->
+	<script>
+		jQuery(document).ready(function($){
+			// initialize flickity(new)
+			var $gallery = $('#photoThumb').flickity({
+				cellSelector: 'img',
+				imagesLoaded: true,
+				percentPosition: false
+			});
+			// Flickity instance
+			var flkty = $gallery.data('flickity');
+			// Caption
+			var $caption = $('.caption');
+			// elements
+			var $cellButtonGroup = $('#imageAttr');
+			var $cellButtons = $cellButtonGroup.find('option');
+
+			// update selected cellButtons
+			$gallery.on( 'cellSelect', function() {
+				$caption.text( flkty.selectedElement.alt )
+				// $cellButtons.filter('.is-selected').removeClass('is-selected');
+				// $cellButtons.eq( flkty.selectedIndex ).addClass('is-selected').prop("selected", "selected");
+			});
+
+			// select cell on button click
+			// $cellButtonGroup.change(function () {
+			// 	$( "#imageAttr option:selected" ).each(function() {
+			// 		var index = $(this).index();
+			// 		$gallery.flickity( 'select', index );
+			// 	})
+			// });
+		});
+	</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 Flickity
 ----------------------------------------------------------------- */
 .home-gallery .gallery-cell {
-	width: 90%;
+	width: 100%;
 	// margin-right: 10px;
 	position: relative;
 	@media (min-width: $break-small) {
@@ -43,6 +43,7 @@ Promotional banner images
 .home-promo {
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 	@media (max-width: $break-medium - 1 ) {
 		margin-bottom: 1em;
 	}
@@ -81,6 +82,19 @@ Homepage featured items
 		width: 20%;
 	}
 }
+.home-featured .gallery-cell-image {
+	display: block;
+	max-height: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+/* fade in lazy loaded image */
+.home-featured .gallery-cell-image.flickity-lazyloaded,
+.home-featured .gallery-cell-image.flickity-lazyerror {
+	opacity: 1;
+}
 .home-featured .flickity-prev-next-button {
 	display: none;
 	visibility: hidden;
@@ -88,4 +102,21 @@ Homepage featured items
 		display: block;
 		visibility: visible;
 	}
+}
+
+
+.fan-gallery .gallery-cell {
+  width: 200px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.fan-gallery .gallery-cell-image {
+	min-height: 222px;
+}
+
+/* fade in lazy loaded image */
+.fan-gallery .gallery-cell-image.flickity-lazyloaded,
+.fan-gallery .gallery-cell-image.flickity-lazyerror {
+
 }

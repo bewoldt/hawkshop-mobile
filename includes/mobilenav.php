@@ -264,10 +264,10 @@
 			</div>
 			<hr>
 			<p>Store Hours:<br />
-				<meta itemprop="openingHours" content="Mo-Th 8:00-20:00">Mon–Thur: 8am – 8pm<br />
-				<meta itemprop="openingHours" content="Fr 8:00-17:00">Fri: 8am–5pm<br />
-				<meta itemprop="openingHours" content="Sa 9:00-17:00">Sat: 9am–5pm<br />
-				<meta itemprop="openingHours" content="Su 102:00-16:00">Sun: 12pm–4pm
+				<meta itemprop="openingHours" content="Mo-Th 8:00-20:00">Mon–Thur: 8am-8pm<br />
+				<meta itemprop="openingHours" content="Fr 8:00-17:00">Fri: 8am-5pm<br />
+				<meta itemprop="openingHours" content="Sa 9:00-17:00">Sat: 9am-5pm<br />
+				<meta itemprop="openingHours" content="Su 102:00-16:00">Sun: 12pm-4pm
 			</p>
 		</div>
 

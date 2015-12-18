@@ -12,6 +12,7 @@
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js"></script>
 </head>
 <body class="">
+	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
@@ -19,7 +20,7 @@
 			<a href="#">
 				<picture>
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="http://placehold.it/1400x300" media="(min-width: 981px)">
+					<source srcset="images/amazon-banner.jpg" media="(min-width: 981px)">
 					<source srcset="http://placehold.it/1000x400" media="(min-width: 480px)">
 					<!--[if IE 9]></video><![endif]-->
 					<img srcset="http://placehold.it/480x300" alt="…">
@@ -40,7 +41,8 @@
 								<ul class="justify product-list">
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/DW1000-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/DW1000-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" width="350" />
+											<noscript><img src="images/items/DW1000-t.jpg" alt="" class="productimg" /></noscript>
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -51,7 +53,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0964-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0964-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -62,7 +64,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/PR0305-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/O0495-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -73,7 +75,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0988-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0988-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -84,7 +86,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0950-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0950-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -95,7 +97,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/PR0216-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/PR0216-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -106,7 +108,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0838-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0838-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -117,7 +119,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0901-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0901-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -128,7 +130,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/BW0834-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/BW0834-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -139,7 +141,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0968-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0968-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -150,7 +152,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0859-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0859-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -161,7 +163,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0956-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0956-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -172,7 +174,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0980-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/CW0980-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">
@@ -183,7 +185,7 @@
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/PR0351-t.jpg" alt="" class="lazy productimg" width="350" height="389" />
+											<img data-original="images/items/PR0351-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
 											<h2 class="thumbnail-title">

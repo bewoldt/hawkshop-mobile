@@ -84,6 +84,7 @@ jQuery(document).ready(function($){
 		cellAlign: 'left',
 		freeScroll: true,
 		contain: true,
+		lazyLoad: 4,
 		// disable previous & next buttons and dots
 		prevNextButtons: true,
 		pageDots: false
@@ -133,34 +134,7 @@ jQuery(document).ready(function($){
 	// 	$caption.text( flkty.selectedElement.alt )
 	// });
 
-	// initialize flickity(new)
-			var $gallery = $('#photoThumb').flickity({
-				cellSelector: 'img',
-				imagesLoaded: true,
-				percentPosition: false
-			});
-			// Flickity instance
-			var flkty = $gallery.data('flickity');
-			// Caption
-			var $caption = $('.caption');
-			// elements
-			var $cellButtonGroup = $('#imageAttr');
-			var $cellButtons = $cellButtonGroup.find('option');
 
-			// update selected cellButtons
-			$gallery.on( 'cellSelect', function() {
-				$caption.text( flkty.selectedElement.alt )
-				$cellButtons.filter('.is-selected').removeClass('is-selected');
-				$cellButtons.eq( flkty.selectedIndex ).addClass('is-selected').prop("selected", "selected");
-			});
-
-			// select cell on button click
-			$cellButtonGroup.change(function () {
-				$( "#imageAttr option:selected" ).each(function() {
-					var index = $(this).index();
-					$gallery.flickity( 'select', index );
-				})
-			});
 
 
 
@@ -179,12 +153,23 @@ jQuery(document).ready(function($){
 	  $this.next('.panel').toggleClass('active');
 	});
 
+	// $(".unveil").unveil(300);
+
 	// Lazy Load
-	$("img.lazy").lazyload({
+	// $("img.lazy").lazyload({
+	// 	threshold : 300,
+	// 	effect : "fadeIn"
+	// });
+	// $("html,body").trigger("scroll");
+
+	jQuery("img.lazy").lazyload({
 		threshold : 300,
 		effect : "fadeIn"
 	});
-	$("html,body").trigger("scroll");
+	// make sure lazy loader runs and loads initial
+	// images in the view without initiating a scroll.
+	setTimeout(function() { jQuery(window).resize(); }, 1000);
+
 
 	//Sticky header
 	var sticky = new Waypoint.Sticky({

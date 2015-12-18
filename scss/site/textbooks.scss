@@ -1,6 +1,46 @@
 .cat-450 .catalogcontent-heading {
 	display: none;
 }
+.featurette-strap .featurette-3-wells {
+    padding-bottom: 0;
+}
+.featurette-3-wells {
+    padding-bottom: 30px;
+}
+.featurette-wells {
+    font-size: 0;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+.featurette-well {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    height: 100%;
+}
+.featurette-3-wells .featurette-well {
+	width: 33.3333333333%;
+}
+.featurette-well-inner {
+    height: 100%;
+}
+.featurette-well.content .featurette-well-inner .s_rte-text {
+    text-align: left;
+    padding: 10%;
+    height: 100%;
+    position: relative;
+}
+.s_rte-text-alt p {
+	font-size: 20px;
+	font-family: $heading-font;
+}
+
+
+
+
 
 
 .textStart, #courseFrame {

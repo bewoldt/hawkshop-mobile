@@ -16,7 +16,7 @@
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_765aef7fe0feeccd1e9d0941d_0db4cdc35a" tabindex="-1" value=""></div>
+					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_765aef7fe0feeccd1e9d0941d_0db4cdc35a" value=""></div>
 					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 				    </div>
 				</form>
@@ -26,7 +26,7 @@
 		<div class="clearfix">
 			<div id="pattern" class="quicklinks clearfix">
 				<div class="tabholder">
-					<h3 id="tab3" class="tab accordian" aria-controls="panel3" role="tab" tabindex="-1">Academics</h3>
+					<h3 id="tab3" class="tab accordian" aria-controls="panel3" role="tab">Academics</h3>
 					<div id="panel3" class="panel accordian" aria-labeledby="tab3" role="tabpanel">
 						<ul>
 							<li><a href="#">Textbook Search</a></li>
@@ -38,19 +38,19 @@
 					</div>
 				</div>
 				<div class="tabholder">
-					<h3 id="tab4" class="tab accordian" aria-controls="panel4" role="tab" tabindex="-1">Customer Service</h3>
+					<h3 id="tab4" class="tab accordian" aria-controls="panel4" role="tab">Customer Service</h3>
 					<div id="panel4" class="panel accordian" aria-labeledby="tab4" role="tabpanel">
 						<ul>
 							<li><a href="#">Our Location</a></li>
 							<li><a href="#">Shipping &amp; Returns</a></li>
 							<li><a href="#">Sizing Chart</a></li>
-							<li><a href="#">Gift CArds</a></li>
+							<li><a href="#">Gift Cards</a></li>
 							<li><a href="#">Request a Catalog</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="tabholder">
-					<h3 id="tab1" class="tab accordian" aria-controls="panel1" role="tab" tabindex="0">About Us</h3>
+					<h3 id="tab1" class="tab accordian" aria-controls="panel1" role="tab">About Us</h3>
 					<div id="panel1" class="panel accordian" aria-labeledby="tab1" role="tabpanel">
 						<ul>
 							<li><a href="#">Company Info</a></li>
@@ -62,7 +62,7 @@
 					</div>
 				</div>
 				<div class="tabholder">
-					<h3 id="tab2" class="tab accordian" aria-controls="panel2" role="tab" tabindex="-1">My Account</h3>
+					<h3 id="tab2" class="tab accordian" aria-controls="panel2" role="tab">My Account</h3>
 					<div id="panel2" class="panel accordian" aria-labeledby="tab2" role="tabpanel">
 						<ul>
 							<li><a href="#">Log In</a></li>
@@ -81,12 +81,13 @@
 				</div>
 				<div class="clearfix social">
 					<a href="http://www.facebook.com/hawkshop" class="fb" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Facebook Footer']);">
-						<span class="icon-facebook"></span>
+						<svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg>
+						<!-- <span class="icon-facebook"></span> -->
 						<strong>Facebook</strong><br>
 						<span class="username">@hawkshop</span>
 					</a>
 					<a href="https://twitter.com/iowahawkshop" class="tw" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Twitter Footer']);">
-						<span class="icon-twitter"></span>
+						<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
 						<strong>Follow on Twitter</strong><br>
 						<span class="username">@iowahawkshop</span>
 					</a>

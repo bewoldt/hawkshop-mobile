@@ -9,9 +9,10 @@
 	<link rel="stylesheet" href="css/p3.css">
 	<?php include 'includes/google-font.php'; ?>
 	<script src="js/modernizr.js"></script>
-	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js"></script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
 </head>
 <body class="home-page">
+	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
@@ -19,27 +20,27 @@
 		<div class="home-gallery">
 			<div class="gallery-cell">
 				<a href="#">
-					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+					<img src="http://placehold.it/950x450/aaaaaa" alt="">
 				</a>
 			</div>
 			<div class="gallery-cell">
 				<a href="#">
-					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+					<img src="images/bonobos-1.jpg" alt="">
 				</a>
 			</div>
 			<div class="gallery-cell">
 				<a href="#">
-					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+					<img src="http://placehold.it/950x450/aaaaaa" alt="">
 				</a>
 			</div>
 			<div class="gallery-cell">
 				<a href="#">
-					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+					<img src="http://placehold.it/950x450/aaaaaa" alt="">
 				</a>
 			</div>
 			<div class="gallery-cell">
 				<a href="#">
-					<img src="http://placehold.it/900x450/aaaaaa" alt="">
+					<img src="http://placehold.it/950x450/aaaaaa" alt="">
 				</a>
 			</div>
 		</div>
@@ -48,15 +49,15 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- <img src="images/banner1.png"> -->
-					<a href="#"><img src="images/banner1.png" class="home-promo"></a>
+					<a href="#"><img data-original="images/banner1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo"></a>
 				</div>
 				<div class="col-sm-4">
 					<!-- <img src="images/banner2.png"> -->
-					<img src="http://placehold.it/350x250" class="home-promo">
+					<img data-original="images/banner2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
 				</div>
 				<div class="col-sm-4">
 					<!-- <img src="images/banner3.png"> -->
-					<img src="http://placehold.it/350x250" class="home-promo">
+					<img data-original="images/banner3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
 				</div>
 			</div><!-- end .row -->
 			<div class="row">
@@ -67,22 +68,51 @@
 			</div>
 			<br /><br />
 			<div class="row">
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3a.jpg">
+				<div class="col-sm-6">
+					<!-- <img src="images/banner1.png"> -->
+					<a href="#"><img src="http://placehold.it/550x350"></a>
 				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3b.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3c.jpg">
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<img src="images/extra-3a.jpg">
+				<div class="col-sm-6">
+					<!-- <img src="images/banner2.png"> -->
+					<a href="#"><img class="lazy" data-original="images/service.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
 				</div>
 			</div><!-- end .row -->
 		</div>
 
+		<br /><br />
 
+		<div class="gallery fan-gallery js-flickity" data-flickity-options='{ "freeScroll":true, "wrapAround": true, "pageDots":false, "cellAlign":"left" }'>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_1_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_2_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_3_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_4_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_5_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_6_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_7_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_8_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_9_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+			<div class="gallery-cell">
+				<img class="gallery-cell-image lazy" data-original="images/instagram_10_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+			</div>
+		</div>
 
 		<?php include 'includes/footer.php'; ?>
 		<div class="offscreen-exit"></div>

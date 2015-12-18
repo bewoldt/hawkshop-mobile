@@ -214,7 +214,7 @@ Size Options
 Add to Cart button
 ----------------------------------------------------------------- */
 .addtocart-btn {
-	background: #fdd212;
+	background: lighten(#fdd212,10%);
 	box-shadow: inset 0 1px rgba(255,255,255,.5);
 	position: relative;
 	border-radius: 3px;
@@ -229,6 +229,12 @@ Add to Cart button
    width: 69%;
    height: 39px;
    text-transform: uppercase;
+   &:hover, &:focus {
+   	background: #fdd212;
+   }
+   &:active {
+   	background: darken(#fdd212,4%);
+   }
 }
 .addtocart-btn .icon-shopping-cart {
 	position: absolute;
@@ -242,7 +248,8 @@ Add to Cart button
 	color: #fff;
 	padding: 6px 7px;
 	border-radius: 3px;
-	font-size: 19px;
+	width: 31px;
+	height: 31px;
 }
 #cartAdd {
 	position: absolute;
@@ -374,9 +381,98 @@ Social Media
 	.icon-pinterest {color: #c6271f;}
 }
 
+/* -----------------------------------------------------------------
+Why Shop the Hawk Shop?
+----------------------------------------------------------------- */
+.why-shop {
+	margin-bottom: 1em;
+	@media (min-width: $break-medium) {
+		xbackground: #ebebeb url(../images/herky-bg.jpg) no-repeat center top;
+		background-color: #ebebeb;
+		margin: 1em;
+	}
+}
+.cell-1 {
+	background-color: #525252;
+	color: #fff;
+	padding: 25px;
+	@media (min-width: $break-medium) {
+		background-color: transparent;
+		color: #000;
+		float: left;
+		width: 300px;
+		margin-right: 140px;
+		padding-right: 0;
+	}
+}
+.cell-1 h3 {
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 28px;
+	@media (min-width: $break-medium) {
+		color: #333;
+		font-size: 32px;
+	}
+}
+.cell-1 .bar {
+	display: block;
+	margin: 12px 0 14px 0;
+	width: 100px;
+	background-color: #fff;
+	height: 7px;
+	@media (min-width: $break-medium) {
+		background-color: #000;
+	}
+}
+.cell-1 p {
+	font-size: 15px;
+	line-height: 1.3;
+}
 
 
-
-
+.cell-3 {
+	background: #ebebeb;
+	padding: 25px;
+	& ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	@media (min-width: $break-medium) {
+		background: transparent;
+		float: right;
+		width: 330px;
+		padding-left: 0;
+	}
+}
+.cell-3 ul li {
+	padding-left: 52px;
+	margin-right: 15px;
+	margin-bottom: 1em;
+	font-family: arial;
+	font-size: 12px;
+	& strong {
+		font-size: 18px;
+		line-height: 18px;
+		padding-bottom: 2px;
+		display: block;
+		font-weight: normal;
+	}
+}
+.cell-3 li:nth-child(1) {
+	background: url(../images/benefit_1.png) no-repeat left top;
+}
+.cell-3 li:nth-child(2) {
+	background: url(../images/benefit_2.png) no-repeat left top;
+}
+.cell-3 li:nth-child(3) {
+	background: url(../images/benefit_3.png) no-repeat left top;
+}
+.cell-3 li:nth-child(4) {
+	background: url(../images/benefit_4.png) no-repeat left top;
+	margin-bottom: 0;
+}
 
 

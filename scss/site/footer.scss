@@ -6,7 +6,7 @@ $footer-break: 850px;
 	position: relative;
 	overflow: hidden;
 	@media (min-width: $break-medium) {
-		background-image: url(../images/Iowa_Hawkeyes2.gif);
+		// background-image: url(../images/Iowa_Hawkeyes2.gif);
 		background-repeat: no-repeat;
 		background-position: -180px -35px;
 	}
@@ -412,7 +412,7 @@ Social Media
 .social .username {
 	color: #999;
 }
-.social .icon-twitter, .social .icon-facebook {
+.social .icon-twitter, .social .icon-facebook2 {
 	color: #666;
 	display: block;
 	font-size: 30px;
@@ -421,12 +421,10 @@ Social Media
 	height: 30px;
 	width: 30px;
 }
-.social .tw:hover .icon-twitter {
-	color: #49cffb;
+.social .tw:hover .icon-twitter, .social .fb:hover .icon-facebook2 {
+	color: $yellow;
 }
-.social .fb:hover .icon-facebook {
-	color: #4963a0;
-}
+
 
 /* -----------------------------------------------------------------
 Copyright

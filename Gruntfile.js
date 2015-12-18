@@ -8,8 +8,10 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
+					'js/plugins/svgxuse.js',
 					'js/plugins/mobilenav.js',
 					'js/plugins/dropdown.js',
+					// 'js/plugins/jquery.unveil.js',
 					'js/plugins/jquery.lazyload.js',
 					'js/plugins/jquery.waypoints.min.js',
 					'js/plugins/sticky.min.js',

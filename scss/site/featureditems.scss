@@ -4,7 +4,7 @@ Catalog/Browse page featured
 ----------------------------------------------------------------- */
 .featured-item-list .catalog-featured {
 	padding-bottom: 1em;
-	@media (min-width: $break-xlarge) {
+	@media (min-width: $break-large) {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -56,7 +56,7 @@ Suggested items
 .suggested-gallery {
 	list-style: none;
 	margin: 0;
-	@media (min-width: $break-xlarge) {
+	@media (min-width: $break-large) {
 		padding: 0 1em;
 	}
 }
@@ -65,7 +65,7 @@ Suggested items
 	font-size: 15px;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 2em 0;
 	@media (min-width: $break-medium) {
 		font-size: 24px;
 	}

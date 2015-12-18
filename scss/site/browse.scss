@@ -3,6 +3,7 @@ Catalog Content
 ----------------------------------------------------------------- */
 .catalogcontent {
 	position: relative;
+	text-align: center;
 	& p {
 		font-size: 16px;
 	}
@@ -11,11 +12,12 @@ Catalog Content
 	font-size: 30px;
 	line-height: 1.3;
 	margin-top: .5em;
+	margin-bottom: .25em;
 	text-align: center;
 	@media (min-width: $break-medium) {
 		font-size: 34px;
 		margin-top: 1em;
-		margin-bottom: 1em;
+
 	}
 }
 .catalogcontent-heading .catalog-title span {
@@ -27,11 +29,9 @@ Catalog Content
 		display: inline;
 	}
 }
-/*.catalogcount {
-	position: absolute;
-	right: 0;
-	top: 7px;
-}*/
+#catalog-list {
+	padding-top: 1.5em;
+}
 .product-list-wrapper {
 	@media (min-width: $break-small) {
 		padding: 0 1em;
@@ -61,7 +61,7 @@ Catalog Content
 	transition: .1s ease-in-out;
 	border-radius: 3px;
 }
-.product-list > li:hover, .product-list > li:focus {
+.product-list > li:hover, .product-list > li:focus, .product-list > li:active {
 	box-shadow: inset 0 0 1px 0 #999;
 }
 .product-list .justify-item:after {
@@ -102,14 +102,18 @@ Thumbnail Image
 ----------------------------------------------------------------- */
 .thumbnail-link {
 	display: block;
-	margin-bottom: 5px;
-	@media (min-width: $break-small) {
-		margin-bottom: 10px;
-	}
+	margin-bottom: 10px;
+	position: relative;
+	height: 0;
+	padding-top: 111%;
+	overflow: hidden;
 }
 .thumbnail-link img {
 	display: block;
 	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 /* -----------------------------------------------------------------
 Thumbnail Info
@@ -119,6 +123,8 @@ Thumbnail Info
 	font-size: 13px;
 	line-height: 1.4;
 	text-align: center;
+	position: relative;
+	background-color: #fff;
 	& .brand {
 		display: block;
 		font-weight: bold;
@@ -160,6 +166,9 @@ Thumbnail Info
 	& a {
 		color: #333;
 		display: block;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
 	}
 }
 
