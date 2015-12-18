@@ -61,6 +61,7 @@
 
 /* focus/open states of first descendant link within a top level
 	 navigation item */
+.nav-item > a:hover,
 .nav-item > a:focus,
 .nav-item > a.open {
 	background-color: #fff;
