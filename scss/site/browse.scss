@@ -3,9 +3,11 @@ Catalog Content
 ----------------------------------------------------------------- */
 .catalogcontent {
 	position: relative;
-	text-align: center;
-	& p {
-		font-size: 16px;
+	@media (min-width: $break-small) {
+		padding: 0 1em 1em 1em;
+	}
+	@media (min-width: $break-xlarge) {
+		padding: 0 2em 1em 2em;
 	}
 }
 .catalogcontent-heading .catalog-title {
@@ -33,7 +35,7 @@ Catalog Content
 	padding-top: 1.5em;
 }
 .product-list-wrapper {
-	@media (min-width: $break-small) {
+	@media (min-width: $break-large) {
 		padding: 0 1em;
 	}
 }

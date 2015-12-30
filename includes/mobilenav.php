@@ -246,7 +246,7 @@
 					<div class="search">
 						<label for="quicksearch" class="visuallyhidden">Search</label>
 						<input type="TEXT" name="KEY" id="quicksearch" placeholder="Search" class="quicksearch-input" aria-label="Search">
-						<button type="submit" name="search" class="icon-search" title="Search">Search</button>
+						<button type="submit" name="search" class="icon-search" title="Search"></button>
 					</div>
 				</fieldset>
 			</form>

@@ -12,7 +12,6 @@
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js"></script>
 </head>
 <body class="cat-578">
-	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">

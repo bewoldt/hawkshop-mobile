@@ -69,7 +69,7 @@
 	position: relative;
 	&:after {
 		content: '';
-		background-color: $yellow;
+		background-color: #000;
 		border-top-left-radius: 1px;
 		border-top-right-radius: 1px;
 		width: 100%;
@@ -221,7 +221,7 @@
 }
 
 /* Arrow Icon */
-.sub-nav .icon-chevron-right2 {
+.sub-nav .icon-chevron-right {
 	float: right;
 }
 

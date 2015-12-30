@@ -360,7 +360,6 @@ Description
 Social Media
 ----------------------------------------------------------------- */
 .item-social {
-
 	& a {
 		display: inline-block;
 		margin: 0 5px;
@@ -368,17 +367,17 @@ Social Media
 			text-decoration: none;
 		}
 	}
-	& span {
-		color: #999;
-		font-size: 18px;
-	}
 	& .item-share {
 		color: #333;
 		font-weight: bold;
 	}
-	.icon-facebook {color: #3c589d;}
-	.icon-twitter {color: #48aaf2;}
-	.icon-pinterest {color: #c6271f;}
+	& .icon {
+		font-size: 18px;
+		vertical-align: text-bottom;
+	}
+	.icon-facebook-square {color: #3c589d;text-indent: -999em;}
+	.icon-twitter-square {color: #48aaf2;}
+	.icon-pinterest-square {color: #c6271f;}
 }
 
 /* -----------------------------------------------------------------
@@ -473,6 +472,64 @@ Why Shop the Hawk Shop?
 .cell-3 li:nth-child(4) {
 	background: url(../images/benefit_4.png) no-repeat left top;
 	margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------------
+Added to Cart Page
+----------------------------------------------------------------- */
+.cartAddPage {
+	background-color: #fff;
+	position: relative;
+	max-width: $break-xxlarge;
+	padding: 1em;
+	@media (min-width: $break-medium) {
+		min-height: 600px;
+	}
+	@media (min-width: $break-xxlarge) {
+		margin: 1em auto;
+		border: 1px solid #e5e5e5;
+		border-radius: 2px;
+	}
+	@media (min-width: $break-xlarge) {
+		padding: 2em;
+	}
+	& span.titlefont {
+		font-family: $heading-font;
+		font-size: 20px;
+	}
+	& .rbutton {
+		box-shadow: 2px 2px 2px #ccc;
+		border-radius: 3px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+		border: solid 1px #000;
+		margin: 5px 10px 5px 0px;
+		cursor: pointer;
+		display: block;
+		float: left;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 10px 15px;
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	& .rsecondary {
+		color: #666;
+		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bbb));
+		border-color: #999
+	}
+	& .cartAdd {
+		background: #f5f5f5;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1em;
+		margin: 1em 0;
+	}
+	& .textsmall {
+		display: none;
+	}
 }
 
 

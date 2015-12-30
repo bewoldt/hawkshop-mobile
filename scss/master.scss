@@ -9,8 +9,8 @@
 @import "global/mixins";
 @import "global/normalize";
 @import "global/typography";
-// @import "global/fonts";
-@import "global/svg";
+@import "global/fonts";
+// @import "global/svg";
 @import "global/global";
 
 
@@ -30,7 +30,6 @@
 @import "site/mobilenav";
 @import "site/megamenu";
 @import "site/subcatalogs";
-// @import "site/subcatalogs-two";
 @import "site/footer";
 @import "site/header";
 @import "site/browse";

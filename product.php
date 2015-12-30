@@ -12,7 +12,6 @@
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
 </head>
 <body>
-	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
@@ -108,9 +107,15 @@
 								<p class="item-meta" id="itemNumber" itemprop="productID">F0694</p>
 								<div class="item-meta item-social">
 									<span class="item-share">Share: </span>
-									<a href="#" class="js-social-share"><span class="icon-facebook"></span></a>
-									<a href="https://twitter.com/intent/tweet?text=hello%20world&url=https%3A%2F%2Fjonsuh.com%2F&via=iowahawkshop" class="js-social-share"><span class="icon-twitter"></span></a>
-									<a href="#" class="js-social-share"><span class="icon-pinterest"></span></a>
+									<a href="#" class="js-social-share">
+										<span class="icon icon-facebook-square"></span>
+									</a>
+									<a href="#" class="js-social-share">
+										<span class="icon icon-twitter-square"></span>
+									</a>
+									<a href="#" class="js-social-share">
+										<span class="icon icon-pinterest-square"></span>
+									</a>
 								</div>
 								<div class="cell-3">
 							<ul>

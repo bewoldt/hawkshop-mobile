@@ -331,27 +331,6 @@ Search
 .mobilenav-form .search {
 	position: relative;
 }
-.mobilenav-form .search:before {
-	content: "\e600";
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	position: absolute;
-	left: 9px;
-	top: 8px;
-	color: #666;
-	font-size: 19px;
-	z-index: 1;
-}
 .mobilenav-form .quicksearch-input {
 	background: #fff;
 	box-shadow: none;
@@ -361,7 +340,7 @@ Search
 	font-size: 16px;
 	height: auto;
 	line-height: normal;
-	padding: 10px 10px 10px 40px;
+	padding: 10px 40px 10px 10px;
 	position: relative;
 	vertical-align: middle;
 	width: 100%;
@@ -369,16 +348,53 @@ Search
 	border-radius: 18px;
 	transition: width 0.2s ease, background-color 0.2s ease;
 }
+// .mobilenav-form .icon-search {
+// 	 border: 0;
+// 	 clip: rect(0 0 0 0);
+// 	 height: 1px;
+// 	 margin: -1px;
+// 	 overflow: hidden;
+// 	 padding: 0;
+// 	 position: absolute;
+// 	 width: 1px;
+// }
 .mobilenav-form .icon-search {
-	 border: 0;
-	 clip: rect(0 0 0 0);
-	 height: 1px;
-	 margin: -1px;
-	 overflow: hidden;
-	 padding: 0;
-	 position: absolute;
-	 width: 1px;
+	border: none;
+	background: transparent;
+	text-indent: -9999em;
+	position: absolute;
+	right: 7px;
+	width: 18px;
+	height: 22px;
+	top: 7px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
 }
+.mobilenav-form .icon-search:before {
+	color: #999;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-indent: 0;
+	font-size: 17px;
+	font-weight: normal;
+}
+// .mobilenav-form .icon-search {
+// 	border: none;
+// 	position: absolute;
+// 	right: 5px;
+// 	top: 5px;
+// 	display: block;
+// 	text-indent: -9999px;
+// 	background: transparent;
+// }
+// .mobilenav-form .icon-search {
+// 	fill: #333;
+// 	display: block;
+// 	width: 16px;
+// 	height: 22px;
+// }
 
 /* -----------------------------------------------------------------
 Address

@@ -1,64 +1,44 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?hsztpq');
-	src:url('../fonts/icomoon.eot?#iefixhsztpq') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?hsztpq') format('truetype'),
-		url('../fonts/icomoon.woff?hsztpq') format('woff'),
-		url('../fonts/icomoon.svg?hsztpq#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?vikd0z');
+    src:    url('../fonts/icomoon.eot?vikd0z#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?vikd0z') format('truetype'),
+        url('../fonts/icomoon.woff?vikd0z') format('woff'),
+        url('../fonts/icomoon.svg?vikd0z#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cross:before {
-	content: "\e608";
+.icon-facebook-square:before {
+    content: "\e900";
 }
-.icon-menu:before {
-	content: "\e605";
+.icon-twitter-square:before {
+    content: "\e901";
 }
-.icon-chevron-left:before {
-	content: "\e60c";
+.icon-pinterest-square:before {
+    content: "\e902";
 }
 .icon-chevron-right:before {
-	content: "\e607";
+    content: "\e903";
 }
 .icon-shopping-cart:before {
-	content: "\e603";
+    content: "\e904";
 }
 .icon-search:before {
-	content: "\e600";
-}
-.icon-location:before {
-	content: "\e60b";
-}
-.icon-phone:before {
-	content: "\e60a";
-}
-.icon-home:before {
-	content: "\e609";
-}
-.icon-instagram:before {
-	content: "\e604";
-}
-.icon-pinterest:before {
-	content: "\e606";
-}
-.icon-twitter:before {
-	content: "\e601";
-}
-.icon-facebook:before {
-	content: "\e602";
+    content: "\e905";
 }

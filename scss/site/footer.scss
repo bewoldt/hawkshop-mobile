@@ -298,13 +298,6 @@ Tabs to Full
 	font-size: 12px;
 	padding: 11px 0 11px 1em;
 	border-top: 1px solid #333;
-	&:before {
-		content: '\00b7';
-		padding-right: 5px;
-		@media (min-width: 600px) {
-			display: none;
-		}
-	}
 	@media (min-width: 600px) {
 		border-top: none;
 		color: #eee;
@@ -412,7 +405,7 @@ Social Media
 .social .username {
 	color: #999;
 }
-.social .icon-twitter, .social .icon-facebook2 {
+.social .icon {
 	color: #666;
 	display: block;
 	font-size: 30px;
@@ -421,7 +414,7 @@ Social Media
 	height: 30px;
 	width: 30px;
 }
-.social .tw:hover .icon-twitter, .social .fb:hover .icon-facebook2 {
+.social .tw:hover .icon, .social .fb:hover .icon {
 	color: $yellow;
 }
 

@@ -3,14 +3,14 @@
 	<div class="top-wrapper">
 		<div class="top-cart right">
 			<a href="#" class="cart-toggler">
-				<svg class="icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg><span class="my-cart"> My Cart</span> <b class="caret square" id="cart_products_number">0</b>
+				<span class="icon-shopping-cart"></span><span class="my-cart"> My Cart</span> <b class="caret square" id="cart_products_number">0</b>
 			</a>
 		</div>
 		<div class="searchcontainer">
 			<form action="">
 				<label for="quicksearch" class="visuallyhidden" for="search">Search</label>
-				<input type="search" name="search" placeholder="Search" id="search" aria-label="Search" autocomplete="off">
-				<button type="submit" class="icon-search" title="Search">Search</button>
+				<input type="search" name="search" placeholder="Enter keyword or item #" id="search" aria-label="Search" autocomplete="off">
+				<button type="submit" name="search" class="icon-search" title="Search">Search</button>
 			</form>
 		</div>
 		<a href="tel:+18004295746" class="header-phone">1-800-429-5746</a>
@@ -35,7 +35,7 @@
 	<div class="container clearfix">
 		<div class="logo-container">
 			<a class="logo" href="#"><img src="images/iowahawkshop.png" alt="Iowa Hawk Shop"></a>
-			<a href="#" class="cart-trigger"><span class="cd-menu-text">Cart</span><svg class="icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg></a>
+			<a href="#" class="cart-trigger"><span class="cd-menu-text">Cart</span><span class="icon-shopping-cart"></span></a>
 			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</div>
 	</div>

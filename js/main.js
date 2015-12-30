@@ -46,29 +46,6 @@ jQuery(document).ready(function($){
 	});
 
 
-	// scroll to top of page
-	// $('.scrollup').click(function () {
-	// 	$("html, body").animate({
-	// 		scrollTop: 0
-	// 	}, 600);
-	// 	return false;
-	// });
-
-
-	// Flickity
-	// show
-	// var $gallery = $('.home-gallery').removeClass('is-hidden');
-	// $gallery[0].offsetHeight;
-	// $gallery.flickity({
-	// 	initialIndex: 1,
-	// 	wrapAround: true,
-	// 	imagesLoaded: true,
-	// 	selectedAttraction: 0.01,
-	// 	friction: 0.15,
-	// 	autoPlay: true,
-	// 	autoPlay: 6000
-	// });
-
 	$('.home-gallery').flickity({
 		initialIndex: 1,
 		wrapAround: true,
@@ -142,26 +119,18 @@ jQuery(document).ready(function($){
 	// Header dropdown menus
 	$('.dropdown-toggle').dropdown()
 
-	// Footer tabs
-	$('body').addClass('js');
-	  var $tab = $('.tab');
 
-		$tab.on("click", function(e){
-	  e.preventDefault();
-	  var $this = $(this);
-	  $this.toggleClass('active');
-	  $this.next('.panel').toggleClass('active');
+	// Footer tabs
+	var $tab = $('.tab');
+	$tab.on("click", function(e){
+		e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('active');
+		$this.next('.panel').toggleClass('active');
 	});
 
-	// $(".unveil").unveil(300);
 
-	// Lazy Load
-	// $("img.lazy").lazyload({
-	// 	threshold : 300,
-	// 	effect : "fadeIn"
-	// });
-	// $("html,body").trigger("scroll");
-
+	// Lazy load images
 	jQuery("img.lazy").lazyload({
 		threshold : 300,
 		effect : "fadeIn"

@@ -26,7 +26,9 @@
 		<div class="clearfix">
 			<div id="pattern" class="quicklinks clearfix">
 				<div class="tabholder">
-					<h3 id="tab3" class="tab accordian" aria-controls="panel3" role="tab">Academics</h3>
+					<h3 class="tab accordian" >
+						<a href="#panel3" aria-controls="panel3" role="tab" id="tab3">Academics</a>
+					</h3>
 					<div id="panel3" class="panel accordian" aria-labeledby="tab3" role="tabpanel">
 						<ul>
 							<li><a href="#">Textbook Search</a></li>
@@ -81,13 +83,13 @@
 				</div>
 				<div class="clearfix social">
 					<a href="http://www.facebook.com/hawkshop" class="fb" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Facebook Footer']);">
-						<svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg>
+						<span class="icon icon-facebook-square"></span>
 						<!-- <span class="icon-facebook"></span> -->
 						<strong>Facebook</strong><br>
 						<span class="username">@hawkshop</span>
 					</a>
 					<a href="https://twitter.com/iowahawkshop" class="tw" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Twitter Footer']);">
-						<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+						<span class="icon icon-twitter-square"></span>
 						<strong>Follow on Twitter</strong><br>
 						<span class="username">@iowahawkshop</span>
 					</a>

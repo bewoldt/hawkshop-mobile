@@ -58,6 +58,7 @@ Logo
 	}
 	@media(min-width: $break-medium) {
 		width: 389px;
+		margin: 0 auto;
 	}
 	@media(min-width: $break-large) {
 		width: 439px;
@@ -81,8 +82,8 @@ Search
 	border: none;
 	font-size: 13px;
 	height: 30px;
-	padding: 4px 10px;
-	line-height: 30px;
+	padding: 0px 30px 0 10px;
+	line-height: 29px;
 	background-color: transparent;
 	outline: none;
 	color: #fff;
@@ -104,7 +105,7 @@ Search
 	line-height: 22px;
 }
 .searchcontainer .icon-search:before {
-    content: "\e600";
+    content: "\e905";
     color: #999;
     position: absolute;
     left: 50%;
@@ -178,7 +179,7 @@ Shopping Cart
 	position: absolute;
 	left: 14px;
 	color: #999;
-	top: 5px;
+	top: 0;
 }
 .cart-toggler:hover .icon-shopping-cart {
 	color: #fff;
@@ -241,13 +242,16 @@ Mobile Shopping Cart Icon
 		right: 105px;
 		height: 70px;
 	}
+	@media (min-width: $break-medium) {
+		display: none;
+	}
 }
 .logo-container .icon-shopping-cart {
 	width: 50px;
-	height: 20px;
+	height: 50px;
 	display: block;
 	position: absolute;
-	top: 15px;
+	top: 0;
 	font-size: 17px;
 	right: 0;
 	line-height: 50px;
@@ -257,8 +261,8 @@ Mobile Shopping Cart Icon
 		text-decoration: none;
 	}
 	@media only screen and (min-width: $break-small) {
-		width: 50px;
-		top: 25px;
+		height: 70px;
+		line-height: 70px;
 	}
 	@media only screen and (min-width: $break-medium) {
 		display: none;

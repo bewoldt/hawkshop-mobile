@@ -12,7 +12,6 @@
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
 </head>
 <body class="home-page">
-	<?php include 'includes/svg.php'; ?>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
@@ -74,43 +73,47 @@
 				</div>
 				<div class="col-sm-6">
 					<!-- <img src="images/banner2.png"> -->
-					<a href="#"><img class="lazy" data-original="images/service.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+					<a href="#"><img class="lazy" data-original="images/appleservicecenter.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
 				</div>
 			</div><!-- end .row -->
 		</div>
 
 		<br /><br />
 
-		<div class="gallery fan-gallery js-flickity" data-flickity-options='{ "freeScroll":true, "wrapAround": true, "pageDots":false, "cellAlign":"left" }'>
+		<div class="gallery fan-gallery js-flickity" data-flickity-options='{ "freeScroll":true, "wrapAround": true, "pageDots":false, "cellAlign":"left", "cellSelector":".gallery-cell", "prevNextButtons":false, "autoPlay":true }'>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_1_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_1_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_2_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_2_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_3_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_3_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_4_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_4_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_5_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_5_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_6_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_6_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_7_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_7_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_8_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_8_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_9_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_9_n.jpg" alt="tulip" />
 			</div>
 			<div class="gallery-cell">
-				<img class="gallery-cell-image lazy" data-original="images/instagram_10_n.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="tulip" />
+				<img class="gallery-cell-image" src="images/instagram_10_n.jpg" alt="tulip" />
+			</div>
+			<div class="hawkofthemonth">
+				<h3>#hawkofthemonth</h3>
+				Send us your best Hawkeye fan photo for your chance to be the Hawk of the Month! The winner will win a Nike Replica Iowa Hawkeye Football. Send a photo to <a href="#">hawkshopcontest@gmail.com</a>.
 			</div>
 		</div>
 

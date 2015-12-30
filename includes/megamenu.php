@@ -148,12 +148,12 @@
 			<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=30&amp;design=p3">Home &amp; Gifts</a>
 			<div class="sub-nav groups group-2">
 				<ul class="sub-nav-group">
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=49&amp;design=p3">Accessories <svg class="icon icon-chevron-right2"><use xlink:href="#icon-chevron-right2"></use></svg></a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=49&amp;design=p3">Accessories <span class="icon icon-chevron-right"></span></a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=156&amp;design=p3">Auto</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=160&amp;design=p3">Flags &amp; Pennants</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=315&amp;design=p3">Gameday &amp; Tailgating</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=157&amp;design=p3">Holiday Gifts</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=372&amp;design=p3">Home &amp; Kitchen <svg class="icon icon-chevron-right2"><use xlink:href="#icon-chevron-right2"></use></svg></a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=372&amp;design=p3">Home &amp; Kitchen <span class="icon icon-chevron-right"></span></a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=305&amp;design=p3">Office &amp; Desk</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=893&amp;design=p3">Patio, Lawn, &amp; Garden</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=175&amp;design=p3">Pet Accessories</a></li>
