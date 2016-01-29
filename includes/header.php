@@ -13,9 +13,9 @@
 				<button type="submit" name="search" class="icon-search" title="Search">Search</button>
 			</form>
 		</div>
-		<a href="tel:+18004295746" class="header-phone">1-800-429-5746</a>
+		<a href="tel:+18004295746" class="header-phone">1-800-429-5746, M-F: 8am-5pm</a>
 		<div class="help-center">
-			<a data-target="#" href="#" id="drop1" class="header-location" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+			<a data-target="#" href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=567&amp;design=p3" id="drop1" class="header-location" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
 			<ul class="dropdown-menu" aria-labelledby="drop1">
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Shipping</a></li>
@@ -23,7 +23,7 @@
 	  		</ul>
 	  	</div>
 	  	<div class="account-dropdown">
-			<a data-target="#" href="#" id="drop2" class="header-account" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+			<a data-target="#" href="https://secure.sequoiars.com/ePOS/store=103&form=shared3/users/userlogin.html" id="drop2" class="header-account" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
 			<ul class="dropdown-menu" aria-labelledby="drop2">
 				<li><a href="#">My Account</a></li>
 				<li><a href="#">Order History</a></li>
@@ -34,7 +34,7 @@
 	</div>
 	<div class="container clearfix">
 		<div class="logo-container">
-			<a class="logo" href="#"><img src="images/iowahawkshop.png" alt="Iowa Hawk Shop"></a>
+			<a class="logo" href="#"><img src="images/iowahawkshop.png" alt="Iowa Hawk Shop" width="479"></a>
 			<a href="#" class="cart-trigger"><span class="cd-menu-text">Cart</span><span class="icon-shopping-cart"></span></a>
 			<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 		</div>

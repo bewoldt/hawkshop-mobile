@@ -1,6 +1,5 @@
 /* ePOS styles
 -------------------------------------------*/
-// @import "site/masterstyles";
 
 
 /* Global Settings
@@ -22,7 +21,8 @@
 
 /* Plugins
 -------------------------------------------*/
-@import "plugins/flickity.scss";
+@import "plugins/flickity";
+@import 'bourbon/bourbon'; // http://bourbon.io/
 
 /* Layout
 -------------------------------------------*/

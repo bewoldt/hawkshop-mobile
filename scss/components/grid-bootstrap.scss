@@ -16,6 +16,15 @@
 .container:after {
   clear: both;
 }
+.visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+    display: none!important;
+}
+.visible-sm-block {
+		@media (min-width: $break-small) and (max-width: $break-medium - 1) {
+			display: block!important;
+		}
+
+}
 .row {
   margin-left: -15px;
   margin-right: -15px;
@@ -140,7 +149,7 @@
     Min-Width: $break-medium;
 -------------------------------------------*/
 
-@media (min-width: $break-medium) {
+@media (min-width: $break-small) {
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -296,7 +305,7 @@
     Min-Width: $break-large;
 -------------------------------------------*/
 
-@media (min-width: $break-large) {
+@media (min-width: $break-medium) {
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -461,7 +470,7 @@
     Min-Width: $break-xlarge;
 -------------------------------------------*/
 
-@media (min-width: $break-xlarge) {
+@media (min-width: $break-large) {
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,

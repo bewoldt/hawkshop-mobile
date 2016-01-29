@@ -69,7 +69,10 @@
 .catalog-icons .filler {
 	padding: 0;
 }
-
+.catalog-icons a {
+	display: block;
+	text-decoration: none;
+}
 .catalog-thumb {
 	border: 1px solid #000;
 	display: block;
@@ -81,6 +84,8 @@
 }
 .catalog-heading {
 	background-color: #000;
+	color: #fff;
+	padding: 8px 5px;
 	font-size: 13px;
 	font-family: $heading-font;
 	font-weight: normal;
@@ -90,14 +95,11 @@
 	@media (min-width: $break-small) {
 		font-size: 16px;
 	}
-	& a {
-		color: #fff;
-		display: block;
-		font-family: $heading-font;
-		padding: 5px;
-	}
 }
-
+.catalog-icons a:hover .catalog-heading,
+.catalog-icons a:focus .catalog-heading {
+	text-decoration: underline
+}
 
 /* -----------------------------------------------------------------
 Top Promotional Image

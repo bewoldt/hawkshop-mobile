@@ -64,6 +64,27 @@ img.right {margin-left: 1em; margin-bottom: 1em;}
 	vertical-align: top;
 	width: 100%;
 }
+.justify-2 .justify-item {
+	@media screen and (min-width: $break-small) {
+		width: 48%;
+	}
+}
+.justify-3 .justify-item {
+	@media screen and (min-width: $break-small) {
+		width: 48%;
+	}
+	@media screen and (min-width: $break-medium) {
+		width: 32%;
+	}
+}
+.justify-4 .justify-item {
+	@media screen and (min-width: $break-small) {
+		width: 48%;
+	}
+	@media screen and (min-width: $break-medium) {
+		width: 24%;
+	}
+}
 .justify .filler {
 	height: 0 !important;
 	margin: 0 !important;

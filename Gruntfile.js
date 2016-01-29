@@ -55,11 +55,11 @@ module.exports = function(grunt) {
 		postcss: {
          options: {
              map: true,
-             processors: [
-                 require('autoprefixer')({
-                     browsers: ['not ie <= 8']
-                 })
-             ]
+             // processors: [
+             //     require('autoprefixer')({
+             //         browsers: ['not ie <= 8']
+             //     })
+             // ]
          },
          dist: {
 				files:{
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
 			css: {
 
 				files: ['scss/*.scss', 'scss/**/*.scss'],
-				tasks: ['sass', 'postcss'],
+				tasks: ['sass'],
 				options: {
 					spawn: false,
 				}
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-postcss');
 
 	// Default task(s).
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss:dist', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
 
 
 };

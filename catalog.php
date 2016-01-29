@@ -26,6 +26,7 @@
 		</div>
 		<div class="container">
 			<div class="column-main">
+				<?php include 'includes/breadcrumbs.php'; ?>
 				<div class="row">
 					<div class="col-md-12">
 						<section class="catalog-page">
@@ -35,9 +36,9 @@
 							<div class="catalog-wrapper">
 								<ul class="justify catalog-icons">
 									<li class="justify-item">
-										<h2 class="catalog-heading"><a href="#">Tops</a></h2>
-										<a href="#" class="catalog-thumb">
-											<img src="images/CW0609-t.jpg" alt="">
+										<a href="#">
+											<h2 class="catalog-heading">Tops</h2>
+											<img src="images/CW0609-t.jpg" class="catalog-thumb" alt="">
 										</a>
 									</li>
 									<li class="justify-item">

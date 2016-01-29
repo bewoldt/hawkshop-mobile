@@ -7,9 +7,17 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="stylesheet" href="css/p3.css">
+	<!--[if IE 8]>
+	<style>
+		.logo {display:block;}
+	</style>
+	<![endif]-->
 	<?php include 'includes/google-font.php'; ?>
 	<script src="js/modernizr.js"></script>
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
+	<!--[if lt IE 9]>
+		<script src="js/ie/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<a id="skiplink" href="#main-content">Skip to main content</a>
@@ -81,7 +89,7 @@
 												<div id="cartLimit"></div>
 												<div id="qtyCart" class="optionLimit"></div>
 												<span class="addtocart-btn">
-													<svg class="icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg>
+													<span class="icon-shopping-cart"></span>
 													<!-- <span class="icon-shopping-cart"></span> -->
 													<input name="Add Cart" value="Add to Cart" type="submit" id="cartAdd" border="0" alt="Add to Cart" aria-label="Add to cart" >
 												</span>
@@ -92,7 +100,7 @@
 
 								<div id="itemDesc">
 									<div id="itemText" itemprop="description">
-										<h4 class="description"><span>Description</span></h4>
+										<p class="description"><strong>Description</strong></p>
 										<p>The Vertical Short Sleeve T-Shirt is a great way to show you school spirit at any sporting event!</p>
 										<p>Features Iowa Hawkeyes printed vertically with a Tigerhawk at the bottom.</p>
 										<ul>
@@ -108,55 +116,19 @@
 								<div class="item-meta item-social">
 									<span class="item-share">Share: </span>
 									<a href="#" class="js-social-share">
-										<span class="icon icon-facebook-square"></span>
+										<span class="icon icon-facebook-square"><span class="visuallyhidden">Facebook</span></span>
 									</a>
 									<a href="#" class="js-social-share">
-										<span class="icon icon-twitter-square"></span>
+										<span class="icon icon-twitter-square"><span class="visuallyhidden">Twitter</span></span>
 									</a>
 									<a href="#" class="js-social-share">
-										<span class="icon icon-pinterest-square"></span>
+										<span class="icon icon-pinterest-square"><span class="visuallyhidden">Pinterest</span></span>
 									</a>
 								</div>
-								<div class="cell-3">
-							<ul>
-								<li>
-									<strong>We're a non-profit</strong> Nullam quis risus eget urna mollis ornare vel eu leo ed posuere.
-								</li>
-								<li>
-									<strong>We help student orgs</strong> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-								</li>
-								<li>
-									<strong>Community Giving</strong> Nullam id dolor id nibh ultricies vehicula ut id elit urabitur blandit tempus.
-								</li>
-							</ul>
-						</div>
 							</div>
 						</div>
 					</div>
 					<?php include 'includes/suggested-items.php'; ?>
-					<div class="why-shop clearfix">
-						<div class="cell-1">
-							<h3>Why<br/>Shop the<br/>Hawk Shop?</h3>
-							<span class="bar"></span>
-							<p>The Iowa Hawk Shop is owned and operated by the University of Iowa. All proceeds support student programs and success initiatives. Our mission is to support academic excellence and build Hawkeye tradition. <a href="#">Learn more</a>.</p>
-						</div>
-						<div class="cell-2">
-
-						</div>
-						<div class="cell-3">
-							<ul>
-								<li>
-									<strong>We're a non-profit</strong> Nullam quis risus eget urna mollis ornare vel eu leo ed posuere.
-								</li>
-								<li>
-									<strong>We help students</strong> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-								</li>
-								<li>
-									<strong>Community Partnerships</strong> Nullam id dolor id nibh ultricies vehicula ut id elit urabitur blandit tempus.
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

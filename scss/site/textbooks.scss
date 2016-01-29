@@ -75,14 +75,14 @@
 	padding-right: 5px;
 }
 #textHeading, #textList {
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 #textList {
 	background-color: #fff;
 	margin: 1em auto 1em auto;
 	max-width: $break-large;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 #textList h1 {
 	margin-left: 20px;
@@ -114,4 +114,31 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+
+/* -----------------------------------------------------------------
+Book Renter
+----------------------------------------------------------------- */
+.bookRenterBanner {
+	@extend .clearfix;
+	display: block;
+	white-space:nowrap;
+	margin-bottom: 10px;
+	padding: 10px;
+	position: relative;
+	z-index: 10;
+	border-radius: 2px;
+	-webkit-background-clip: padding-box;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+.bookRenterTitle { display: block; float: left; z-index: 12;line-height: 47px;}
+.bookRenterFloat { display: block; float: right; overflow: visible;}
+.bookrenterCart { padding-top: 5px;}
+
+
+.more-gallery .gallery-cell {
+	width: 100%;
 }

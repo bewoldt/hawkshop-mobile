@@ -8,6 +8,7 @@ Sub-Catalog Slider
 	white-space: nowrap;
 	xoverflow-x: scroll;
 	overflow-y: hidden;
+	height: 44px;
 	-webkit-overflow-scrolling: touch;
 	@media (min-width: $break-medium ) {
 		display: none;

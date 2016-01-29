@@ -2,7 +2,9 @@
 
 	<!-- small size -->
 	<picture>
+		 <!--[if IE 9]><video style="display: none;"><![endif]-->
 		<source srcset="images/bannertest.jpg" media="(min-width: 768px)">
+		<!--[if IE 9]></video><![endif]-->
 		<img srcset="images/bannertest-sm.jpg" alt="">
 	</picture>
 

@@ -2,6 +2,13 @@
 /* -----------------------------------------------------------------
 Catalog/Browse page featured
 ----------------------------------------------------------------- */
+
+.catalog-featured a {
+	display: block;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
 .featured-item-list .catalog-featured {
 	padding-bottom: 1em;
 	@media (min-width: $break-large) {
@@ -24,6 +31,10 @@ Catalog/Browse page featured
 }
 .browse-page .featured-item-list .featured-title {
 	border-top: none;
+}
+.catalog-featured a:hover .thumbnail-title,
+.catalog-featured a:focus .thumbnail-title {
+	text-decoration: underline;
 }
 /* featured */
 .catalog-featured {
@@ -60,6 +71,12 @@ Suggested items
 		padding: 0 1em;
 	}
 }
+.suggested-gallery a {
+	display: block;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
 .suggested-title {
 	color: #222;
 	font-size: 15px;
@@ -69,6 +86,10 @@ Suggested items
 	@media (min-width: $break-medium) {
 		font-size: 24px;
 	}
+}
+.suggested-gallery a:hover .thumbnail-title,
+.suggested-gallery a:focus .thumbnail-title {
+	text-decoration: underline;
 }
 .suggested-wrapper .suggested-img img {
 	display: block;

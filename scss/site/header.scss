@@ -15,6 +15,7 @@
 	@media only screen and (min-width: $break-medium) {
 		height: auto;
 		position: relative;
+		background: #000 url(../images/header-capitol.jpg) no-repeat center top;
 	}
 
 }
@@ -34,6 +35,7 @@ Logo
 	}
 }
 .logo {
+	display: block;
 	display: inline-block;
 	vertical-align: middle;
 	padding: 15px 0;
@@ -78,6 +80,9 @@ Search
 	position: relative;
 	width: 200px;
 }
+.searchcontainer label {
+	color: #eee;
+}
 .searchcontainer input {
 	border: none;
 	font-size: 13px;
@@ -96,6 +101,7 @@ Search
 .searchcontainer .icon-search {
 	border: none;
 	background: transparent;
+	color: #eee;
 	text-indent: -9999em;
 	position: absolute;
 	right: 5px;
@@ -122,7 +128,6 @@ Shopping Cart
 .top-wrapper {
 	display: block;
 	height: 40px;
-	background: #111;
 	border-bottom: 1px solid #3f3f43;
 	width: 100%;
 	white-space: nowrap;
@@ -276,7 +281,6 @@ Mobile Shopping Cart Icon
 My Account
 ----------------------------------------------------------------- */
 .header-phone {
-	background: #000;
 	border-right: 1px solid #3f3f43;
 	color: #f8f8f8;
 	display: inline-block;
@@ -296,7 +300,6 @@ My Account
 }
 .help-center {
 	display: none;
-	background: #000;
 	border-right: 1px solid #3f3f43;
 	float: left;
 	@media (min-width: $break-medium) {
@@ -318,7 +321,6 @@ My Account
 }
 .account-dropdown {
 	display: none;
-	background: #000;
 	border-right: 1px solid #3f3f43;
 	float: left;
 	position: relative;
@@ -333,7 +335,6 @@ My Account
 	padding: 0 20px;
 	text-align: center;
 	padding: 0 20px;
-
 	text-decoration: none;
 }
 .account-dropdown.open .header-account {

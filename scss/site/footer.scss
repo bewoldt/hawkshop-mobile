@@ -5,10 +5,10 @@ $footer-break: 850px;
 	background-color: #000;
 	position: relative;
 	overflow: hidden;
-	@media (min-width: $break-medium) {
-		// background-image: url(../images/Iowa_Hawkeyes2.gif);
+	@media (min-width: $break-large) {
+		// background-image: url(../images/footer-capitol.jpg);
 		background-repeat: no-repeat;
-		background-position: -180px -35px;
+		background-position: center top;
 	}
 }
 .footer a {
@@ -20,79 +20,26 @@ Signup
 ----------------------------------------------------------------- */
 .footer-signup {
 	margin: 10px 0;
-	@media (min-width: 700px) {
-		margin-top: 1em;
-		display: block;
-	}
-	@media (min-width: $footer-break) {
-		margin: 0;
-		padding: 1em 0;
-		border-bottom: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding-bottom: 1em;
+	& p {
+		color: #eee;
+		font-size: 13px;
+		margin: 0 0 5px;
 	}
 	@media (min-width: $break-medium) {
-		padding: 2em 0 2em 0;
-		margin: 0;
-		// background: url(../images/Iowa_Hawkeyes.gif) no-repeat 0 12px;
+		margin-bottom: 0;
 	}
 	@media (min-width: $break-large) {
-		padding-left: 0;
-		margin: 0;
-		// background: url(../images/Iowa_Hawkeyes.gif) no-repeat 0 6px;
-	}
-}
-.hawkeye-logo {
-	display: block;
-	margin: 0 auto;
-	width: 25%;
-	@media (min-width: 600px) {
-		float: left;
-		width: 25%;
-		padding-right: 1.5em;
-	}
-	@media (min-width: $footer-break) {
-		width: 17%;
-	}
-}
-.footer .signuptext {
-	display: none;
-	@media (min-width: $footer-break) {
-		color: #ddd;
-		display: block;
-		font-size: 12px;
-		line-height: 1.3;
-		margin: 0;
-	}
-	@media (min-width: $break-large) {
-		float: left;
-		width: 62%;
-		padding-right: 2em;
-		line-height: 1.5;
-	}
-	@media (min-width: $break-xlarge) {
-		font-size: 14px;
+		border-right: 1px solid #333;
+		border-bottom: none;
+		min-height: 165px;
+		margin-top: 0;
+		padding: 2em 1.5em 1.5em 0;
 	}
 }
 #mc_embed_signup {
 	margin-top: 10px;
-	@media (min-width: 600px) {
-		float: left;
-		width: 100%;
-		margin-top: 8px;
-	}
-	@media (min-width: 700px) {
-		margin-top: 15px;
-	}
-	@media (min-width: 700px) {
-		margin-top: 10px;
-	}
-	@media (min-width: $break-medium) {
-		float: none;
-	}
-	@media (min-width: $break-large) {
-		width: 38%;
-		float: left;
-		margin-top: 0;
-	}
 }
 .footer .signup-preferences {
 	color: #ccc;
@@ -100,7 +47,7 @@ Signup
 	margin-top: 5px;
 	font-size: 10px;
 	text-decoration: underline;
-	text-align: center;
+	text-align: left;
 	@media (min-width: 600px) {
 		text-align: right;
 	}
@@ -153,246 +100,121 @@ Signup
 }
 
 /* -----------------------------------------------------------------
-Quick Links
+Footer Links
 ----------------------------------------------------------------- */
-.quicklinks {
-	border-top: 1px solid #333;
-	padding: 0 0 0 0;
-	margin-top: 1.5em;
-	@media (min-width: 600px) {
-		padding: 1.5em 0;
-		margin-top: 0;
-		border-top: none;
-	}
-	@media (min-width: $footer-break) {
-		border-right: 1px solid #333;
-		float: left;
-		width: 70%;
-		padding: 1.5em 0 1.5em 0;
-	}
-}
-.footer-callouts {
-	padding-top: 1em;
-	@media (min-width: 600px) {
-		padding: 1em 0;
-		border-top: 1px solid #333;
-	}
-	@media (min-width: $footer-break) {
-		border-top: none;
-		float: left;
-		width: 30%;
-		padding: 1.5em 0 1.5em 1.5em;
-	}
-}
-.tabholder {
-	@media (min-width: 600px) {
-		float: left;
-		width: 25%;
-		padding: 0 1.5em 0 0;
-	}
-}
-.tabholder:last-of-type {
-	@media (min-width: 600px) {
-		padding-right: 0;
-	}
-	@media (min-width: $footer-break) {
-		padding-right: 1.5em;
-	}
-}
-
-
-/* -----------------------------------------------------------------
-Tabs to Full
------------------------------------------------------------------ */
-.tab {
-	border-bottom: 1px solid #333;
-	color: $yellow;
-	font-family: $body-font;
+.footer-links {
 	font-size: 13px;
-	font-weight: normal;
-	padding: 1.4em 1em;
-	margin: 0;
-	position: relative;
-	cursor: pointer;
-	outline: 0;
-	@media (min-width: 600px) {
-		color: #fff;
-		border-bottom: 2px solid #ffd900;
-		font-size: 12px;
-		font-weight: bold;
-		letter-spacing: 1px;
-		padding: 0 0 4px;
-		text-transform: uppercase;
-	}
-}
-.tab:after {
-	content: '+';
-	color: $yellow;
-	position: absolute;
-	top: 11px;
-	right: 16px;
-	display: block;
-	font-size: 24px;
-	@media (min-width: 600px) {
-		content: "";
-	}
-}
-.tab.active:after {
-	content: '-';
-	@media (min-width: 600px) {
-		content: "";
-	}
-}
-
-.panel {
-	overflow: hidden;
-}
-.js .panel {
-	background-color: #222;
-	max-height: 0;
-	-webkit-transition: max-height 0.8s ease-out;
-	-moz-transition: max-height 0.8s ease-out;
-	-ms-transition: max-height 0.8s ease-out;
-	-o-transition: max-height 0.8s ease-out;
-	transition: max-height 0.8s ease-out;
-	@media (min-width: 600px) {
-		background-color: transparent;
-	}
-}
-.js .panel.active {
-	border-bottom: 1px solid #333;
-	max-height: 30em;
-}
-.panel p {
-	padding: 1em;
-}
-.panel p:last-child {
-	margin: 0;
-}
-
-/* Where it makes sense to display the full content */
-@media all and (min-width:600px) {
-	.tab {
-		 cursor: default;
-	}
-	.tab.active {
-		background: none;
-	}
-
-	.js .panel, .js .panel.active {
-		max-height: none;
-	}
-}
-.panel ul {
+	margin: 1em 0 0;
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	margin-top: -1px;
-	@media (min-width: 600px) {
-		padding: 0;
-		margin-top: 5px;
-	}
-}
-.panel ul li a {
-	display: block;
-	font-size: 12px;
-	padding: 11px 0 11px 1em;
-	border-top: 1px solid #333;
-	@media (min-width: 600px) {
-		border-top: none;
+	& a {
 		color: #eee;
 		display: block;
-		font-size: 12px;
-		padding: 3px 0;
+		padding: 4px 0;
+		&:hover, &:focus {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+	@media (max-width: $break-small - 1) {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		padding-top: .5em;
+		& a {
+			padding: 10px 0;
+		}
+	}
+	@media (min-width: $break-small) {
+		border-right: 1px solid #333;
+	}
+	@media (min-width: $break-medium) {
+		margin-top: 0;
+		padding: 2em 1em;
+	}
+	@media (min-width: $break-large) {
+		padding-left: 0;
+		min-height: 165px;
 	}
 }
+
+/* -----------------------------------------------------------------
+Store Hours
+----------------------------------------------------------------- */
+.store-hours {
+	margin-top: 1em;
+	color: #eee;
+	& p {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+	& dl {
+		font-size: 13px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	& dt {
+		font-weight: normal;
+		margin: 0;
+		clear: left;
+		float: left;
+		width: 50%;
+	}
+	& dd {
+		margin: 0;
+		float: left;
+		width: 50%;
+	}
+	@media (max-width: $break-small - 1) {
+		border-top: 1px solid #333;
+		padding-top: 1em;
+	}
+	@media (min-width: $break-medium) {
+		margin-top: 0;
+		padding: 2em 1em;
+		border-right: 1px solid #333;
+	}
+	@media (min-width: $break-large) {
+		padding-left: 0;
+		min-height: 165px;
+	}
+}
+
+
 
 /* -----------------------------------------------------------------
 Mission
 ----------------------------------------------------------------- */
-.mission {
-	margin-bottom: 15px;
-	position: relative;
-	@media (min-width: 600px) {
-		float: left;
-		margin-bottom: 0;
-		width: 50%;
-		padding-right: 1.5em;
-	}
-	@media (min-width: $footer-break) {
-		float: none;
-		width: 100%;
-		padding-right: 0;
-	}
-}
-.mission img {
-	float: left;
-	width: 75px;
-}
-.mission p {
-	color: #fff;
-	float: left;
-	font-size: 13px;
-	font-family: Georgia, Times, 'Times New Roman', serif;
-	position: absolute;
-	left: 90px;
-	margin: 0;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	@media (min-width: $break-small) {
-		font-size: 16px;
-	}
-	@media (min-width: 600px) {
-		font-size: 13px;
-	}
-	@media (min-width: $footer-break) {
-		font-size: 12px;
-		line-height: 1.3;
-	}
-	@media (min-width: $break-large) {
-		font-size: 13px;
-	}
-	@media (min-width: $break-xlarge) {
-		font-size: 14px;
-	}
-}
+
 
 
 /* -----------------------------------------------------------------
 Social Media
 ----------------------------------------------------------------- */
 .social {
-	border-top: 1px solid #333;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	border-bottom: 1px solid #333;
+	margin-bottom: .5em;
+	padding: 2em 0;
 	color: #d9d9d9;
 	font-size: 11px;
 	font-weight: normal;
 	line-height: 1.4;
-	@media (min-width: 600px) {
-		border-top: none;
-		float: left;
-		width: 50%;
-		padding-left: 1em;
-		padding-top: 27px;
-	}
-	@media (min-width: 600px) {
-		padding-bottom: 0;
-	}
-	@media (min-width: $footer-break) {
-		float: none;
-		width: 100%;
+	@media (max-width: $break-medium - 1) {
 		border-top: 1px solid #333;
-		margin: 15px 0 0;
-		padding-top: 20px;
-		padding-left: 0;
+		margin-top: 2em;
+	}
+	@media (min-width: $break-medium) {
+		border-bottom: none;
+	}
+	@media (min-width: $break-large) {
+		min-height: 165px;
+		margin: 0;
+		font-size: 12px;
 	}
 }
 .fb, .tw {
+	display: block;
 	float: left;
 	width: 50%;
 	& strong {
@@ -400,6 +222,11 @@ Social Media
 	}
 	&:hover {
 		text-decoration: none;
+	}
+	@media (min-width: $break-medium) {
+		float: none;
+		width: 100%;
+		padding: 10px 0;
 	}
 }
 .social .username {
@@ -414,8 +241,25 @@ Social Media
 	height: 30px;
 	width: 30px;
 }
-.social .tw:hover .icon, .social .fb:hover .icon {
+.social .tw:hover .icon, .social .fb:hover .icon,
+.social .tw:focus .icon, .social .fb:focus .icon {
 	color: $yellow;
+}
+
+/* -----------------------------------------------------------------
+Why Shop?
+----------------------------------------------------------------- */
+.why-shop {
+	display: block;
+	& img {
+		opacity: .8;
+	}
+	&:hover img, &:focus img {
+		opacity: 1;
+	}
+	@media (min-width: $break-medium) {
+		border-top: 1px solid #333;
+	}
 }
 
 
@@ -426,8 +270,14 @@ Copyright
 	clear: both;
 	padding: 1em 0;
 	text-align: center;
-	@media (min-width: 600px) {
-		border-top: 1px solid #333;
+	position: relative;
+	border-top: 1px solid #333;
+	border-top: 1px solid rgba(255,255,255,.2);
+	@media (min-width: $break-small) {
+		margin-top: 1em;
+	}
+	@media (min-width: $break-medium) {
+		margin-top: 0;
 	}
 }
 .footer-bot p {
@@ -441,28 +291,5 @@ Copyright
 .copyright {
 	@media (min-width: 600px) {
 		float: left;
-	}
-}
-
-.back-to-top {
-	& a {
-		display: block;
-		text-align: center;
-		font-size: 13px;
-		padding: 4em 0;
-		letter-spacing: 1px;
-	}
-	& span {
-		width: 0;
-		height: 0;
-		border-left: 5px solid transparent;
-		border-right: 5px solid transparent;
-		border-bottom: 5px solid #fff;
-		position: relative;
-		top: -10px;
-		margin: 0 10px;
-	}
-	@media (min-width: 600px) {
-		display: none;
 	}
 }

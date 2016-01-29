@@ -117,6 +117,9 @@
 .sub-nav.open {
 	display: block;
 }
+.no-js .nav-item:hover .sub-nav {
+	display: block;
+}
 /* last nav item right align */
 .nav-item:last-of-type .sub-nav.open {
 	right: 0;
@@ -203,6 +206,7 @@
 }
 /* Headings */
 .sub-nav .sub-nav-heading {
+	display: block;
 	margin: 0;
 	font-size: 12px;
 	font-weight: bold;
@@ -229,6 +233,7 @@
 /* Featured Product */
 .sub-nav .featured .inner {
 	padding: 10px 10px 0;
+	text-align: center;
 }
 .sub-nav .featured .sub-nav-img {
 	position: absolute;
@@ -237,7 +242,7 @@
 	margin-left: -40%;
 	width: 80%;
 }
-.sub-nav .featured h4 {
+.sub-nav .featured .title {
 	font-size: 18px;
 	line-height: 1.3;
 	margin: 0 0 5px 0;
@@ -247,16 +252,68 @@
 	margin: 0;
 }
 .sub-nav .featured a {
-	color: $link;
-	display: inline-block;
-	padding: 0;
-	text-decoration: underline;
 	&:hover, &:focus {
 		background: inherit;
-		border-radius: 0;
-		color: $link !important;
-		text-decoration: underline;
 	}
+}
+.sub-nav .featured .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  &:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover {
+    color: #333333;
+    text-decoration: none;
+  }
+  &:active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+}
+.sub-nav .featured .btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  &:hover, &:focus, &:active {
+    color: #333333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+  }
+}
+.sub-nav .featured .btn-sm,
+.sub-nav .featured .btn-xs {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.sub-nav .featured .btn-xs {
+  padding: 1px 5px;
+}
+.sub-nav .featured .btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 

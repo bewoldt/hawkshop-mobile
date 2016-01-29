@@ -30,6 +30,7 @@
 		<?php include 'includes/subcats.php'; ?>
 		<div class="container">
 			<div class="column-main">
+				<?php include 'includes/breadcrumbs.php'; ?>
 				<div class="row">
 					<div class="col-md-12">
 						<?php /* include 'includes/breadcrumbs.php';*/ ?>
@@ -40,30 +41,35 @@
 							<div class="product-list-wrapper">
 								<ul class="justify product-list">
 									<li class="justify-item">
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/DW1000-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" width="350" />
-											<noscript><img src="images/items/DW1000-t.jpg" alt="" class="productimg" /></noscript>
+										<a href="#">
+											<span class="thumbnail-link">
+												<img data-original="images/items/DW1000-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" width="350" />
+												<noscript><img src="images/items/DW1000-t.jpg" alt="" class="productimg" /></noscript>
+											</span>
+											<div class="thumbnail-info">
+												<h2 class="thumbnail-title">
+													<span class="brand">Nike</span> Iowa Floral Burnout Dress
+												</h2>
+												<p class="thumbnail-price"><span class="sale-flag">Sale</span><span class="sale">$45.00</span> <span class="regular-price">$25.00</span></p>
+											</div>
+
 										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title">
-												<a href="#"><span class="brand">Nike</span> Iowa Floral Burnout Dress</a>
-											</h2>
-											<p class="thumbnail-price"><span class="sale">$45.00</span> <span class="regular-price">$25.00</span></p>
-										</div>
 									</li>
 									<li class="justify-item">
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0964-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
+										<a href="#">
+											<span class="thumbnail-link">
+												<img data-original="images/items/CW0964-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
+											</span>
+											<div class="thumbnail-info">
+												<h2 class="thumbnail-title">
+													<span class="brand">Nike</span> Iowa Women's Rewind Run Game Shirt
+												</h2>
+												<p class="thumbnail-price">$32.00</p>
+											</div>
 										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title">
-												<a href="#"><span class="brand">Nike</span> Iowa Women's Rewind Run Game Shirt</a>
-											</h2>
-											<p class="thumbnail-price">$32.00</p>
-										</div>
 									</li>
 									<li class="justify-item">
-										<a class="thumbnail-link" href="#" title="">
+										<a class="thumbnail-link" href="#">
 											<img data-original="images/O0495-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
 										</a>
 										<div class="thumbnail-info">
@@ -140,15 +146,19 @@
 										</div>
 									</li>
 									<li class="justify-item">
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0968-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
+										<a href="#">
+											<span class="thumbnail-link">
+												<img data-original="images/items/DW1000-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" width="350" />
+												<noscript><img src="images/items/DW1000-t.jpg" alt="" class="productimg" /></noscript>
+											</span>
+											<div class="thumbnail-info">
+												<h2 class="thumbnail-title">
+													<span class="brand">Nike</span> Iowa Floral Burnout Dress
+												</h2>
+												<p class="thumbnail-price"><span class="sale">$45.00</span> <span class="regular-price">$25.00</span></p>
+											</div>
+											<span class="sale-flag">New</span>
 										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title">
-												<a href="#"><span class="brand">Under Armour</span> Iowa Hawkeyes Fleece</a>
-											</h2>
-											<p class="thumbnail-price"><span class="sale">$50.00</span> <span class="regular-price">$25.00</span></p>
-										</div>
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">
@@ -173,15 +183,19 @@
 										</div>
 									</li>
 									<li class="justify-item">
-										<a class="thumbnail-link" href="#" title="">
-											<img data-original="images/items/CW0980-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" />
+										<a href="#">
+											<span class="thumbnail-link">
+												<img data-original="images/items/DW1000-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" width="350" />
+												<noscript><img src="images/items/DW1000-t.jpg" alt="" class="productimg" /></noscript>
+											</span>
+											<div class="thumbnail-info">
+												<h2 class="thumbnail-title">
+													<span class="brand">Nike</span> Iowa Floral Burnout Dress
+												</h2>
+												<p class="thumbnail-price"><span class="sale">$45.00</span> <span class="regular-price">$25.00</span></p>
+											</div>
+											<span class="sale-flag">New</span>
 										</a>
-										<div class="thumbnail-info">
-											<h2 class="thumbnail-title">
-												<a href="#"><span class="brand">Nike</span> Iowa Floral Burnout Dress</a>
-											</h2>
-											<p class="thumbnail-price">$45.00</p>
-										</div>
 									</li>
 									<li class="justify-item">
 										<a class="thumbnail-link" href="#" title="">

@@ -69,7 +69,7 @@
 								<div class="leadership section-inner-wrap">
 									<div class="row">
 										<div class="col-md-10 col-md-offset-1">
-												<h2 class="text-center" style="font-size: 60px;margin-top:0;">Community Giving and Partnerships</h2>
+												<h2 class="about-title">Community Giving and Partnerships</h2>
 												<p class="text-center">The Hawk Shop has a longstanding tradition of supporting UI students, organizations, and the local community.  Throughout the years, the Hawk Shop has proudly sponsored numerous events on campus and donated merchandise to countless charity events and organizations.</p><br /><br />
 										</div>
 									</div>
@@ -127,7 +127,7 @@
 								</div>
 
 								<div class="section-inner-wrap">
-									<h2 class="text-center" style="font-size: 60px;margin-top:0;">Our Partners</h2>
+									<h2 class="about-title">Our Partners</h2>
 									<br />
 									<img src="images/partners.jpg" style="display:block;margin:0 auto;">
 								</div>
@@ -158,7 +158,7 @@
 									</div>
 									<div class="col-md-10 col-md-offset-1">
 										<br />
-										<h2 class="text-center" style="font-size: 60px;margin-top:0;">Our Store</h2>
+										<h2 class="about-title">Our Store</h2>
 										<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.</p>
 									</div><!-- end .col -->
 								</div><!-- end .row -->

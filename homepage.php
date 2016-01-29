@@ -15,48 +15,70 @@
 	<a id="skiplink" href="#main-content">Skip to main content</a>
 	<?php include 'includes/header.php'; ?>
 	<main id="main-content" tabindex="-1" class="cd-main-content">
-
-		<div class="home-gallery">
-			<div class="gallery-cell">
-				<a href="#">
-					<img src="http://placehold.it/950x450/aaaaaa" alt="">
-				</a>
-			</div>
-			<div class="gallery-cell">
-				<a href="#">
-					<img src="images/bonobos-1.jpg" alt="">
-				</a>
-			</div>
-			<div class="gallery-cell">
-				<a href="#">
-					<img src="http://placehold.it/950x450/aaaaaa" alt="">
-				</a>
-			</div>
-			<div class="gallery-cell">
-				<a href="#">
-					<img src="http://placehold.it/950x450/aaaaaa" alt="">
-				</a>
-			</div>
-			<div class="gallery-cell">
-				<a href="#">
-					<img src="http://placehold.it/950x450/aaaaaa" alt="">
-				</a>
-			</div>
-		</div>
-		<br /><br />
 		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="home-gallery">
+						<div class="gallery-cell">
+							<a href="#">
+								<picture>
+									<!--[if IE 9]><video style="display: none;"><![endif]-->
+									<source srcset="images/home-slider-outerwear.jpg" media="(min-width: 667px)">
+									<!--[if IE 9]></video><![endif]-->
+									<img src="images/home-slider-outerwear-sm.jpg" alt="">
+								</picture>
+							</a>
+						</div>
+						<div class="gallery-cell">
+							<a href="#">
+								<picture>
+									<!--[if IE 9]><video style="display: none;"><![endif]-->
+									<source srcset="images/home-slider-hattrick.jpg" media="(min-width: 667px)">
+									<!--[if IE 9]></video><![endif]-->
+									<img src="images/home-slider-hattrick-sm.jpg" alt="">
+								</picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- <img src="images/banner1.png"> -->
-					<a href="#"><img data-original="images/banner1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo"></a>
+					<a href="#" class="sec-promo">
+						<div class="sec-promo-img">
+							<img data-original="images/newarrivals-mens.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
+							<div class="sec-promo-hover">
+								<span>Shop Now</span>
+							</div>
+						</div>
+						<div class="sec-promo-txt">
+							Basketball Apparel
+						</div>
+					</a>
 				</div>
 				<div class="col-sm-4">
-					<!-- <img src="images/banner2.png"> -->
-					<img data-original="images/banner2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
+					<a href="#" class="sec-promo">
+						<div class="sec-promo-img">
+							<img data-original="images/sec-promo-value.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
+							<div class="sec-promo-hover">
+								<span>Shop Now</span>
+							</div>
+						</div>
+						<div class="sec-promo-txt">Value Apparel</div>
+					</a>
 				</div>
 				<div class="col-sm-4">
-					<!-- <img src="images/banner3.png"> -->
-					<img data-original="images/banner3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
+
+					<a href="#" class="sec-promo">
+						<div class="sec-promo-img">
+							<img data-original="images/wearabletech.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy home-promo">
+							<div class="sec-promo-hover">
+								<span>Shop Now</span>
+							</div>
+						</div>
+						<div class="sec-promo-txt">Fitness Accessories</div>
+					</a>
 				</div>
 			</div><!-- end .row -->
 			<div class="row">
@@ -76,46 +98,52 @@
 					<a href="#"><img class="lazy" data-original="images/appleservicecenter.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
 				</div>
 			</div><!-- end .row -->
-		</div>
-
-		<br /><br />
-
-		<div class="gallery fan-gallery js-flickity" data-flickity-options='{ "freeScroll":true, "wrapAround": true, "pageDots":false, "cellAlign":"left", "cellSelector":".gallery-cell", "prevNextButtons":false, "autoPlay":true }'>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_1_n.jpg" alt="tulip" />
+			<br /><br />
+		</div><!-- end .container -->
+		<div class="hawkofthemonth">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>#hawkofthemonth</h3>
+						<p>Send us your best Hawkeye fan photo for your chance to be the Hawk of the Month! <br />The winner will win a Nike Replica Iowa Hawkeye Football.</p>
+						<p><a href="mailto:hawkshopcontest@gmail.com?subject=Hawk of the month" class="btn btn-default btn-yellow">Send us your photo</a></p>
+						<br />
+					</div>
+				</div>
 			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_2_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_3_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_4_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_5_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_6_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_7_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_8_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_9_n.jpg" alt="tulip" />
-			</div>
-			<div class="gallery-cell">
-				<img class="gallery-cell-image" src="images/instagram_10_n.jpg" alt="tulip" />
-			</div>
-			<div class="hawkofthemonth">
-				<h3>#hawkofthemonth</h3>
-				Send us your best Hawkeye fan photo for your chance to be the Hawk of the Month! The winner will win a Nike Replica Iowa Hawkeye Football. Send a photo to <a href="#">hawkshopcontest@gmail.com</a>.
-			</div>
-		</div>
+						<div class="gallery fan-gallery js-flickity" data-flickity-options='{ "freeScroll":true, "wrapAround": true, "pageDots":false, "cellAlign":"left", "autoPlay":true, "lazyLoad": 5, "prevNextButtons": false, "pauseAutoPlayOnHover": false }'>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram1.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram2.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram3.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram4.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram5.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram6.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram7.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram8.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram9.jpg" alt="" />
+							</div>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" data-flickity-lazyload="images/instagram10.jpg" alt="" />
+							</div>
+						</div>
+		</div><!-- end .hawkofthemonth -->
 
 		<?php include 'includes/footer.php'; ?>
 		<div class="offscreen-exit"></div>

@@ -13,7 +13,7 @@
 			</li>
 
 			<li class="item-has-children">
-				<a href="#0">Men</a>
+				<a href="/ePOS/form=shared3/gm/browse.html&cat=26&amp;design=p3">Men</a>
 				<ul class="sub-menu">
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=386&amp;design=p3">T-Shirts &amp; Tanks</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=714&amp;design=p3">Long Sleeve Shirts</a></li>
@@ -26,7 +26,7 @@
 					<li class="item-has-children">
 						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=402&amp;design=p3">Accessories</a>
 						<ul class="sub-menu">
-							<li><a href="#">Footwear &amp; Socks</a></li>
+							<li><a href="/ePOS/form=shared3/gm/browse.html&cat=1012&design=p3">Footwear &amp; Socks</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=756&amp;design=p3">Gloves &amp; Scarves</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=65&amp;design=p3">Caps &amp; Hats</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=221&amp;design=p3">Scrubs</a></li>

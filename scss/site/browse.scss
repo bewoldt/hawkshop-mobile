@@ -57,6 +57,7 @@ Catalog Content
 	}
 	@media (min-width: 860px) {
 		width: 24.5%;
+		padding-top: 1.5em;
 	}
 }
 .product-list li {
@@ -102,6 +103,12 @@ Catalog Content
 /* -----------------------------------------------------------------
 Thumbnail Image
 ----------------------------------------------------------------- */
+.product-list a {
+	display: block;
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
 .thumbnail-link {
 	display: block;
 	margin-bottom: 10px;
@@ -125,36 +132,26 @@ Thumbnail Info
 	font-size: 13px;
 	line-height: 1.4;
 	text-align: center;
-	position: relative;
 	background-color: #fff;
 	& .brand {
 		display: block;
 		font-weight: bold;
 	}
 	& .thumbnail-price {
-		font-size: 14px;
+		font-weight: bold;
 		margin: 0;
 		& .regular-price {
 			font-weight: normal;
 			text-decoration: line-through;
 		}
 		& .sale {
-			color: #ed1c24;
+			color: #d81118;
+
 		}
 	}
-	& .more-colors {
-		display: block;
-		color: #888;
-		font-size: 11px;
-		border: 1px solid #eee;
-		padding: 2px;
-		text-align: center;
-		border-radius: 3px;
-		margin: 5px 0 0;
-		@media (min-width: $break-small) {
-			font-size: 12px;
-		}
-	}
+}
+.product-list a:hover .thumbnail-title {
+	text-decoration: underline;
 }
 .thumbnail-info .thumbnail-title {
 	font-family: $body-font;
@@ -192,4 +189,14 @@ Search No Results
 	display: block;
 }
 
+.sale-flag {
+	background: url(../images/sale.png) no-repeat 0 0;
+	position: absolute;
+	height: 46px;
+	width: 103px;
+	top: 0;
+	left: 10px;
+	text-indent: -999em;
+	z-index: 1;
+}
 

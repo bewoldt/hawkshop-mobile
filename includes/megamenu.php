@@ -16,7 +16,7 @@
 			<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=26&amp;design=p3">Men</a>
 			<div class="sub-nav groups group-4">
 				<ul class="sub-nav-group">
-					<li><h4 class="sub-nav-heading">Featured Shops</h4></li>
+					<li><span class="sub-nav-heading">Featured Shops</span></li>
 					<li><a href="#">Fall Weather Gear</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692&amp;design=p3">Hawkeye Values</a></li>
 					<li class="divider"></li>
@@ -27,9 +27,7 @@
 				</ul>
 				<ul class="sub-nav-group">
 					<li>
-						<h4 class="sub-nav-heading">
-							<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=26&amp;design=p3">Clothing</a>
-						</h4>
+						<a class="sub-nav-heading" href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=26&amp;design=p3">Clothing</a>
 					</li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=386&amp;design=p3">T-Shirts &amp; Tanks</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=714&amp;design=p3">Long Sleeve Shirts</a></li>
@@ -42,9 +40,7 @@
 				</ul>
 				<ul class="sub-nav-group">
 					<li>
-						<h4 class="sub-nav-heading">
-							<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=402&amp;design=p3">Accessories</a>
-						</h4>
+						<a class="sub-nav-heading" href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=402&amp;design=p3">Accessories</a>
 					</li>
 					<li><a href="#">Footwear &amp; Socks</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=756&amp;design=p3">Gloves &amp; Scarves</a></li>
@@ -56,8 +52,8 @@
 				<ul class="sub-nav-group featured">
 					<li>
 						<div class="inner">
-							<h4>25% Off</h4>
-							<p>Men's Polos and dress shirts. <a href="#">Shop Now</a></p>
+							<p class="title">Men's New Arrivals</p>
+							<p><a href="#" class="btn btn-default btn-sm">Shop Now</a></p>
 							<a href="#"><img src="images/C1057-m.jpg" alt="" class="sub-nav-img"></a>
 						</div>
 					</li>
@@ -68,7 +64,7 @@
 			<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=64&amp;design=p3">Women</a>
 			<div class="sub-nav groups group-4">
 				<ul class="sub-nav-group">
-					<li><h4 class="sub-nav-heading">Featured Shops</h4></li>
+					<li><span class="sub-nav-heading">Featured Shops</span></li>
 					<li><a href="#">Fall Weather Gear</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692&amp;design=p3">Hawkeye Values</a></li>
 					<li class="divider"></li>
@@ -79,9 +75,7 @@
 				</ul>
 				<ul class="sub-nav-group">
 					<li>
-						<h4 class="sub-nav-heading">
-							<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=64&amp;design=p3">Clothing</a>
-						</h4>
+						<a class="sub-nav-heading" href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=64&amp;design=p3">Clothing</a>
 					</li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=379&amp;design=p3">T-Shirts &amp; Tanks</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=985&amp;design=p3">Long Sleeve Shirts</a></li>
@@ -93,9 +87,7 @@
 				</ul>
 				<ul class="sub-nav-group">
 					<li>
-						<h4 class="sub-nav-heading">
-							<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=259&amp;design=p3">Accessories</a>
-						</h4>
+						<a class="sub-nav-heading" href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=259&amp;design=p3">Accessories</a>
 					</li>
 					<li><a href="#">Footwear &amp; Socks</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=951&amp;design=p3">Gloves &amp; Scarves</a></li>
@@ -120,9 +112,7 @@
 			<div class="sub-nav groups group-2">
 				<ul class="sub-nav-group">
 					<li>
-						<h4 class="sub-nav-heading">
-							<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=252&amp;design=p3">Clothing</a>
-						</h4>
+							<a class="sub-nav-heading" href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=252&amp;design=p3">Clothing</a>
 					</li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=403&amp;design=p3">Youth Tops</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=404&amp;design=p3">Youth Bottoms</a></li>

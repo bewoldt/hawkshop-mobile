@@ -170,7 +170,9 @@ Size Options
 	width: 29%;
 }
 
-
+#oneAttrLabel, #availNotes {
+	margin-bottom: .5em;
+}
 /* Select */
 .form-control, #attrSelector .itemMenu, .qtyMenu {
 	display: block;
@@ -199,13 +201,13 @@ Size Options
 	padding-top: 9px;
 	padding-bottom: 9px;
 }
-.form-control, #attrSelector .itemMenu, .qtyMenu {
-	-webkit-appearance: none;
-	background-image: url(../images/select-down2.png);
-	background-repeat: no-repeat;
-	background-position: 100% 50%;
-	padding-right: 45px;
-}
+// .form-control, #attrSelector .itemMenu, .qtyMenu {
+// 	-webkit-appearance: none;
+// 	background-image: url(../images/select-down2.png);
+// 	background-repeat: no-repeat;
+// 	background-position: 100% 50%;
+// 	padding-right: 45px;
+// }
 .form-control:hover, #attrSelector .itemMenu:hover, .qtyMenu {
 	cursor: pointer;
 }
@@ -235,6 +237,12 @@ Add to Cart button
    &:active {
    	background: darken(#fdd212,4%);
    }
+}
+.giftcard .addtocart-btn {
+	width: 250px;
+	float: none;
+	overflow: hidden;
+	display: block;
 }
 .addtocart-btn .icon-shopping-cart {
 	position: absolute;
@@ -376,103 +384,10 @@ Social Media
 		vertical-align: text-bottom;
 	}
 	.icon-facebook-square {color: #3c589d;text-indent: -999em;}
-	.icon-twitter-square {color: #48aaf2;}
+	.icon-twitter-square {color: #0d6eb4;}
 	.icon-pinterest-square {color: #c6271f;}
 }
 
-/* -----------------------------------------------------------------
-Why Shop the Hawk Shop?
------------------------------------------------------------------ */
-.why-shop {
-	margin-bottom: 1em;
-	@media (min-width: $break-medium) {
-		xbackground: #ebebeb url(../images/herky-bg.jpg) no-repeat center top;
-		background-color: #ebebeb;
-		margin: 1em;
-	}
-}
-.cell-1 {
-	background-color: #525252;
-	color: #fff;
-	padding: 25px;
-	@media (min-width: $break-medium) {
-		background-color: transparent;
-		color: #000;
-		float: left;
-		width: 300px;
-		margin-right: 140px;
-		padding-right: 0;
-	}
-}
-.cell-1 h3 {
-	color: #fff;
-	margin: 0;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 28px;
-	@media (min-width: $break-medium) {
-		color: #333;
-		font-size: 32px;
-	}
-}
-.cell-1 .bar {
-	display: block;
-	margin: 12px 0 14px 0;
-	width: 100px;
-	background-color: #fff;
-	height: 7px;
-	@media (min-width: $break-medium) {
-		background-color: #000;
-	}
-}
-.cell-1 p {
-	font-size: 15px;
-	line-height: 1.3;
-}
-
-
-.cell-3 {
-	background: #ebebeb;
-	padding: 25px;
-	& ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	@media (min-width: $break-medium) {
-		background: transparent;
-		float: right;
-		width: 330px;
-		padding-left: 0;
-	}
-}
-.cell-3 ul li {
-	padding-left: 52px;
-	margin-right: 15px;
-	margin-bottom: 1em;
-	font-family: arial;
-	font-size: 12px;
-	& strong {
-		font-size: 18px;
-		line-height: 18px;
-		padding-bottom: 2px;
-		display: block;
-		font-weight: normal;
-	}
-}
-.cell-3 li:nth-child(1) {
-	background: url(../images/benefit_1.png) no-repeat left top;
-}
-.cell-3 li:nth-child(2) {
-	background: url(../images/benefit_2.png) no-repeat left top;
-}
-.cell-3 li:nth-child(3) {
-	background: url(../images/benefit_3.png) no-repeat left top;
-}
-.cell-3 li:nth-child(4) {
-	background: url(../images/benefit_4.png) no-repeat left top;
-	margin-bottom: 0;
-}
 
 /* -----------------------------------------------------------------
 Added to Cart Page
@@ -500,6 +415,7 @@ Added to Cart Page
 	& .rbutton {
 		box-shadow: 2px 2px 2px #ccc;
 		border-radius: 3px;
+		background: #333;
 		background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
 		border: solid 1px #000;
 		margin: 5px 10px 5px 0px;
@@ -517,6 +433,7 @@ Added to Cart Page
 	}
 	& .rsecondary {
 		color: #666;
+		background: #ccc;
 		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bbb));
 		border-color: #999
 	}

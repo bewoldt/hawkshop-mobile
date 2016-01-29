@@ -7013,7 +7013,7 @@ jQuery(document).ready(function($){
 
 
 	$('.home-gallery').flickity({
-		initialIndex: 1,
+		lazyLoad: true,
 		wrapAround: true,
 		imagesLoaded: true,
 		selectedAttraction: 0.01,
@@ -7027,7 +7027,7 @@ jQuery(document).ready(function($){
 		cellAlign: 'left',
 		freeScroll: true,
 		contain: true,
-		lazyLoad: 4,
+		lazyLoad: 5,
 		// disable previous & next buttons and dots
 		prevNextButtons: true,
 		pageDots: false

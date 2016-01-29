@@ -16,11 +16,14 @@
 	margin-right: -1em;
 	& h1 {
 		color: #ffffff;
-		font-size: 66px;
+		font-size: 40px;
 		line-height: 48px;
 		padding-top: 18%;
 		margin-bottom: 24px;
 		margin-top: 0;
+		@media (min-width: 600px) {
+			font-size: 66px;
+		}
 	}
 	& p {
 		color: #ffffff;
@@ -41,6 +44,9 @@
 		width: 100%;
 	}
 }
+.about-hero.academics {
+	background-image: url(../images/hero-academics.jpg);
+}
 .about-gallery .flickity-page-dots {
   bottom: 10px;
 }
@@ -57,11 +63,19 @@
   background: white;
 }
 .section-inner-wrap {
-	border-bottom: 1px solid #ddd;
+	// border-bottom: 1px solid #ddd;
 
 	padding: 30px 0;
 	@media (min-width: $break-medium) {
 		margin: 0 48px;
 		padding: 60px 0;
+	}
+}
+.about-title {
+	text-align: center;
+	font-size: 30px;
+	margin-top:0;
+	@media (min-width: 667px) {
+		font-size: 60px;
 	}
 }

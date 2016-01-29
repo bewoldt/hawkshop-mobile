@@ -28,81 +28,125 @@
 						</div>
 						<div class="content-padding">
 							<div class="about-hero">
-								<h1 class="text-center">Academics</h1>
+								<h1 class="text-center">&nbsp;</h1>
 							</div>
 							<div class="catalogcontent">
 								<div class="row section-inner-wrap">
-										<div class="col-md-10 col-md-offset-1">
-											<h2 class="text-center">Purchasing your textbooks</h2>
-											<p>Purchasing your textbooks from the University Book Store means you're guaranteed the correct course materials, can expect easy returns, offered convenient forms of payment (including U-Bill) - and most importantly, your purchase supports student programs and facilities on campus.</p>
-											<br />
-											<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Search for textbooks</a></p>
-										</div>
-								</div>
-								<div class="featurette-wells featurette-3-wells">
-									<div class="featurette-well content">
-										<div class="featurette-well-inner" style="background-color: #fdd212;">
-											<div class="s_rte-text s_rte-text-alt">
-												<h3>Textbook Rentals</h3>
-												<p class="p1">Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-											</div>
-										</div>
-									</div>
-									<div class="featurette-well content">
-										<div class="featurette-well-inner" style="background-color: #ff665c;">
-											<div class="s_rte-text s_rte-text-alt">
-												<h3>eBooks</h3>
-												<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
-											</div>
-										</div>
-									</div>
-									<div class="featurette-well content">
-										<div class="featurette-well-inner" style="background-color: #77cdd2;">
-											<div class="s_rte-text s_rte-text-alt">
-												<h3>Book Buyback</h3>
-												<p class="p1">Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row section-inner-wrap">
-									<h2 class="text-center" style="font-size: 60px;margin-top:0;">Compare and Save</h2>
 									<div class="col-md-10 col-md-offset-1">
+										<h2 class="about-title">Purchasing your textbooks</h2>
+										<p>Purchasing your textbooks from the Hawk Shop means you're guaranteed the correct course materials, can expect easy returns, offered convenient forms of payment (including U-Bill) - and most importantly, your purchase <a href="#">supports student programs and facilities on campus</a>.</p>
+										<br />
+										<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Search for textbooks</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<br />
+						<div class="more-gallery js-flickity"  data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+							<div class="gallery-cell">
+								<div class="col-md-6">
+									<img src="images/store-c.jpg">
+								</div>
+								<div class="col-md-6">
+									<div style="padding:2em;">
+										<h3>Sell Your Textbooks</h3>
+										<p>Sell your textbooks back for cash at one of our 3 convenient locations.</p>
+										<a href="#" class="btn btn-default">link goes here</a>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-cell">
+								<div class="col-md-6">
+									<img src="images/store-c.jpg">
+								</div>
+								<div class="col-md-6">
+									<div style="padding:2em;">
+										<h3>Rentals</h3>
+										<p>We carry over 1000 rentals in-store and thousands are available online.</p>
+										<a href="#" class="btn btn-default">link goes here</a>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-cell">
+								<div class="col-md-6">
+									<img src="images/store-c.jpg">
+								</div>
+								<div class="col-md-6">
+									<div style="padding:2em;">
+										<h3>eBooks</h3>
+										<p>An economical (and green) alternative to print textbooks.</p>
+										<a href="#" class="btn btn-default">link goes here</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br /><br /><br /><br />
+						<div class="content-padding">
+							<div class="catalogcontent">
+								<div class="row section-inner-wrap">
+									<h2 class="about-title">Compare and Save</h2>
+									<div class="col-md-10 col-md-offset-1">
+										<div class="videoWrapper">
+											<iframe width="560" height="349" style="max-width:100%;" src="https://www.youtube.com/embed/895rHvEgVCo?rel=0" frameborder="0" allowfullscreen></iframe>
+										</div>
 										<p>Introducing our new price comparison tool - check competing new, used, and rental textbook prices online to make sure you're getting the best price, whether it's from us, Amazon, half.com, or a number of other online retailers. You'll be able to compare options on one page and order from any source directly.</p>
 										<br />
-										<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Find out more</a></p>
-									</div><!-- end .col -->
-									<div class="videoWrapper">
-										<iframe width="560" height="349" style="max-width:100%;" src="https://www.youtube.com/embed/895rHvEgVCo?rel=0" frameborder="0" allowfullscreen></iframe>
+										<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Open Compare and Save</a></p>
 									</div>
 								</div><!-- end .row -->
 
 								<div class="row section-inner-wrap">
-									<h2 class="text-center" style="font-size: 60px;margin-top:0;">Sell Your Textbooks</h2>
+									<h2 class="about-title">Tech Connection</h2>
 									<div class="col-md-10 col-md-offset-1">
-										<p>Try to sell your books back as soon as you can - demand for used books is limited and the value of your textbook drops after we buy the necessary books needed. You must have your student ID to sell your books.</p>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum.</p>
 										<br />
-										<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Find out more</a></p>
-									</div><!-- end .col -->
-								</div><!-- end .row -->
+									</div>
+								</div>
+
+								<br />
 
 								<div class="row section-inner-wrap">
-									<h2 class="text-center" style="font-size: 60px;margin-top:0;">Renting Textbooks</h2>
-									<div class="col-md-10 col-md-offset-1">
-										<p>Save money by renting. We carry over 1000 rentals in-store and thousands are available online. We've partnered with an online provider to ensure students have access to thousands of rental titles. Payment is made through the affiliate site. Books will be shipped directly to you with no charge for standard service. At the end of the semester, you can either return your rental title to us, or ship it directly (at no charge) to the provider.</p>
-										<br />
-										<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Find out more</a></p>
-									</div><!-- end .col -->
-								</div><!-- end .row -->
+									<div class="col-md-6">
+										<img src="images/store-c.jpg">
+									</div>
+									<div class="col-md-6">
+										<h3>Apple Store</h3>
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+									</div>
+								</div>
 
 								<div class="row section-inner-wrap">
-									<h2 class="text-center" style="font-size: 60px;margin-top:0;">eBooks</h2>
+									<div class="col-md-6">
+										<h3>Tech Support</h3>
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+									</div>
+									<div class="col-md-6">
+										<img src="images/store-c.jpg">
+									</div>
+								</div>
+
+								<div class="row section-inner-wrap">
+									<div class="col-md-6">
+										<img src="images/store-c.jpg">
+									</div>
+									<div class="col-md-6">
+										<h3>Video Games, Cameras, Printers, and more</h3>
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+									</div>
+								</div>
+
+								<div class="row section-inner-wrap">
 									<div class="col-md-10 col-md-offset-1">
-										<p>The University Book Store partners with eBook provider, CourseSmart to provide students an economical (and green) alternative to print textbooks. Stop in Tech Connection to try out the new CourseSmart eReader with better highlights and bookmarks, improved notes management, and multiple viewing options.</p>
-										<br />
-										<p class="text-center"><a href="#" class="btn btn-lg btn-yellow">Find out more</a></p>
-									</div><!-- end .col -->
-								</div><!-- end .row -->
+										<h2 class="about-title">IMU</h2>
+										<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<h3>Java House</h3>
+										<h3>Godfather's Pizza</h3>
+										<h3>Ebert and Gerbert</h3>
+										<h3>Hill's Bank</h3>
+									</div>
+								</div>
+
 
 							</div>
 						</div>
