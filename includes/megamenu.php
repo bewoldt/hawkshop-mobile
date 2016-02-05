@@ -190,12 +190,13 @@
 			<div class="sub-nav">
 				<ul class="sub-nav-group">
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=472&amp;design=p3">Apple</a></li>
-					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=599&amp;design=p3">Computers</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=599&amp;design=p3">PC Computers and Tablets</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=604&amp;design=p3">Computer Accessories</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=778&amp;design=p3">Phone Accessories</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=485&amp;design=p3">Printers &amp; Ink</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=473&amp;design=p3">Audio</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=479&amp;design=p3">Cameras</a></li>
+					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=489&amp;design=p3">Video Games</a></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=902&amp;design=p3">Wearable Tech</a></li>
 					<li class="divider"></li>
 					<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=906&amp;design=p3">Apple Service Center</a></li>

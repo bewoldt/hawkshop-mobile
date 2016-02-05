@@ -37,8 +37,20 @@
 	font-size: 20px;
 	font-family: $heading-font;
 }
-
-
+.bookData h4 {
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 13px;
+}
+.bookData .bkL {
+	width: auto;
+}
+.courseTotal .total {
+	@media (max-width: $break-small - 1 ) {
+		padding: 10px;
+		margin-left: 0;
+	}
+}
 
 
 

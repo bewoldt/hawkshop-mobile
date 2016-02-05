@@ -81,24 +81,38 @@
 					</a>
 				</div>
 			</div><!-- end .row -->
+			<br />
 			<div class="row">
 				<div class="col-sm-12">
 					<?php include 'includes/home-featured.php'; ?>
 					<br />
 				</div>
 			</div>
-			<br /><br />
+			<br /><br /><br />
 			<div class="row">
 				<div class="col-sm-6">
-					<!-- <img src="images/banner1.png"> -->
-					<a href="#"><img src="http://placehold.it/550x350"></a>
+					<div class="promo-sec-2 graduation">
+						<h3>Graduation</h3>
+						<p>The Iowa Hawk Shop is here to help you with for one of the most important days of your life. </p>
+						<ul>
+							<li>Nursing Pins</li>
+							<li>Diploma Frames</li>
+							<li>Cap and Gown</li>
+							<li>Class Rings</li>
+						</ul>
+						<p><a href="#" class="btn btn-default">Learn More</a></p>
+					</div>
+					<br />
 				</div>
 				<div class="col-sm-6">
-					<!-- <img src="images/banner2.png"> -->
-					<a href="#"><img class="lazy" data-original="images/appleservicecenter.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+					<div class="promo-sec-2 apple-promo">
+						<h3>Apple Service Center</h3>
+						<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p><a href="#" class="btn btn-default">Our Services</a></p>
+					</div>
 				</div>
 			</div><!-- end .row -->
-			<br /><br />
+			<br />
 		</div><!-- end .container -->
 		<div class="hawkofthemonth">
 			<div class="container">
