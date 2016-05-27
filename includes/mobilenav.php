@@ -35,7 +35,7 @@
 						</ul>
 					</li>
 					<li class="item-has-children">
-						<a href="#0">Featured Shops</a>
+						<a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692&amp;design=p3">Featured Shops</a>
 						<ul class="sub-menu">
 							<li><a href="#">Fall Weather Gear</a></li>
 							<li><a href="http://www.hawkshop.com/ePOS/form=shared3/gm/browse.html&cat=692&amp;design=p3">Hawkeye Values</a></li>

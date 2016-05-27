@@ -10,6 +10,9 @@
 	<?php include 'includes/google-font.php'; ?>
 	<script src="js/modernizr.js"></script>
 	<script src="https://cdn.rawgit.com/scottjehl/picturefill/master/dist/picturefill.min.js" async></script>
+	<!--[if lt IE 9]>
+		<script src="js/ie/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body class="home-page">
 	<a id="skiplink" href="#main-content">Skip to main content</a>
@@ -20,28 +23,65 @@
 				<div class="col-sm-12">
 					<div class="home-gallery">
 						<div class="gallery-cell">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="images/nike-lg.jpg" media="(min-width: 667px)">
+								<!--[if IE 9]></video><![endif]-->
+								<img data-flickity-lazyload="images/nike-sm.jpg" alt="">
+							</picture>
+							<div class="caption-wrapper">
+								<h3 class="caption-header">All Reppin' One Thing</h3>
+								<p class="caption-subheader">Hawkeye Summer Sixteen</p>
+								<a href="#" class="caption-link">Shop Women</a>
+								<a href="#" class="caption-link">Shop Men</a>
+							</div>
+						</div>
+
+						<div class="gallery-cell">
 							<a href="#">
 								<picture>
 									<!--[if IE 9]><video style="display: none;"><![endif]-->
 									<source srcset="images/home-slider-outerwear.jpg" media="(min-width: 667px)">
 									<!--[if IE 9]></video><![endif]-->
-									<img src="images/home-slider-outerwear-sm.jpg" alt="">
-								</picture>
-							</a>
-						</div>
-						<div class="gallery-cell">
-							<a href="#">
-								<picture>
-									<!--[if IE 9]><video style="display: none;"><![endif]-->
-									<source srcset="images/home-slider-hattrick.jpg" media="(min-width: 667px)">
-									<!--[if IE 9]></video><![endif]-->
-									<img src="images/home-slider-hattrick-sm.jpg" alt="">
+									<img data-flickity-lazyload="images/home-slider-outerwear-sm.jpg" alt="">
 								</picture>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="homelinks">
+						<li class="home-link">
+							<a href="#">Textbooks</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Men's Apparel</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Women's Apparel</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Kids's Apparel</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Home &amp; Gifts</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Sports</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Supplies</a>
+						</li>
+						<li class="home-link">
+							<a href="#">Tech</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br />
 			<div class="row">
 				<div class="col-sm-4">
 					<!-- <img src="images/banner1.png"> -->
@@ -82,6 +122,7 @@
 				</div>
 			</div><!-- end .row -->
 			<br />
+
 			<div class="row">
 				<div class="col-sm-12">
 					<?php include 'includes/home-featured.php'; ?>
@@ -92,15 +133,16 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="promo-sec-2 graduation">
-						<h3>Graduation</h3>
-						<p>The Iowa Hawk Shop is here to help you with for one of the most important days of your life. </p>
+						<h3>Spring Grad Fair</h3>
+						<h4>March 30-31, 10am - 4pm</h4>
+						<p>Join us for the 2016 Spring Grad Fair in the IMU! If you are graduating this Spring, then you don’t want to miss this event.</p>
 						<ul>
-							<li>Nursing Pins</li>
-							<li>Diploma Frames</li>
-							<li>Cap and Gown</li>
-							<li>Class Rings</li>
+							<li>Purchase your cap and gown and get a free t-shirt</li>
+							<li>20% off diploma frames</li>
+							<li>Order announcements or a class ring</li>
+							<li>Win prizes from Java House, and more!</li>
 						</ul>
-						<p><a href="#" class="btn btn-default">Learn More</a></p>
+
 					</div>
 					<br />
 				</div>

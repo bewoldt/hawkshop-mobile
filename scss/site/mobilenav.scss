@@ -109,6 +109,8 @@ Trigger
 	height: 100%;
 	width: 50px;
 	background-color: #222;
+	text-align: left;
+	border: none;
 
 	&.is-clicked {
 		.cd-menu-icon {

@@ -125,6 +125,12 @@
 										<span class="icon icon-pinterest-square"><span class="visuallyhidden">Pinterest</span></span>
 									</a>
 								</div>
+								<div class="item-meta">
+									<p><strong>Add $1 to your order to help Colleges Against Cancer</strong></p>
+									<a href="#"><img src="images/colleges-against-cancer.jpg" alt="Colleges against Cancer" class="left"></a>
+									<p style="font-size:15px;">We will be competing against ISU, UNI, and Drake University to see who can fundraise the most between February 15 and February 22, 2016.</p>
+									<p><a href="#" class="btn btn-sm btn-default">Add $1 to your order</a></p>
+								</div>
 							</div>
 						</div>
 					</div>

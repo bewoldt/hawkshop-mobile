@@ -12,8 +12,8 @@ module.exports = function(grunt) {
 					'js/plugins/dropdown.js',
 					// 'js/plugins/jquery.unveil.js',
 					'js/plugins/jquery.lazyload.js',
-					'js/plugins/jquery.waypoints.min.js',
-					'js/plugins/sticky.min.js',
+					// 'js/plugins/jquery.waypoints.min.js',
+					// 'js/plugins/sticky.min.js',
 					'js/plugins/jquery-accessibleMegaMenu.js',
 					'js/plugins/flickity.pkgd.js',
 					'js/main.js'

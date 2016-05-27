@@ -30,10 +30,10 @@ h3 {
     font-size: 24px;
 }
 h4 {
-    font-size: 17px;
+    font-size: 20px;
 }
 h5 {
-    font-size: 16px;
+    font-size: 18px;
 }
 h6 {
     font-size: 15px;
@@ -43,7 +43,13 @@ h2 + h3,
 h3 + h4,
 h4 + h5,
 h5 + h6 {margin-top:0;}
-
+.alpha {
+    font-size: 28px;
+    margin: .75em 0 .5em;
+    @media (min-width: $break-small) {
+        font-size: 38px;
+    }
+}
 ul,ol {
     padding: 0;
     margin-left: 24px;

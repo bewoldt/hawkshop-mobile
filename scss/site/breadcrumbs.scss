@@ -1,7 +1,11 @@
-.breadcrumbs-wrapper {
+.breadcrumbs-wrapper,
+.breadcrumbsFrame {
+	margin: 0 !important;
 	display: none;
 	border-bottom: 1px solid #e9e9ea;
 	padding: .5em 1em;
+	color: #555;
+	font-size: 13px;
 	@media (min-width: $break-medium) {
 		display: block;
 	}

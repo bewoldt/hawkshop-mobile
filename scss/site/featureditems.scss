@@ -64,6 +64,18 @@ Suggested items
 	margin-top: 2em;
 	padding: 2em 0;
 }
+/* sequoia */
+.itemSuggestedFrame,
+.itemCorrelatedFrame {
+	margin: 2em 0 0;
+	padding: 2em 0;
+	clear: both;
+}
+.itemSuggestedFrame .listSubheading,
+.itemCorrelatedFrame .listSubheading {
+	border-bottom: none;
+	border-top: 1px solid #ddd;
+}
 .suggested-gallery {
 	list-style: none;
 	margin: 0;
@@ -77,9 +89,14 @@ Suggested items
 		text-decoration: none;
 	}
 }
-.suggested-title {
+.suggested-title,
+.itemSuggestedSubheading h2,
+.itemCorrelatedSubheading h2 {
 	color: #222;
+	display: block;
 	font-size: 15px;
+	font-weight: bold;
+	padding-top: 1em;
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0 0 2em 0;
@@ -114,8 +131,23 @@ Suggested items
 		width: 25%;
 	}
 }
-
-
+/* sequoia fixs */
+.catalogImageFrame {
+	height: auto;
+	margin-bottom: 5px;
+}
+.catalogItemTitle {
+	font-size: 13px;
+	font-weight: normal;
+}
+.featuredFrame .itemPriceMain {
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+}
+.featuredFrame .itemPriceSuffix {
+	font-size: 13px;
+}
 
 
 

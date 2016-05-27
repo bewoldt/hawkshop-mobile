@@ -141,9 +141,9 @@ jQuery(document).ready(function($){
 
 
 	//Sticky header
-	var sticky = new Waypoint.Sticky({
-		element: $('#dawgdrops')[0]
-	});
+	// var sticky = new Waypoint.Sticky({
+	// 	element: $('#dawgdrops')[0]
+	// });
 
 
 });

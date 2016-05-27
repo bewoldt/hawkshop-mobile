@@ -43,8 +43,8 @@
 									<li class="justify-item">
 										<a href="#">
 											<span class="thumbnail-link">
-												<img data-original="images/items/DW1000-t.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lazy productimg" width="350" />
-												<noscript><img src="images/items/DW1000-t.jpg" alt="" class="productimg" /></noscript>
+												<img src="images/items/DW1000-t.jpg" alt="" class="productimg" width="350" />
+
 											</span>
 											<div class="thumbnail-info">
 												<h2 class="thumbnail-title">

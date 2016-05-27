@@ -14,6 +14,45 @@
 		width: 42%;
 	}
 }
+
+/* sequoia fixes */
+#merchPageFrame {
+	background-color: #fff;
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.column-main #merchPageFrame {
+	background-color: #fff;
+	max-width: none;
+	margin-right: auto;
+	margin-left: auto;
+	border: none;
+	margin:0;
+}
+#shareFrame {
+	display: none;
+}
+.itemPhotoDisplay {
+	width: 100% !important;
+	margin: 0;
+	padding: 1em;
+	@media (min-width: $break-medium) {
+		width: 55% !important;
+	}
+}
+.itemInfoFrame {
+	margin: 0;
+	padding: 1em;
+	max-width: 100%;
+	@media (min-width: $break-medium) {
+		width: 40%;
+	}
+}
 /* -----------------------------------------------------------------
 Photos
 ----------------------------------------------------------------- */
@@ -51,14 +90,16 @@ Photos
 		display: block;
 	}
 }
-
 #itemInfo {
 	@media (min-width: $break-large) {
 		padding-right: 1em;
 	}
 }
-
-.caption {
+/* Sequoia fix */
+.itemPhotoDisplay .itemIconFrame {
+	width: 100% !important;
+}
+#itemPhoto .caption {
 	font-size: 13px;
 	margin: 10px;
 	padding: 0;
@@ -71,7 +112,8 @@ Photos
 /* -----------------------------------------------------------------
 Title
 ----------------------------------------------------------------- */
-#itemTitle {
+#itemTitle,
+.itemDisplayFrame h1 {
 	font-size: 24px;
 	line-height: 1.3;
 	margin: .5em 0 .25em 0;
@@ -362,6 +404,10 @@ Description
 	color: #333;
 	content: 'Item Number: ';
 	font-weight: bold;
+}
+/* Sequoia fix */
+.itemLongDescription {
+	font-size: 16px;
 }
 
 /* -----------------------------------------------------------------
