@@ -112,18 +112,18 @@ Layout
 
 /* Media */
 .media-object {
-    margin: 2em 0;
-    display: block;
+	 margin: 2em 0;
+	 display: block;
 }
 .media-object-section {
-    display: table-cell;
-    vertical-align: top;
+	 display: table-cell;
+	 vertical-align: top;
 }
 .media-object-section:first-child {
-    padding-right: 2em;
+	 padding-right: 2em;
 }
 .media-object img {
-    max-width: none;
+	 max-width: none;
 }
 .media-heading {
 	margin-top: 0;
@@ -171,5 +171,123 @@ Promotional Banners
 	& img {
 		display: block;
 		margin: 0 auto;
+	}
+}
+
+/* -----------------------------------------------------------------
+Tech by Major
+----------------------------------------------------------------- */
+$accordion-color: #fdd212;
+
+.accordion dl,
+.accordion-list {
+	border:1px solid #ddd;
+	&:after {
+		content: "";
+		display:block;
+		height:1em;
+		width:100%;
+		background-color:darken($accordion-color, 10%);
+	}
+}
+.accordion dd,
+.accordion__panel {
+	background-color:#f4f4f4;
+	font-size:1em;
+	line-height:1.5em;
+}
+.accordion {
+	position:relative;
+	background-color:#f4f4f4;
+}
+.accordionTitle,
+.accordion__Heading {
+	background-color:$accordion-color;
+	text-align:center;
+	font-weight:700;
+	padding:2em;
+	display:block;
+	text-decoration:none;
+	color:#333;
+	transition:background-color 0.5s ease-in-out;
+	border-bottom:1px solid darken($accordion-color, 15%);
+	&:before {
+		content: "+";
+		font-size:1.5em;
+		line-height:0.5em;
+		float:left;
+		transition: transform 0.3s ease-in-out;
+	}
+	&:hover {
+		background-color:darken($accordion-color, 10%);
+	}
+}
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+	background-color:darken($accordion-color, 10%);
+	 &:before {
+		transform:rotate(-225deg);
+	 }
+}
+.accordionItem {
+	margin: 0;
+	height:auto;
+	overflow:hidden;
+	//SHAME: magic number to allow the accordion to animate
+	max-height:50em;
+	transition:max-height 1s;
+	@media screen and (min-width:48em) {
+		transition:max-height 0.5s
+	}
+}
+.accordion-content-inner {
+	padding: 2em 1em;
+}
+
+.accordionItem.is-collapsed { max-height:0;}
+.no-js .accordionItem.is-collapsed {max-height: auto;}
+.animateIn {animation: accordionIn 0.45s normal ease-in-out both 1;}
+.animateOut {animation: accordionOut 0.45s alternate ease-in-out both 1;}
+@keyframes accordionIn {
+	0% {
+		opacity: 0;
+		transform:scale(0.9) rotateX(-60deg);
+		transform-origin: 50% 0;
+	}
+	100% {
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
+@keyframes accordionOut {
+	0% {
+		opacity: 1;
+		transform:scale(1);
+	}
+	100% {
+		opacity:0;
+		transform:scale(0.9) rotateX(-60deg);
+	 }
+}
+.accordion .table {
+	background-color: #fff;
+}
+.accordion-product {
+	padding: 5px;
+	text-align: center;
+	& .accordion-img {
+		display: block;
+		margin-bottom: 20px;
+	}
+	& .accordion-title {
+		font-family: $body-font;
+		font-size: 14px;
+		font-weight: normal;
+	}
+	& .accordion-price {
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0;
 	}
 }
